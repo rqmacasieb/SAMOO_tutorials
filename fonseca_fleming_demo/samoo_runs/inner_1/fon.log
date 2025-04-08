@@ -1,0 +1,2311 @@
+time,elapsed_seconds,message
+07:09:08,5.38e-05,PEST++ performance logger started
+07:09:08,0.0020918,starting to process control file
+07:09:08,0.0015261,finished processing control file
+07:09:08,0.009716,initializing MOEA process
+07:09:08,0.0003473,using 'nsga2_ppd' env selector
+07:09:08,0.0004131,using binary tournament mating pool selector
+07:09:08,0.0002785,saving generation specific populations and archives every nth generation 1
+07:09:08,0.0002609,'opt_dec_var_groups' passed, using 2 adjustable parameters as decision variables
+07:09:08,0.0003058,number of decision variables:  2
+07:09:08,0.0003504,max run fail:  3
+07:09:08,0.0002815,'opt_chance_points' = SINGLE, evaluting chance at representative point
+07:09:08,0.0003976,initializing constraints
+07:09:08,0.0029867,using particle swarm generator
+07:09:08,0.0006018,processing dv population file initial.dv_pop.csv
+07:09:08,0.0001467,loading dv population from csv file initial.dv_pop.csv
+07:09:08,0.0019807,dv population with 50 members read from 'initial.dv_pop.csv'
+
+07:09:08,5.91e-05,processing obs population file initial.obs_pop.csv
+07:09:08,0.0003159,loading obs population from csv file initial.obs_pop.csv
+07:09:08,0.0017879,obs population with 42 members read from 'initial.obs_pop.csv'
+
+07:09:08,0.0002612,WARNING: only 42 members are common between the dv population and obs restart population.
+07:09:08,0.0004757,aligning dv and obs populations
+07:09:08,0.0003857,dv population size:  42
+07:09:08,0.0003321,obs population size 42
+07:09:08,0.0003293,checking for denormal values in dv population
+07:09:08,0.0002647,checking for denormal values in obs restart population
+07:09:08,0.001914, saved observation population to  fon.0.obs_pop.csv
+07:09:08,0.0005835,initial population decision variable summary:
+07:09:08,0.0009545,initial population objective function summary:
+07:09:08,0.0003562,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:08,0.0007798,using member GEN=0_TRAINING=34 as single, 'optimal' point
+   with distance of 0.662165 from optimal trade - off
+07:09:08,0.0030311, saved initial dv population to  fon.0.dv_pop.csv
+07:09:08,0.0006491,performing initial pareto dominance sort
+07:09:08,0.0076199,ParetoObjectives::get_nsga2_pareto_dominance() for 42 population members
+07:09:08,6.28e-05,ParetoObjectives::update() for  42 population members
+07:09:08,1.48e-05,preparing fast-lookup containers
+07:09:08,0.0006855,checking for duplicate solutions
+07:09:08,0.000285,calculating fitness
+07:09:08,8.6e-06,get_spea_fitness
+07:09:08,0.0001407,fill domination containers
+07:09:08,0.0010041,pareto front sorting
+07:09:08,6.4e-06,starting 'fast non-dom sort
+07:09:08,5e-06,fill domination containers
+07:09:08,0.0007149,finding first front
+07:09:08,9.2e-06,sorting remaining fronts
+07:09:08,0.0029807,initialized archives with 4 nondominated members
+07:09:08,3.36e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 4 population members
+07:09:08,1.34e-05,ParetoObjectives::update() for  4 population members
+07:09:08,1.01e-05,preparing fast-lookup containers
+07:09:08,9.33e-05,checking for duplicate solutions
+07:09:08,6.32e-05,calculating fitness
+07:09:08,1.41e-05,get_spea_fitness
+07:09:08,2.25e-05,fill domination containers
+07:09:08,3.63e-05,pareto front sorting
+07:09:08,1.04e-05,starting 'fast non-dom sort
+07:09:08,9.9e-06,fill domination containers
+07:09:08,2.25e-05,finding first front
+07:09:08,1.13e-05,sorting remaining fronts
+07:09:08,0.0006995,ParetoObjectives::get_nsga2_pareto_dominance() for 4 population members
+07:09:08,2.17e-05,ParetoObjectives::update() for  4 population members
+07:09:08,1.11e-05,preparing fast-lookup containers
+07:09:08,4.57e-05,checking for duplicate solutions
+07:09:08,2.62e-05,calculating fitness
+07:09:08,1.08e-05,get_spea_fitness
+07:09:08,1.99e-05,fill domination containers
+07:09:08,2.73e-05,pareto front sorting
+07:09:08,1.01e-05,starting 'fast non-dom sort
+07:09:08,9.6e-06,fill domination containers
+07:09:08,2.13e-05,finding first front
+07:09:08,1.16e-05,sorting remaining fronts
+07:09:08,0.0013688,using the initial population for hypervolume partitioning
+07:09:08,3.27e-05,ParetoObjectives::get_hypervolume() for 42 archive members
+07:09:08,5.17e-05,ParetoObjectives::set_hypervolume_partitions() for outer pareto archive members
+07:09:08,0.0008092,saved decision variable population of size 4 X 2 to 'fon.archive.dv_pop.csv'
+07:09:08,0.0008932,saved generation-specific decision variable population of size 4 X 2 to 'fon.0.archive.dv_pop.csv'
+07:09:08,0.0008272,saved observation population of size 4 X 4 to 'fon.archive.obs_pop.csv'
+07:09:08,0.0008257,saved generation-specific observation population of size 4 X 4 to 'fon.0.archive.obs_pop.csv'
+07:09:08,0.0005792,number of initial feasible solutions: 4
+07:09:08,0.00058,initialization complete
+07:09:08,0.0007908,starting generation  1
+07:09:08,0.0001251,ParetoObjectives::get_nsga2_pareto_dominance() for 42 population members
+07:09:08,2.32e-05,ParetoObjectives::update() for  42 population members
+07:09:08,1.19e-05,preparing fast-lookup containers
+07:09:08,0.0010618,checking for duplicate solutions
+07:09:08,0.0002803,calculating fitness
+07:09:08,7.6e-06,get_spea_fitness
+07:09:08,0.0001518,fill domination containers
+07:09:08,0.00128,pareto front sorting
+07:09:08,9e-06,starting 'fast non-dom sort
+07:09:08,5.6e-06,fill domination containers
+07:09:08,0.0011732,finding first front
+07:09:08,1.32e-05,sorting remaining fronts
+07:09:08,0.0011563,augmenting PSO population DE population of size 8
+07:09:08,0.000546,generating diffevol population of size 8
+07:09:08,0.0008966,generating PSO population of size 50
+07:09:08,2.51e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 4 population members
+07:09:08,1.41e-05,ParetoObjectives::update() for  4 population members
+07:09:08,1.11e-05,preparing fast-lookup containers
+07:09:08,8.54e-05,checking for duplicate solutions
+07:09:08,5.22e-05,calculating fitness
+07:09:08,1.09e-05,get_spea_fitness
+07:09:08,2.16e-05,fill domination containers
+07:09:08,4.7e-05,pareto front sorting
+07:09:08,1.11e-05,starting 'fast non-dom sort
+07:09:08,9.7e-06,fill domination containers
+07:09:08,2.75e-05,finding first front
+07:09:08,1.06e-05,sorting remaining fronts
+07:09:08,0.0016215,running population of size  50
+07:09:08,2.83e-05,queuing 50 runs
+07:09:08,0.0152106,making runs
+07:09:17,9.13132,processing runs
+07:09:17,0.0045596,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:09:17,0.0017217,saved generation-specific decision variable population of size 50 X 2 to 'fon.1.dv_pop.csv'
+07:09:17,0.0021538,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:09:17,0.0038647,saved generation-specific observation population of size 50 X 4 to 'fon.1.obs_pop.csv'
+07:09:17,0.0202392,ParetoObjectives::update() for  92 population members
+07:09:17,3.35e-05,preparing fast-lookup containers
+07:09:17,0.0026256,checking for duplicate solutions
+07:09:17,0.0009801,calculating fitness
+07:09:17,5.7e-06,get_spea_fitness
+07:09:17,0.0005727,fill domination containers
+07:09:17,0.0057193,pareto front sorting
+07:09:17,2.12e-05,starting 'fast non-dom sort
+07:09:17,5.5e-06,fill domination containers
+07:09:17,0.0059819,finding first front
+07:09:17,3.54e-05,sorting remaining fronts
+07:09:17,0.0003338,ParetoObjectives::get_nsga2_pareto_dominance() for 92 population members
+07:09:17,5.8e-06,ParetoObjectives::update() for  92 population members
+07:09:17,4.4e-06,preparing fast-lookup containers
+07:09:17,0.0024506,checking for duplicate solutions
+07:09:17,0.00095,calculating fitness
+07:09:17,5e-06,get_spea_fitness
+07:09:17,0.0005784,fill domination containers
+07:09:17,0.0055021,pareto front sorting
+07:09:17,8.5e-06,starting 'fast non-dom sort
+07:09:17,5.3e-06,fill domination containers
+07:09:17,0.005409,finding first front
+07:09:17,1.71e-05,sorting remaining fronts
+07:09:17,0.00508,pareto dominance sorting combined parent-child populations of size  92
+07:09:17,4.27e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 92 population members
+07:09:17,2.25e-05,ParetoObjectives::update() for  92 population members
+07:09:17,0.0001081,preparing fast-lookup containers
+07:09:17,0.0026834,checking for duplicate solutions
+07:09:17,0.0009658,calculating fitness
+07:09:17,5e-06,get_spea_fitness
+07:09:17,0.0005546,fill domination containers
+07:09:17,0.005549,pareto front sorting
+07:09:17,5.5e-06,starting 'fast non-dom sort
+07:09:17,4.6e-06,fill domination containers
+07:09:17,0.0054865,finding first front
+07:09:17,2.24e-05,sorting remaining fronts
+07:09:17,0.0048544,updating archive
+07:09:17,0.0003664,adding 7 non-dominated members to archive
+07:09:17,0.0002399,pareto dominance sorting archive of size 11
+07:09:17,1.74e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 11 population members
+07:09:17,6.4e-06,ParetoObjectives::update() for  11 population members
+07:09:17,4.5e-06,preparing fast-lookup containers
+07:09:17,8.71e-05,checking for duplicate solutions
+07:09:17,4.3e-05,calculating fitness
+07:09:17,4.6e-06,get_spea_fitness
+07:09:17,2.26e-05,fill domination containers
+07:09:17,0.0001137,pareto front sorting
+07:09:17,4.6e-06,starting 'fast non-dom sort
+07:09:17,4.3e-06,fill domination containers
+07:09:17,9.45e-05,finding first front
+07:09:17,5.7e-06,sorting remaining fronts
+07:09:17,0.0010708,resizing archive from 11 to 11 current non-dominated solutions
+07:09:17,1.93e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 11 population members
+07:09:17,5.5e-06,ParetoObjectives::update() for  11 population members
+07:09:17,4.3e-06,preparing fast-lookup containers
+07:09:17,6.65e-05,checking for duplicate solutions
+07:09:17,2.92e-05,calculating fitness
+07:09:17,4.4e-06,get_spea_fitness
+07:09:17,2.33e-05,fill domination containers
+07:09:17,0.0001048,pareto front sorting
+07:09:17,4.6e-06,starting 'fast non-dom sort
+07:09:17,4.6e-06,fill domination containers
+07:09:17,9.57e-05,finding first front
+07:09:17,5.6e-06,sorting remaining fronts
+07:09:17,0.0032603,saved decision variable population of size 11 X 2 to 'fon.archive.dv_pop.csv'
+07:09:17,0.0024567,saved generation-specific decision variable population of size 11 X 2 to 'fon.1.archive.dv_pop.csv'
+07:09:17,0.0019712,saved observation population of size 11 X 4 to 'fon.archive.obs_pop.csv'
+07:09:17,0.0013537,saved generation-specific observation population of size 11 X 4 to 'fon.1.archive.obs_pop.csv'
+07:09:17,0.0004768,resizing current populations to  50
+07:09:17,0.0004506,generation 1 decision variable summary:
+07:09:17,0.0009174,generation 1 decision variable change summary:
+07:09:17,0.0015026,generation 1 objective function summary:
+07:09:17,0.0004697,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:17,0.000665,using member GEN=1_MEMBER=37_PSO as single, 'optimal' point
+   with distance of 0.641358 from optimal trade - off
+07:09:17,0.0010134,generation 1 objective function change summary:
+07:09:17,0.0010945,number of feasible solutions at the end of generation 1: 11
+07:09:17,0.000715,starting generation  2
+07:09:17,2.68e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:09:17,1.42e-05,ParetoObjectives::update() for  50 population members
+07:09:17,1.05e-05,preparing fast-lookup containers
+07:09:17,0.001607,checking for duplicate solutions
+07:09:17,0.0003535,calculating fitness
+07:09:17,6.5e-06,get_spea_fitness
+07:09:17,0.0001963,fill domination containers
+07:09:17,0.001931,pareto front sorting
+07:09:17,2.79e-05,starting 'fast non-dom sort
+07:09:17,6.7e-06,fill domination containers
+07:09:17,0.0017797,finding first front
+07:09:17,2.08e-05,sorting remaining fronts
+07:09:17,0.0017306,generating PSO population of size 50
+07:09:17,2.49e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 11 population members
+07:09:17,1.29e-05,ParetoObjectives::update() for  11 population members
+07:09:17,9.9e-06,preparing fast-lookup containers
+07:09:17,0.0001572,checking for duplicate solutions
+07:09:17,8.06e-05,calculating fitness
+07:09:17,1.11e-05,get_spea_fitness
+07:09:17,3.88e-05,fill domination containers
+07:09:17,0.0002094,pareto front sorting
+07:09:17,2.33e-05,starting 'fast non-dom sort
+07:09:17,7.7e-06,fill domination containers
+07:09:17,9.94e-05,finding first front
+07:09:17,7.7e-06,sorting remaining fronts
+07:09:17,0.0024556,running population of size  50
+07:09:17,2.91e-05,queuing 50 runs
+07:09:17,0.0146256,making runs
+07:09:22,4.82777,processing runs
+07:09:22,0.0021317,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:09:22,0.0016422,saved generation-specific decision variable population of size 50 X 2 to 'fon.2.dv_pop.csv'
+07:09:22,0.0011206,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:09:22,0.0023872,saved generation-specific observation population of size 50 X 4 to 'fon.2.obs_pop.csv'
+07:09:22,0.025507,ParetoObjectives::update() for  100 population members
+07:09:22,3.22e-05,preparing fast-lookup containers
+07:09:22,0.0032667,checking for duplicate solutions
+07:09:22,0.0011592,calculating fitness
+07:09:22,5.7e-06,get_spea_fitness
+07:09:22,0.0007568,fill domination containers
+07:09:22,0.0073681,pareto front sorting
+07:09:22,1.53e-05,starting 'fast non-dom sort
+07:09:22,6.7e-06,fill domination containers
+07:09:22,0.0076458,finding first front
+07:09:22,3.76e-05,sorting remaining fronts
+07:09:22,0.0004134,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:22,6.8e-06,ParetoObjectives::update() for  100 population members
+07:09:22,5.1e-06,preparing fast-lookup containers
+07:09:22,0.0034219,checking for duplicate solutions
+07:09:22,0.001238,calculating fitness
+07:09:22,8.6e-06,get_spea_fitness
+07:09:22,0.0007571,fill domination containers
+07:09:22,0.0071492,pareto front sorting
+07:09:22,1.21e-05,starting 'fast non-dom sort
+07:09:22,4.8e-06,fill domination containers
+07:09:22,0.0067787,finding first front
+07:09:22,1.87e-05,sorting remaining fronts
+07:09:22,0.004083,pareto dominance sorting combined parent-child populations of size  100
+07:09:22,2.38e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:22,1.18e-05,ParetoObjectives::update() for  100 population members
+07:09:22,9.1e-06,preparing fast-lookup containers
+07:09:22,0.0030019,checking for duplicate solutions
+07:09:22,0.0011817,calculating fitness
+07:09:22,1.02e-05,get_spea_fitness
+07:09:22,0.0007506,fill domination containers
+07:09:22,0.0072122,pareto front sorting
+07:09:22,2.33e-05,starting 'fast non-dom sort
+07:09:22,6.2e-06,fill domination containers
+07:09:22,0.0071716,finding first front
+07:09:22,1.88e-05,sorting remaining fronts
+07:09:22,0.0064629,updating archive
+07:09:22,0.0008389,adding 5 non-dominated members to archive
+07:09:22,0.0002491,pareto dominance sorting archive of size 16
+07:09:22,1.89e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 16 population members
+07:09:22,1.26e-05,ParetoObjectives::update() for  16 population members
+07:09:22,9.7e-06,preparing fast-lookup containers
+07:09:22,0.0002715,checking for duplicate solutions
+07:09:22,0.0001364,calculating fitness
+07:09:22,2.29e-05,get_spea_fitness
+07:09:22,5.16e-05,fill domination containers
+07:09:22,0.0002208,pareto front sorting
+07:09:22,5.9e-06,starting 'fast non-dom sort
+07:09:22,4.7e-06,fill domination containers
+07:09:22,0.0001959,finding first front
+07:09:22,7.8e-06,sorting remaining fronts
+07:09:22,0.0012985,resizing archive from 16 to 15 current non-dominated solutions
+07:09:22,4.62e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 15 population members
+07:09:22,1.32e-05,ParetoObjectives::update() for  15 population members
+07:09:22,9.8e-06,preparing fast-lookup containers
+07:09:22,0.0001459,checking for duplicate solutions
+07:09:22,5.67e-05,calculating fitness
+07:09:22,5.4e-06,get_spea_fitness
+07:09:22,3.09e-05,fill domination containers
+07:09:22,0.0001896,pareto front sorting
+07:09:22,5.1e-06,starting 'fast non-dom sort
+07:09:22,4.8e-06,fill domination containers
+07:09:22,0.0001695,finding first front
+07:09:22,7.8e-06,sorting remaining fronts
+07:09:22,0.0042372,saved decision variable population of size 15 X 2 to 'fon.archive.dv_pop.csv'
+07:09:22,0.0013347,saved generation-specific decision variable population of size 15 X 2 to 'fon.2.archive.dv_pop.csv'
+07:09:22,0.0010298,saved observation population of size 15 X 4 to 'fon.archive.obs_pop.csv'
+07:09:22,0.002263,saved generation-specific observation population of size 15 X 4 to 'fon.2.archive.obs_pop.csv'
+07:09:22,0.0005696,resizing current populations to  50
+07:09:22,0.0006716,generation 2 decision variable summary:
+07:09:22,0.0010398,generation 2 decision variable change summary:
+07:09:22,0.0031357,generation 2 objective function summary:
+07:09:22,0.0006489,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:22,0.0004429,using member GEN=2_MEMBER=97_PSO as single, 'optimal' point
+   with distance of 0.626287 from optimal trade - off
+07:09:22,0.001209,generation 2 objective function change summary:
+07:09:22,0.0008421,number of feasible solutions at the end of generation 2: 15
+07:09:22,0.0006564,starting generation  3
+07:09:22,3e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:09:22,1.4e-05,ParetoObjectives::update() for  50 population members
+07:09:22,1.03e-05,preparing fast-lookup containers
+07:09:22,0.0016108,checking for duplicate solutions
+07:09:22,0.0006078,calculating fitness
+07:09:22,1.42e-05,get_spea_fitness
+07:09:22,0.0003058,fill domination containers
+07:09:22,0.0034803,pareto front sorting
+07:09:22,2.83e-05,starting 'fast non-dom sort
+07:09:22,1.04e-05,fill domination containers
+07:09:22,0.0024622,finding first front
+07:09:22,3.19e-05,sorting remaining fronts
+07:09:22,0.0022503,generating PSO population of size 50
+07:09:22,2.56e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 15 population members
+07:09:22,1.26e-05,ParetoObjectives::update() for  15 population members
+07:09:22,9.5e-06,preparing fast-lookup containers
+07:09:22,0.0002372,checking for duplicate solutions
+07:09:22,9.84e-05,calculating fitness
+07:09:22,1.8e-05,get_spea_fitness
+07:09:22,3.71e-05,fill domination containers
+07:09:22,0.0001935,pareto front sorting
+07:09:22,4.8e-06,starting 'fast non-dom sort
+07:09:22,4.5e-06,fill domination containers
+07:09:22,0.0001715,finding first front
+07:09:22,7.1e-06,sorting remaining fronts
+07:09:22,0.0029715,running population of size  50
+07:09:22,2.68e-05,queuing 50 runs
+07:09:22,0.015118,making runs
+07:09:27,4.8871,processing runs
+07:09:27,0.0029287,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:09:27,0.0024184,saved generation-specific decision variable population of size 50 X 2 to 'fon.3.dv_pop.csv'
+07:09:27,0.0010742,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:09:27,0.0031259,saved generation-specific observation population of size 50 X 4 to 'fon.3.obs_pop.csv'
+07:09:27,0.0248028,ParetoObjectives::update() for  100 population members
+07:09:27,3.49e-05,preparing fast-lookup containers
+07:09:27,0.0030521,checking for duplicate solutions
+07:09:27,0.0011897,calculating fitness
+07:09:27,8.1e-06,get_spea_fitness
+07:09:27,0.0007546,fill domination containers
+07:09:27,0.0111122,pareto front sorting
+07:09:27,2.3e-05,starting 'fast non-dom sort
+07:09:27,7.7e-06,fill domination containers
+07:09:27,0.0071671,finding first front
+07:09:27,4.69e-05,sorting remaining fronts
+07:09:27,0.0003905,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:27,9.5e-06,ParetoObjectives::update() for  100 population members
+07:09:27,4.8e-06,preparing fast-lookup containers
+07:09:27,0.0030909,checking for duplicate solutions
+07:09:27,0.0012091,calculating fitness
+07:09:27,5.6e-06,get_spea_fitness
+07:09:27,0.0007273,fill domination containers
+07:09:27,0.0072243,pareto front sorting
+07:09:27,6.1e-06,starting 'fast non-dom sort
+07:09:27,4.6e-06,fill domination containers
+07:09:27,0.0108712,finding first front
+07:09:27,4.41e-05,sorting remaining fronts
+07:09:27,0.0071358,pareto dominance sorting combined parent-child populations of size  100
+07:09:27,3.77e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:27,1.76e-05,ParetoObjectives::update() for  100 population members
+07:09:27,1.61e-05,preparing fast-lookup containers
+07:09:27,0.0056335,checking for duplicate solutions
+07:09:27,0.0020848,calculating fitness
+07:09:27,1.71e-05,get_spea_fitness
+07:09:27,0.0011153,fill domination containers
+07:09:27,0.0130723,pareto front sorting
+07:09:27,5.68e-05,starting 'fast non-dom sort
+07:09:27,1.53e-05,fill domination containers
+07:09:27,0.0124732,finding first front
+07:09:27,6.14e-05,sorting remaining fronts
+07:09:27,0.0097313,updating archive
+07:09:27,0.0004259,adding 8 non-dominated members to archive
+07:09:27,0.000481,pareto dominance sorting archive of size 23
+07:09:27,2.8e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 23 population members
+07:09:27,1.2e-05,ParetoObjectives::update() for  23 population members
+07:09:27,9.2e-06,preparing fast-lookup containers
+07:09:27,0.0003956,checking for duplicate solutions
+07:09:27,0.0001886,calculating fitness
+07:09:27,9.9e-06,get_spea_fitness
+07:09:27,9.63e-05,fill domination containers
+07:09:27,0.000733,pareto front sorting
+07:09:27,1.08e-05,starting 'fast non-dom sort
+07:09:27,8.8e-06,fill domination containers
+07:09:27,0.0006808,finding first front
+07:09:27,1.4e-05,sorting remaining fronts
+07:09:27,0.0031357,resizing archive from 23 to 19 current non-dominated solutions
+07:09:27,5.08e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 19 population members
+07:09:27,9.6e-06,ParetoObjectives::update() for  19 population members
+07:09:27,6.9e-06,preparing fast-lookup containers
+07:09:27,0.0002364,checking for duplicate solutions
+07:09:27,0.0001011,calculating fitness
+07:09:27,7e-06,get_spea_fitness
+07:09:27,5.97e-05,fill domination containers
+07:09:27,0.0004898,pareto front sorting
+07:09:27,7.9e-06,starting 'fast non-dom sort
+07:09:27,6.7e-06,fill domination containers
+07:09:27,0.0004666,finding first front
+07:09:27,1.15e-05,sorting remaining fronts
+07:09:27,0.003714,saved decision variable population of size 19 X 2 to 'fon.archive.dv_pop.csv'
+07:09:27,0.0028089,saved generation-specific decision variable population of size 19 X 2 to 'fon.3.archive.dv_pop.csv'
+07:09:27,0.0012537,saved observation population of size 19 X 4 to 'fon.archive.obs_pop.csv'
+07:09:27,0.0026417,saved generation-specific observation population of size 19 X 4 to 'fon.3.archive.obs_pop.csv'
+07:09:27,0.0003212,resizing current populations to  50
+07:09:27,0.0003071,generation 3 decision variable summary:
+07:09:27,0.0012416,generation 3 decision variable change summary:
+07:09:27,0.0010877,generation 3 objective function summary:
+07:09:27,0.0002765,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:27,0.0007524,using member GEN=2_MEMBER=97_PSO as single, 'optimal' point
+   with distance of 0.689209 from optimal trade - off
+07:09:27,0.0008757,generation 3 objective function change summary:
+07:09:27,0.0007415,number of feasible solutions at the end of generation 3: 19
+07:09:27,0.000834,starting generation  4
+07:09:27,3.3e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:09:27,9.7e-06,ParetoObjectives::update() for  50 population members
+07:09:27,1.12e-05,preparing fast-lookup containers
+07:09:27,0.001417,checking for duplicate solutions
+07:09:27,0.0004184,calculating fitness
+07:09:27,2.11e-05,get_spea_fitness
+07:09:27,0.0002813,fill domination containers
+07:09:27,0.0021798,pareto front sorting
+07:09:27,2.43e-05,starting 'fast non-dom sort
+07:09:27,8.6e-06,fill domination containers
+07:09:27,0.0018357,finding first front
+07:09:27,1.21e-05,sorting remaining fronts
+07:09:27,0.0031875,generating PSO population of size 50
+07:09:27,3.13e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 19 population members
+07:09:27,1.27e-05,ParetoObjectives::update() for  19 population members
+07:09:27,1.01e-05,preparing fast-lookup containers
+07:09:27,0.0003045,checking for duplicate solutions
+07:09:27,0.0001345,calculating fitness
+07:09:27,1.01e-05,get_spea_fitness
+07:09:27,6.94e-05,fill domination containers
+07:09:27,0.000517,pareto front sorting
+07:09:27,1.57e-05,starting 'fast non-dom sort
+07:09:27,8.9e-06,fill domination containers
+07:09:27,0.0004649,finding first front
+07:09:27,1.35e-05,sorting remaining fronts
+07:09:27,0.0059462,running population of size  50
+07:09:27,3.34e-05,queuing 50 runs
+07:09:27,0.0153465,making runs
+07:09:32,4.97688,processing runs
+07:09:32,0.0035963,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:09:32,0.0017569,saved generation-specific decision variable population of size 50 X 2 to 'fon.4.dv_pop.csv'
+07:09:32,0.0019657,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:09:32,0.0031699,saved generation-specific observation population of size 50 X 4 to 'fon.4.obs_pop.csv'
+07:09:32,0.0219445,ParetoObjectives::update() for  100 population members
+07:09:32,3.46e-05,preparing fast-lookup containers
+07:09:32,0.0031736,checking for duplicate solutions
+07:09:32,0.0012133,calculating fitness
+07:09:32,9.7e-06,get_spea_fitness
+07:09:32,0.0007549,fill domination containers
+07:09:32,0.0075442,pareto front sorting
+07:09:32,2.71e-05,starting 'fast non-dom sort
+07:09:32,5.2e-06,fill domination containers
+07:09:32,0.0071006,finding first front
+07:09:32,2.17e-05,sorting remaining fronts
+07:09:32,0.000381,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:32,8.1e-06,ParetoObjectives::update() for  100 population members
+07:09:32,4.9e-06,preparing fast-lookup containers
+07:09:32,0.0030737,checking for duplicate solutions
+07:09:32,0.0012369,calculating fitness
+07:09:32,1.08e-05,get_spea_fitness
+07:09:32,0.0007629,fill domination containers
+07:09:32,0.0073641,pareto front sorting
+07:09:32,1.67e-05,starting 'fast non-dom sort
+07:09:32,5e-06,fill domination containers
+07:09:32,0.0070999,finding first front
+07:09:32,1.98e-05,sorting remaining fronts
+07:09:32,0.0046854,pareto dominance sorting combined parent-child populations of size  100
+07:09:32,3.27e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:32,1.33e-05,ParetoObjectives::update() for  100 population members
+07:09:32,1e-05,preparing fast-lookup containers
+07:09:32,0.0032813,checking for duplicate solutions
+07:09:32,0.0012511,calculating fitness
+07:09:32,8.6e-06,get_spea_fitness
+07:09:32,0.0007419,fill domination containers
+07:09:32,0.0080829,pareto front sorting
+07:09:32,6.1e-05,starting 'fast non-dom sort
+07:09:32,1.5e-05,fill domination containers
+07:09:32,0.0081502,finding first front
+07:09:32,5.01e-05,sorting remaining fronts
+07:09:32,0.0069991,updating archive
+07:09:32,0.0004329,adding 6 non-dominated members to archive
+07:09:32,0.0004255,pareto dominance sorting archive of size 25
+07:09:32,1.88e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 25 population members
+07:09:32,8.5e-06,ParetoObjectives::update() for  25 population members
+07:09:32,6.9e-06,preparing fast-lookup containers
+07:09:32,0.0003631,checking for duplicate solutions
+07:09:32,0.0001689,calculating fitness
+07:09:32,1.09e-05,get_spea_fitness
+07:09:32,8.25e-05,fill domination containers
+07:09:32,0.000734,pareto front sorting
+07:09:32,2.15e-05,starting 'fast non-dom sort
+07:09:32,7.7e-06,fill domination containers
+07:09:32,0.0006888,finding first front
+07:09:32,2.1e-05,sorting remaining fronts
+07:09:32,0.0032806,resizing archive from 25 to 22 current non-dominated solutions
+07:09:32,7.55e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 22 population members
+07:09:32,1.43e-05,ParetoObjectives::update() for  22 population members
+07:09:32,1e-05,preparing fast-lookup containers
+07:09:32,0.0003743,checking for duplicate solutions
+07:09:32,0.0001486,calculating fitness
+07:09:32,1.29e-05,get_spea_fitness
+07:09:32,8.53e-05,fill domination containers
+07:09:32,0.0006674,pareto front sorting
+07:09:32,1.3e-05,starting 'fast non-dom sort
+07:09:32,8.8e-06,fill domination containers
+07:09:32,0.0006397,finding first front
+07:09:32,1.86e-05,sorting remaining fronts
+07:09:32,0.0033185,saved decision variable population of size 22 X 2 to 'fon.archive.dv_pop.csv'
+07:09:32,0.00207,saved generation-specific decision variable population of size 22 X 2 to 'fon.4.archive.dv_pop.csv'
+07:09:32,0.0012379,saved observation population of size 22 X 4 to 'fon.archive.obs_pop.csv'
+07:09:32,0.0018404,saved generation-specific observation population of size 22 X 4 to 'fon.4.archive.obs_pop.csv'
+07:09:32,0.0005033,resizing current populations to  50
+07:09:32,0.0008992,generation 4 decision variable summary:
+07:09:32,0.0010103,generation 4 decision variable change summary:
+07:09:32,0.0021327,generation 4 objective function summary:
+07:09:32,0.0005321,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:32,0.0007987,using member GEN=2_MEMBER=97_PSO as single, 'optimal' point
+   with distance of 0.689209 from optimal trade - off
+07:09:32,0.0006417,generation 4 objective function change summary:
+07:09:32,0.0013718,number of feasible solutions at the end of generation 4: 22
+07:09:32,0.00046,starting generation  5
+07:09:32,2.79e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:09:32,1.36e-05,ParetoObjectives::update() for  50 population members
+07:09:32,1.04e-05,preparing fast-lookup containers
+07:09:32,0.0016271,checking for duplicate solutions
+07:09:32,0.0006286,calculating fitness
+07:09:32,1.92e-05,get_spea_fitness
+07:09:32,0.0003672,fill domination containers
+07:09:32,0.0029966,pareto front sorting
+07:09:32,4.69e-05,starting 'fast non-dom sort
+07:09:32,9.3e-06,fill domination containers
+07:09:32,0.0019523,finding first front
+07:09:32,1.67e-05,sorting remaining fronts
+07:09:32,0.0030373,generating PSO population of size 50
+07:09:32,3.63e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 22 population members
+07:09:32,1.36e-05,ParetoObjectives::update() for  22 population members
+07:09:32,1.01e-05,preparing fast-lookup containers
+07:09:32,0.0004113,checking for duplicate solutions
+07:09:32,0.0001418,calculating fitness
+07:09:32,2.59e-05,get_spea_fitness
+07:09:32,5.81e-05,fill domination containers
+07:09:32,0.0004407,pareto front sorting
+07:09:32,9.9e-06,starting 'fast non-dom sort
+07:09:32,4.6e-06,fill domination containers
+07:09:32,0.000363,finding first front
+07:09:32,9.5e-06,sorting remaining fronts
+07:09:32,0.0048119,running population of size  50
+07:09:32,3.54e-05,queuing 50 runs
+07:09:32,0.0150745,making runs
+07:09:36,3.96716,processing runs
+07:09:36,0.002983,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:09:36,0.0036665,saved generation-specific decision variable population of size 50 X 2 to 'fon.5.dv_pop.csv'
+07:09:36,0.0017286,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:09:36,0.0032803,saved generation-specific observation population of size 50 X 4 to 'fon.5.obs_pop.csv'
+07:09:36,0.0302769,ParetoObjectives::update() for  100 population members
+07:09:36,4.19e-05,preparing fast-lookup containers
+07:09:36,0.0040105,checking for duplicate solutions
+07:09:36,0.0011885,calculating fitness
+07:09:36,7.4e-06,get_spea_fitness
+07:09:36,0.0006924,fill domination containers
+07:09:36,0.0069048,pareto front sorting
+07:09:36,1.89e-05,starting 'fast non-dom sort
+07:09:36,5.7e-06,fill domination containers
+07:09:36,0.0071504,finding first front
+07:09:36,2.06e-05,sorting remaining fronts
+07:09:36,0.0003193,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:36,5.8e-06,ParetoObjectives::update() for  100 population members
+07:09:36,4.3e-06,preparing fast-lookup containers
+07:09:36,0.0030817,checking for duplicate solutions
+07:09:36,0.0012562,calculating fitness
+07:09:36,1.39e-05,get_spea_fitness
+07:09:36,0.0007322,fill domination containers
+07:09:36,0.0072162,pareto front sorting
+07:09:36,1.06e-05,starting 'fast non-dom sort
+07:09:36,5.1e-06,fill domination containers
+07:09:36,0.0069076,finding first front
+07:09:36,3.37e-05,sorting remaining fronts
+07:09:36,0.0074514,pareto dominance sorting combined parent-child populations of size  100
+07:09:36,6.55e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:36,8.9e-06,ParetoObjectives::update() for  100 population members
+07:09:36,4.9e-06,preparing fast-lookup containers
+07:09:36,0.0030563,checking for duplicate solutions
+07:09:36,0.0011799,calculating fitness
+07:09:36,5.1e-06,get_spea_fitness
+07:09:36,0.0007272,fill domination containers
+07:09:36,0.0074172,pareto front sorting
+07:09:36,2.34e-05,starting 'fast non-dom sort
+07:09:36,5.7e-06,fill domination containers
+07:09:36,0.0070952,finding first front
+07:09:36,1.77e-05,sorting remaining fronts
+07:09:36,0.0081596,updating archive
+07:09:36,0.0003928,adding 12 non-dominated members to archive
+07:09:36,0.0003266,pareto dominance sorting archive of size 34
+07:09:36,1.45e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 34 population members
+07:09:36,1.17e-05,ParetoObjectives::update() for  34 population members
+07:09:36,8.8e-06,preparing fast-lookup containers
+07:09:36,0.0007252,checking for duplicate solutions
+07:09:36,0.0002038,calculating fitness
+07:09:36,6.2e-06,get_spea_fitness
+07:09:36,0.0001018,fill domination containers
+07:09:36,0.0009038,pareto front sorting
+07:09:36,6.4e-06,starting 'fast non-dom sort
+07:09:36,4.7e-06,fill domination containers
+07:09:36,0.0008668,finding first front
+07:09:36,1.04e-05,sorting remaining fronts
+07:09:36,0.0039293,resizing archive from 34 to 33 current non-dominated solutions
+07:09:36,8.09e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 33 population members
+07:09:36,3.01e-05,ParetoObjectives::update() for  33 population members
+07:09:36,9e-06,preparing fast-lookup containers
+07:09:36,0.0004117,checking for duplicate solutions
+07:09:36,0.0001636,calculating fitness
+07:09:36,5.9e-06,get_spea_fitness
+07:09:36,9.05e-05,fill domination containers
+07:09:36,0.0008409,pareto front sorting
+07:09:36,6.8e-06,starting 'fast non-dom sort
+07:09:36,4.6e-06,fill domination containers
+07:09:36,0.0008754,finding first front
+07:09:36,1.8e-05,sorting remaining fronts
+07:09:36,0.0061018,saved decision variable population of size 33 X 2 to 'fon.archive.dv_pop.csv'
+07:09:36,0.0015574,saved generation-specific decision variable population of size 33 X 2 to 'fon.5.archive.dv_pop.csv'
+07:09:36,0.0012891,saved observation population of size 33 X 4 to 'fon.archive.obs_pop.csv'
+07:09:36,0.0021037,saved generation-specific observation population of size 33 X 4 to 'fon.5.archive.obs_pop.csv'
+07:09:36,0.0005109,resizing current populations to  50
+07:09:36,0.0006571,generation 5 decision variable summary:
+07:09:36,0.0010124,generation 5 decision variable change summary:
+07:09:36,0.0027061,generation 5 objective function summary:
+07:09:36,0.0003147,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:36,0.0006521,using member GEN=5_MEMBER=239_PSO as single, 'optimal' point
+   with distance of 0.688226 from optimal trade - off
+07:09:36,0.0010225,generation 5 objective function change summary:
+07:09:36,0.0008375,number of feasible solutions at the end of generation 5: 33
+07:09:36,0.0007231,starting generation  6
+07:09:36,2.87e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:09:36,1.36e-05,ParetoObjectives::update() for  50 population members
+07:09:36,1.01e-05,preparing fast-lookup containers
+07:09:36,0.0016029,checking for duplicate solutions
+07:09:36,0.0004789,calculating fitness
+07:09:36,2.34e-05,get_spea_fitness
+07:09:36,0.0001968,fill domination containers
+07:09:36,0.0019036,pareto front sorting
+07:09:36,6.5e-06,starting 'fast non-dom sort
+07:09:36,4.9e-06,fill domination containers
+07:09:37,0.0018478,finding first front
+07:09:37,1.06e-05,sorting remaining fronts
+07:09:37,0.0040898,generating PSO population of size 50
+07:09:37,2.03e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 33 population members
+07:09:37,1.27e-05,ParetoObjectives::update() for  33 population members
+07:09:37,9.5e-06,preparing fast-lookup containers
+07:09:37,0.0005655,checking for duplicate solutions
+07:09:37,0.0002267,calculating fitness
+07:09:37,9.6e-06,get_spea_fitness
+07:09:37,0.0001841,fill domination containers
+07:09:37,0.0011528,pareto front sorting
+07:09:37,1.77e-05,starting 'fast non-dom sort
+07:09:37,6e-06,fill domination containers
+07:09:37,0.0008137,finding first front
+07:09:37,1.11e-05,sorting remaining fronts
+07:09:37,0.0079587,running population of size  50
+07:09:37,3.12e-05,queuing 50 runs
+07:09:37,0.0152405,making runs
+07:09:40,3.92224,processing runs
+07:09:40,0.0019753,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:09:40,0.0015933,saved generation-specific decision variable population of size 50 X 2 to 'fon.6.dv_pop.csv'
+07:09:40,0.002228,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:09:40,0.0029691,saved generation-specific observation population of size 50 X 4 to 'fon.6.obs_pop.csv'
+07:09:40,0.023917,ParetoObjectives::update() for  100 population members
+07:09:40,2.97e-05,preparing fast-lookup containers
+07:09:40,0.0030357,checking for duplicate solutions
+07:09:40,0.0011547,calculating fitness
+07:09:40,5.4e-06,get_spea_fitness
+07:09:40,0.0006835,fill domination containers
+07:09:40,0.0075408,pareto front sorting
+07:09:40,3.99e-05,starting 'fast non-dom sort
+07:09:40,6.3e-06,fill domination containers
+07:09:41,0.0068749,finding first front
+07:09:41,1.26e-05,sorting remaining fronts
+07:09:41,0.0002485,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:41,6.2e-06,ParetoObjectives::update() for  100 population members
+07:09:41,4e-06,preparing fast-lookup containers
+07:09:41,0.0030869,checking for duplicate solutions
+07:09:41,0.0012602,calculating fitness
+07:09:41,1.9e-05,get_spea_fitness
+07:09:41,0.0007115,fill domination containers
+07:09:41,0.0073233,pareto front sorting
+07:09:41,1.94e-05,starting 'fast non-dom sort
+07:09:41,5.6e-06,fill domination containers
+07:09:41,0.0072051,finding first front
+07:09:41,3.29e-05,sorting remaining fronts
+07:09:41,0.0073499,pareto dominance sorting combined parent-child populations of size  100
+07:09:41,2.83e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:41,1.25e-05,ParetoObjectives::update() for  100 population members
+07:09:41,1.02e-05,preparing fast-lookup containers
+07:09:41,0.0030704,checking for duplicate solutions
+07:09:41,0.0011988,calculating fitness
+07:09:41,7.7e-06,get_spea_fitness
+07:09:41,0.0006928,fill domination containers
+07:09:41,0.0074181,pareto front sorting
+07:09:41,1.9e-05,starting 'fast non-dom sort
+07:09:41,5.7e-06,fill domination containers
+07:09:41,0.0070502,finding first front
+07:09:41,2.54e-05,sorting remaining fronts
+07:09:41,0.0089989,updating archive
+07:09:41,0.0004666,adding 10 non-dominated members to archive
+07:09:41,0.0002896,pareto dominance sorting archive of size 43
+07:09:41,1.35e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 43 population members
+07:09:41,6.4e-06,ParetoObjectives::update() for  43 population members
+07:09:41,4.6e-06,preparing fast-lookup containers
+07:09:41,0.0006486,checking for duplicate solutions
+07:09:41,0.0002663,calculating fitness
+07:09:41,6e-06,get_spea_fitness
+07:09:41,0.0001419,fill domination containers
+07:09:41,0.0013648,pareto front sorting
+07:09:41,5.8e-06,starting 'fast non-dom sort
+07:09:41,4.2e-06,fill domination containers
+07:09:41,0.0012854,finding first front
+07:09:41,8.8e-06,sorting remaining fronts
+07:09:41,0.0058985,resizing archive from 43 to 41 current non-dominated solutions
+07:09:41,0.0001492,ParetoObjectives::get_nsga2_pareto_dominance() for 41 population members
+07:09:41,2.17e-05,ParetoObjectives::update() for  41 population members
+07:09:41,6e-06,preparing fast-lookup containers
+07:09:41,0.0005987,checking for duplicate solutions
+07:09:41,0.0002201,calculating fitness
+07:09:41,4.5e-06,get_spea_fitness
+07:09:41,0.0001206,fill domination containers
+07:09:41,0.0012363,pareto front sorting
+07:09:41,5.6e-06,starting 'fast non-dom sort
+07:09:41,4.3e-06,fill domination containers
+07:09:41,0.001298,finding first front
+07:09:41,1.43e-05,sorting remaining fronts
+07:09:41,0.007707,saved decision variable population of size 41 X 2 to 'fon.archive.dv_pop.csv'
+07:09:41,0.0015316,saved generation-specific decision variable population of size 41 X 2 to 'fon.6.archive.dv_pop.csv'
+07:09:41,0.0019879,saved observation population of size 41 X 4 to 'fon.archive.obs_pop.csv'
+07:09:41,0.0024867,saved generation-specific observation population of size 41 X 4 to 'fon.6.archive.obs_pop.csv'
+07:09:41,0.0007307,resizing current populations to  50
+07:09:41,0.0005195,generation 6 decision variable summary:
+07:09:41,0.0009371,generation 6 decision variable change summary:
+07:09:41,0.0013602,generation 6 objective function summary:
+07:09:41,0.0003316,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:41,0.0006276,using member GEN=6_MEMBER=264_PSO as single, 'optimal' point
+   with distance of 0.701917 from optimal trade - off
+07:09:41,0.0011121,generation 6 objective function change summary:
+07:09:41,0.0010117,number of feasible solutions at the end of generation 6: 41
+07:09:41,0.0006199,starting generation  7
+07:09:41,2.97e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:09:41,1.37e-05,ParetoObjectives::update() for  50 population members
+07:09:41,1.01e-05,preparing fast-lookup containers
+07:09:41,0.0016002,checking for duplicate solutions
+07:09:41,0.0005901,calculating fitness
+07:09:41,1.28e-05,get_spea_fitness
+07:09:41,0.0003057,fill domination containers
+07:09:41,0.0022543,pareto front sorting
+07:09:41,3.94e-05,starting 'fast non-dom sort
+07:09:41,6.6e-06,fill domination containers
+07:09:41,0.0030589,finding first front
+07:09:41,7.14e-05,sorting remaining fronts
+07:09:41,0.0060256,generating PSO population of size 50
+07:09:41,2.84e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 41 population members
+07:09:41,7.2e-06,ParetoObjectives::update() for  41 population members
+07:09:41,4.8e-06,preparing fast-lookup containers
+07:09:41,0.0006233,checking for duplicate solutions
+07:09:41,0.0002353,calculating fitness
+07:09:41,4.6e-06,get_spea_fitness
+07:09:41,0.0001277,fill domination containers
+07:09:41,0.0013135,pareto front sorting
+07:09:41,7.1e-06,starting 'fast non-dom sort
+07:09:41,4.9e-06,fill domination containers
+07:09:41,0.001249,finding first front
+07:09:41,1.1e-05,sorting remaining fronts
+07:09:41,0.0105108,running population of size  50
+07:09:41,3.21e-05,queuing 50 runs
+07:09:41,0.0131962,making runs
+07:09:45,3.89661,processing runs
+07:09:45,0.0024513,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:09:45,0.0030343,saved generation-specific decision variable population of size 50 X 2 to 'fon.7.dv_pop.csv'
+07:09:45,0.0023248,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:09:45,0.0028744,saved generation-specific observation population of size 50 X 4 to 'fon.7.obs_pop.csv'
+07:09:45,0.023843,ParetoObjectives::update() for  100 population members
+07:09:45,3.15e-05,preparing fast-lookup containers
+07:09:45,0.002964,checking for duplicate solutions
+07:09:45,0.0011605,calculating fitness
+07:09:45,6.1e-06,get_spea_fitness
+07:09:45,0.0006872,fill domination containers
+07:09:45,0.007335,pareto front sorting
+07:09:45,3.85e-05,starting 'fast non-dom sort
+07:09:45,6.1e-06,fill domination containers
+07:09:45,0.0067677,finding first front
+07:09:45,1.45e-05,sorting remaining fronts
+07:09:45,0.0002107,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:45,6.5e-06,ParetoObjectives::update() for  100 population members
+07:09:45,4.5e-06,preparing fast-lookup containers
+07:09:45,0.002908,checking for duplicate solutions
+07:09:45,0.00124,calculating fitness
+07:09:45,2.31e-05,get_spea_fitness
+07:09:45,0.0007378,fill domination containers
+07:09:45,0.008239,pareto front sorting
+07:09:45,2.64e-05,starting 'fast non-dom sort
+07:09:45,5.5e-06,fill domination containers
+07:09:45,0.0069193,finding first front
+07:09:45,2.23e-05,sorting remaining fronts
+07:09:45,0.0093935,pareto dominance sorting combined parent-child populations of size  100
+07:09:45,3.19e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:45,6.3e-06,ParetoObjectives::update() for  100 population members
+07:09:45,4.6e-06,preparing fast-lookup containers
+07:09:45,0.0029785,checking for duplicate solutions
+07:09:45,0.0011696,calculating fitness
+07:09:45,5.5e-06,get_spea_fitness
+07:09:45,0.0006904,fill domination containers
+07:09:45,0.0075979,pareto front sorting
+07:09:45,3.49e-05,starting 'fast non-dom sort
+07:09:45,6.2e-06,fill domination containers
+07:09:45,0.0068087,finding first front
+07:09:45,2.23e-05,sorting remaining fronts
+07:09:45,0.0139283,updating archive
+07:09:45,0.0006214,adding 14 non-dominated members to archive
+07:09:45,0.0006456,pareto dominance sorting archive of size 55
+07:09:45,1.52e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 55 population members
+07:09:45,6.9e-06,ParetoObjectives::update() for  55 population members
+07:09:45,4.7e-06,preparing fast-lookup containers
+07:09:45,0.0011174,checking for duplicate solutions
+07:09:45,0.0004329,calculating fitness
+07:09:45,7.5e-06,get_spea_fitness
+07:09:45,0.0002141,fill domination containers
+07:09:45,0.0022913,pareto front sorting
+07:09:45,8.3e-06,starting 'fast non-dom sort
+07:09:45,4.5e-06,fill domination containers
+07:09:45,0.0022536,finding first front
+07:09:45,2.2e-05,sorting remaining fronts
+07:09:45,0.0081206,resizing archive from 55 to 53 current non-dominated solutions
+07:09:45,0.0001024,ParetoObjectives::get_nsga2_pareto_dominance() for 53 population members
+07:09:45,1.55e-05,ParetoObjectives::update() for  53 population members
+07:09:45,5.5e-06,preparing fast-lookup containers
+07:09:45,0.0009642,checking for duplicate solutions
+07:09:45,0.0003447,calculating fitness
+07:09:45,4.5e-06,get_spea_fitness
+07:09:45,0.0001876,fill domination containers
+07:09:45,0.002771,pareto front sorting
+07:09:45,2.39e-05,starting 'fast non-dom sort
+07:09:45,6.8e-06,fill domination containers
+07:09:45,0.003147,finding first front
+07:09:45,2.18e-05,sorting remaining fronts
+07:09:45,0.0105731,saved decision variable population of size 53 X 2 to 'fon.archive.dv_pop.csv'
+07:09:45,0.0026085,saved generation-specific decision variable population of size 53 X 2 to 'fon.7.archive.dv_pop.csv'
+07:09:45,0.0020229,saved observation population of size 53 X 4 to 'fon.archive.obs_pop.csv'
+07:09:45,0.0019548,saved generation-specific observation population of size 53 X 4 to 'fon.7.archive.obs_pop.csv'
+07:09:45,0.0004743,resizing current populations to  50
+07:09:45,0.0005743,generation 7 decision variable summary:
+07:09:45,0.0008614,generation 7 decision variable change summary:
+07:09:45,0.001286,generation 7 objective function summary:
+07:09:45,0.0003692,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:45,0.0006548,using member GEN=6_MEMBER=264_PSO as single, 'optimal' point
+   with distance of 0.713019 from optimal trade - off
+07:09:45,0.0011438,generation 7 objective function change summary:
+07:09:45,0.0007462,number of feasible solutions at the end of generation 7: 53
+07:09:45,0.0005597,starting generation  8
+07:09:45,2.64e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:09:45,1.39e-05,ParetoObjectives::update() for  50 population members
+07:09:45,1.05e-05,preparing fast-lookup containers
+07:09:45,0.0016167,checking for duplicate solutions
+07:09:45,0.0006222,calculating fitness
+07:09:45,1.74e-05,get_spea_fitness
+07:09:45,0.0003011,fill domination containers
+07:09:45,0.0022996,pareto front sorting
+07:09:45,4.26e-05,starting 'fast non-dom sort
+07:09:45,7.1e-06,fill domination containers
+07:09:45,0.0018866,finding first front
+07:09:45,1.82e-05,sorting remaining fronts
+07:09:45,0.006617,generating PSO population of size 50
+07:09:45,2.89e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 53 population members
+07:09:45,1.27e-05,ParetoObjectives::update() for  53 population members
+07:09:45,1.51e-05,preparing fast-lookup containers
+07:09:45,0.0010629,checking for duplicate solutions
+07:09:45,0.0003707,calculating fitness
+07:09:45,6.1e-06,get_spea_fitness
+07:09:45,0.0001892,fill domination containers
+07:09:45,0.0020012,pareto front sorting
+07:09:45,5.5e-06,starting 'fast non-dom sort
+07:09:45,6.3e-06,fill domination containers
+07:09:45,0.0020645,finding first front
+07:09:45,1.86e-05,sorting remaining fronts
+07:09:45,0.0167722,running population of size  50
+07:09:45,3.56e-05,queuing 50 runs
+07:09:45,0.0132205,making runs
+07:09:49,3.87836,processing runs
+07:09:49,0.0028569,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:09:49,0.0029406,saved generation-specific decision variable population of size 50 X 2 to 'fon.8.dv_pop.csv'
+07:09:49,0.0021724,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:09:49,0.0029531,saved generation-specific observation population of size 50 X 4 to 'fon.8.obs_pop.csv'
+07:09:49,0.0260499,ParetoObjectives::update() for  100 population members
+07:09:49,3.83e-05,preparing fast-lookup containers
+07:09:49,0.0028712,checking for duplicate solutions
+07:09:49,0.0011778,calculating fitness
+07:09:49,4.7e-06,get_spea_fitness
+07:09:49,0.0006771,fill domination containers
+07:09:49,0.007154,pareto front sorting
+07:09:49,1.3e-05,starting 'fast non-dom sort
+07:09:49,5.6e-06,fill domination containers
+07:09:49,0.0080461,finding first front
+07:09:49,4.02e-05,sorting remaining fronts
+07:09:49,0.0002493,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:49,6.2e-06,ParetoObjectives::update() for  100 population members
+07:09:49,4.8e-06,preparing fast-lookup containers
+07:09:49,0.0030877,checking for duplicate solutions
+07:09:49,0.0012091,calculating fitness
+07:09:49,6.3e-06,get_spea_fitness
+07:09:49,0.0007121,fill domination containers
+07:09:49,0.0075888,pareto front sorting
+07:09:49,3.25e-05,starting 'fast non-dom sort
+07:09:49,5.7e-06,fill domination containers
+07:09:49,0.0069325,finding first front
+07:09:49,1.44e-05,sorting remaining fronts
+07:09:49,0.0098232,pareto dominance sorting combined parent-child populations of size  100
+07:09:49,4.36e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:49,1.22e-05,ParetoObjectives::update() for  100 population members
+07:09:49,9.2e-06,preparing fast-lookup containers
+07:09:49,0.0031096,checking for duplicate solutions
+07:09:49,0.0012149,calculating fitness
+07:09:49,1.13e-05,get_spea_fitness
+07:09:49,0.0006783,fill domination containers
+07:09:49,0.0074016,pareto front sorting
+07:09:49,2.33e-05,starting 'fast non-dom sort
+07:09:49,6.1e-06,fill domination containers
+07:09:49,0.0069656,finding first front
+07:09:49,1.59e-05,sorting remaining fronts
+07:09:49,0.0112174,updating archive
+07:09:49,0.000372,adding 11 non-dominated members to archive
+07:09:49,0.0003084,pareto dominance sorting archive of size 64
+07:09:49,3.9e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 64 population members
+07:09:49,8e-06,ParetoObjectives::update() for  64 population members
+07:09:49,4.7e-06,preparing fast-lookup containers
+07:09:49,0.0013795,checking for duplicate solutions
+07:09:49,0.0005169,calculating fitness
+07:09:49,5.4e-06,get_spea_fitness
+07:09:49,0.0002821,fill domination containers
+07:09:49,0.0029291,pareto front sorting
+07:09:49,4.9e-06,starting 'fast non-dom sort
+07:09:49,4.5e-06,fill domination containers
+07:09:49,0.0028995,finding first front
+07:09:49,1.05e-05,sorting remaining fronts
+07:09:49,0.0094568,resizing archive from 64 to 58 current non-dominated solutions
+07:09:49,9.5e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 58 population members
+07:09:49,8.1e-06,ParetoObjectives::update() for  58 population members
+07:09:49,4.8e-06,preparing fast-lookup containers
+07:09:49,0.0011669,checking for duplicate solutions
+07:09:49,0.0004216,calculating fitness
+07:09:49,5e-06,get_spea_fitness
+07:09:49,0.0002298,fill domination containers
+07:09:49,0.0024051,pareto front sorting
+07:09:49,7.5e-06,starting 'fast non-dom sort
+07:09:49,6.4e-06,fill domination containers
+07:09:49,0.00239,finding first front
+07:09:49,1.22e-05,sorting remaining fronts
+07:09:49,0.0132712,saved decision variable population of size 58 X 2 to 'fon.archive.dv_pop.csv'
+07:09:49,0.0029894,saved generation-specific decision variable population of size 58 X 2 to 'fon.8.archive.dv_pop.csv'
+07:09:49,0.0014425,saved observation population of size 58 X 4 to 'fon.archive.obs_pop.csv'
+07:09:49,0.0030122,saved generation-specific observation population of size 58 X 4 to 'fon.8.archive.obs_pop.csv'
+07:09:49,0.0005357,resizing current populations to  50
+07:09:49,0.0008866,generation 8 decision variable summary:
+07:09:49,0.0012431,generation 8 decision variable change summary:
+07:09:49,0.0011895,generation 8 objective function summary:
+07:09:49,0.000519,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:49,0.0006037,using member GEN=6_MEMBER=264_PSO as single, 'optimal' point
+   with distance of 0.71409 from optimal trade - off
+07:09:49,0.0008858,generation 8 objective function change summary:
+07:09:49,0.0009697,number of feasible solutions at the end of generation 8: 58
+07:09:49,0.0006047,starting generation  9
+07:09:49,2.45e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:09:49,1.35e-05,ParetoObjectives::update() for  50 population members
+07:09:49,9.8e-06,preparing fast-lookup containers
+07:09:49,0.0016194,checking for duplicate solutions
+07:09:49,0.0004032,calculating fitness
+07:09:49,3.32e-05,get_spea_fitness
+07:09:49,0.0001862,fill domination containers
+07:09:49,0.0018735,pareto front sorting
+07:09:49,8.2e-06,starting 'fast non-dom sort
+07:09:49,4.3e-06,fill domination containers
+07:09:49,0.0017953,finding first front
+07:09:49,3.04e-05,sorting remaining fronts
+07:09:49,0.0064396,generating PSO population of size 50
+07:09:49,3.83e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 58 population members
+07:09:49,2.23e-05,ParetoObjectives::update() for  58 population members
+07:09:49,1.07e-05,preparing fast-lookup containers
+07:09:49,0.0014029,checking for duplicate solutions
+07:09:49,0.0004782,calculating fitness
+07:09:49,6e-06,get_spea_fitness
+07:09:49,0.0002271,fill domination containers
+07:09:49,0.0024628,pareto front sorting
+07:09:49,1.03e-05,starting 'fast non-dom sort
+07:09:49,4.7e-06,fill domination containers
+07:09:49,0.0023712,finding first front
+07:09:49,1.16e-05,sorting remaining fronts
+07:09:49,0.0196239,running population of size  50
+07:09:49,3.3e-05,queuing 50 runs
+07:09:49,0.0126998,making runs
+07:09:53,3.89596,processing runs
+07:09:53,0.0045562,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:09:53,0.0039704,saved generation-specific decision variable population of size 50 X 2 to 'fon.9.dv_pop.csv'
+07:09:53,0.0028617,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:09:53,0.0047453,saved generation-specific observation population of size 50 X 4 to 'fon.9.obs_pop.csv'
+07:09:53,0.0239278,ParetoObjectives::update() for  100 population members
+07:09:53,3.38e-05,preparing fast-lookup containers
+07:09:53,0.0029606,checking for duplicate solutions
+07:09:53,0.0011199,calculating fitness
+07:09:53,4.9e-06,get_spea_fitness
+07:09:53,0.0007099,fill domination containers
+07:09:53,0.0076083,pareto front sorting
+07:09:53,3.02e-05,starting 'fast non-dom sort
+07:09:53,6.2e-06,fill domination containers
+07:09:53,0.0068161,finding first front
+07:09:53,1.37e-05,sorting remaining fronts
+07:09:53,0.0001877,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:53,5.7e-06,ParetoObjectives::update() for  100 population members
+07:09:53,4.2e-06,preparing fast-lookup containers
+07:09:53,0.0029367,checking for duplicate solutions
+07:09:53,0.0011131,calculating fitness
+07:09:53,4.8e-06,get_spea_fitness
+07:09:53,0.0006849,fill domination containers
+07:09:53,0.0068793,pareto front sorting
+07:09:53,5.8e-06,starting 'fast non-dom sort
+07:09:53,4.4e-06,fill domination containers
+07:09:53,0.0067967,finding first front
+07:09:53,2.53e-05,sorting remaining fronts
+07:09:53,0.0141096,pareto dominance sorting combined parent-child populations of size  100
+07:09:53,4.4e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:53,1.93e-05,ParetoObjectives::update() for  100 population members
+07:09:53,1.53e-05,preparing fast-lookup containers
+07:09:53,0.0032357,checking for duplicate solutions
+07:09:53,0.0011833,calculating fitness
+07:09:53,9.1e-06,get_spea_fitness
+07:09:53,0.0006814,fill domination containers
+07:09:53,0.0069942,pareto front sorting
+07:09:53,7.1e-06,starting 'fast non-dom sort
+07:09:53,4.5e-06,fill domination containers
+07:09:53,0.0068766,finding first front
+07:09:53,1.58e-05,sorting remaining fronts
+07:09:53,0.0125043,updating archive
+07:09:53,0.0004049,adding 9 non-dominated members to archive
+07:09:53,0.0002822,pareto dominance sorting archive of size 67
+07:09:53,4.41e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 67 population members
+07:09:53,1.44e-05,ParetoObjectives::update() for  67 population members
+07:09:53,4.9e-06,preparing fast-lookup containers
+07:09:53,0.0015146,checking for duplicate solutions
+07:09:53,0.0005493,calculating fitness
+07:09:53,5e-06,get_spea_fitness
+07:09:53,0.0003015,fill domination containers
+07:09:53,0.0032082,pareto front sorting
+07:09:53,4.6e-06,starting 'fast non-dom sort
+07:09:53,4.1e-06,fill domination containers
+07:09:53,0.0031929,finding first front
+07:09:53,1.73e-05,sorting remaining fronts
+07:09:53,0.0122249,resizing archive from 67 to 66 current non-dominated solutions
+07:09:53,0.0001961,ParetoObjectives::get_nsga2_pareto_dominance() for 66 population members
+07:09:53,2.03e-05,ParetoObjectives::update() for  66 population members
+07:09:53,1.48e-05,preparing fast-lookup containers
+07:09:53,0.0032254,checking for duplicate solutions
+07:09:53,0.0015376,calculating fitness
+07:09:53,2.04e-05,get_spea_fitness
+07:09:53,0.0005701,fill domination containers
+07:09:53,0.0038296,pareto front sorting
+07:09:53,5.8e-05,starting 'fast non-dom sort
+07:09:53,6.3e-06,fill domination containers
+07:09:53,0.0030068,finding first front
+07:09:53,1.93e-05,sorting remaining fronts
+07:09:53,0.0158486,saved decision variable population of size 66 X 2 to 'fon.archive.dv_pop.csv'
+07:09:53,0.002837,saved generation-specific decision variable population of size 66 X 2 to 'fon.9.archive.dv_pop.csv'
+07:09:53,0.0025002,saved observation population of size 66 X 4 to 'fon.archive.obs_pop.csv'
+07:09:53,0.0024939,saved generation-specific observation population of size 66 X 4 to 'fon.9.archive.obs_pop.csv'
+07:09:53,0.0009007,resizing current populations to  50
+07:09:53,0.0005895,generation 9 decision variable summary:
+07:09:53,0.0010391,generation 9 decision variable change summary:
+07:09:53,0.0012266,generation 9 objective function summary:
+07:09:53,0.0003296,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:53,0.00059,using member GEN=6_MEMBER=264_PSO as single, 'optimal' point
+   with distance of 0.720618 from optimal trade - off
+07:09:53,0.0011001,generation 9 objective function change summary:
+07:09:53,0.0007833,number of feasible solutions at the end of generation 9: 66
+07:09:53,0.0005551,starting generation  10
+07:09:53,2.45e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:09:53,1.38e-05,ParetoObjectives::update() for  50 population members
+07:09:53,9.7e-06,preparing fast-lookup containers
+07:09:53,0.0016409,checking for duplicate solutions
+07:09:53,0.00062,calculating fitness
+07:09:53,1.71e-05,get_spea_fitness
+07:09:53,0.0003062,fill domination containers
+07:09:53,0.0019054,pareto front sorting
+07:09:53,4.17e-05,starting 'fast non-dom sort
+07:09:53,6.2e-06,fill domination containers
+07:09:53,0.0023162,finding first front
+07:09:53,2.94e-05,sorting remaining fronts
+07:09:53,0.0068349,generating PSO population of size 50
+07:09:53,3.79e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 66 population members
+07:09:53,1.82e-05,ParetoObjectives::update() for  66 population members
+07:09:53,1.37e-05,preparing fast-lookup containers
+07:09:53,0.0014821,checking for duplicate solutions
+07:09:53,0.0005333,calculating fitness
+07:09:53,6e-06,get_spea_fitness
+07:09:53,0.0002859,fill domination containers
+07:09:53,0.0030944,pareto front sorting
+07:09:53,4.2e-06,starting 'fast non-dom sort
+07:09:53,4.3e-06,fill domination containers
+07:09:53,0.003141,finding first front
+07:09:53,2.01e-05,sorting remaining fronts
+07:09:53,0.0245341,running population of size  50
+07:09:53,3.03e-05,queuing 50 runs
+07:09:53,0.0135945,making runs
+07:09:57,3.88453,processing runs
+07:09:57,0.0019598,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:09:57,0.0034362,saved generation-specific decision variable population of size 50 X 2 to 'fon.10.dv_pop.csv'
+07:09:57,0.0012388,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:09:57,0.0024029,saved generation-specific observation population of size 50 X 4 to 'fon.10.obs_pop.csv'
+07:09:57,0.0215052,ParetoObjectives::update() for  100 population members
+07:09:57,4.7e-05,preparing fast-lookup containers
+07:09:57,0.0030491,checking for duplicate solutions
+07:09:57,0.001259,calculating fitness
+07:09:57,6.8e-06,get_spea_fitness
+07:09:57,0.0007652,fill domination containers
+07:09:57,0.0073364,pareto front sorting
+07:09:57,3.51e-05,starting 'fast non-dom sort
+07:09:57,6.8e-06,fill domination containers
+07:09:57,0.0071254,finding first front
+07:09:57,2.84e-05,sorting remaining fronts
+07:09:57,0.0001724,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:57,6.9e-06,ParetoObjectives::update() for  100 population members
+07:09:57,4.7e-06,preparing fast-lookup containers
+07:09:57,0.0030672,checking for duplicate solutions
+07:09:57,0.0012245,calculating fitness
+07:09:57,4.7e-06,get_spea_fitness
+07:09:57,0.0007045,fill domination containers
+07:09:57,0.0102756,pareto front sorting
+07:09:57,3.15e-05,starting 'fast non-dom sort
+07:09:57,6.7e-06,fill domination containers
+07:09:57,0.0074725,finding first front
+07:09:57,2.26e-05,sorting remaining fronts
+07:09:57,0.0122474,pareto dominance sorting combined parent-child populations of size  100
+07:09:57,4.07e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:09:57,2.33e-05,ParetoObjectives::update() for  100 population members
+07:09:57,1.83e-05,preparing fast-lookup containers
+07:09:57,0.0036244,checking for duplicate solutions
+07:09:57,0.0013281,calculating fitness
+07:09:57,9.8e-06,get_spea_fitness
+07:09:57,0.0007403,fill domination containers
+07:09:57,0.0078153,pareto front sorting
+07:09:57,2.27e-05,starting 'fast non-dom sort
+07:09:57,6.2e-06,fill domination containers
+07:09:57,0.0073579,finding first front
+07:09:57,2.77e-05,sorting remaining fronts
+07:09:57,0.0141945,updating archive
+07:09:57,0.0005108,adding 8 non-dominated members to archive
+07:09:57,0.0005233,pareto dominance sorting archive of size 74
+07:09:57,2.32e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 74 population members
+07:09:57,7.1e-06,ParetoObjectives::update() for  74 population members
+07:09:57,5e-06,preparing fast-lookup containers
+07:09:57,0.0018823,checking for duplicate solutions
+07:09:57,0.0007041,calculating fitness
+07:09:57,6.5e-06,get_spea_fitness
+07:09:57,0.0003845,fill domination containers
+07:09:57,0.0041408,pareto front sorting
+07:09:57,8.5e-06,starting 'fast non-dom sort
+07:09:57,5.2e-06,fill domination containers
+07:09:57,0.0042297,finding first front
+07:09:57,2.84e-05,sorting remaining fronts
+07:09:57,0.0143245,resizing archive from 74 to 71 current non-dominated solutions
+07:09:57,0.0001503,ParetoObjectives::get_nsga2_pareto_dominance() for 71 population members
+07:09:57,1.26e-05,ParetoObjectives::update() for  71 population members
+07:09:57,9.6e-06,preparing fast-lookup containers
+07:09:57,0.0018993,checking for duplicate solutions
+07:09:57,0.0006442,calculating fitness
+07:09:57,1e-05,get_spea_fitness
+07:09:57,0.0003821,fill domination containers
+07:09:57,0.0038116,pareto front sorting
+07:09:57,9e-06,starting 'fast non-dom sort
+07:09:57,4.9e-06,fill domination containers
+07:09:57,0.0037095,finding first front
+07:09:57,1.73e-05,sorting remaining fronts
+07:09:57,0.0160479,saved decision variable population of size 71 X 2 to 'fon.archive.dv_pop.csv'
+07:09:57,0.0022874,saved generation-specific decision variable population of size 71 X 2 to 'fon.10.archive.dv_pop.csv'
+07:09:57,0.002573,saved observation population of size 71 X 4 to 'fon.archive.obs_pop.csv'
+07:09:57,0.003204,saved generation-specific observation population of size 71 X 4 to 'fon.10.archive.obs_pop.csv'
+07:09:57,0.0004577,resizing current populations to  50
+07:09:57,0.0007649,generation 10 decision variable summary:
+07:09:57,0.0005111,generation 10 decision variable change summary:
+07:09:57,0.0012328,generation 10 objective function summary:
+07:09:57,0.0003674,seeking optimal trade-off point for single 'optimal' chance point runs
+07:09:57,0.0006563,using member GEN=6_MEMBER=264_PSO as single, 'optimal' point
+   with distance of 0.720618 from optimal trade - off
+07:09:57,0.0011529,generation 10 objective function change summary:
+07:09:57,0.0011736,number of feasible solutions at the end of generation 10: 71
+07:09:57,0.0007192,starting generation  11
+07:09:57,3.26e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:09:57,1.46e-05,ParetoObjectives::update() for  50 population members
+07:09:57,1.06e-05,preparing fast-lookup containers
+07:09:57,0.0016723,checking for duplicate solutions
+07:09:57,0.0003776,calculating fitness
+07:09:57,8.1e-06,get_spea_fitness
+07:09:57,0.0001929,fill domination containers
+07:09:57,0.0019264,pareto front sorting
+07:09:57,9.2e-06,starting 'fast non-dom sort
+07:09:57,4.8e-06,fill domination containers
+07:09:57,0.0018584,finding first front
+07:09:57,1.41e-05,sorting remaining fronts
+07:09:57,0.0073989,generating PSO population of size 50
+07:09:57,3.48e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 71 population members
+07:09:57,1.24e-05,ParetoObjectives::update() for  71 population members
+07:09:57,1.01e-05,preparing fast-lookup containers
+07:09:57,0.002054,checking for duplicate solutions
+07:09:57,0.0006643,calculating fitness
+07:09:57,7.1e-06,get_spea_fitness
+07:09:57,0.0003642,fill domination containers
+07:09:57,0.0038062,pareto front sorting
+07:09:57,8.5e-06,starting 'fast non-dom sort
+07:09:57,5e-06,fill domination containers
+07:09:57,0.0040403,finding first front
+07:09:57,6.33e-05,sorting remaining fronts
+07:09:57,0.0355841,running population of size  50
+07:09:57,2.89e-05,queuing 50 runs
+07:09:57,0.0152012,making runs
+07:10:01,3.95668,processing runs
+07:10:01,0.0066605,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:10:01,0.0053614,saved generation-specific decision variable population of size 50 X 2 to 'fon.11.dv_pop.csv'
+07:10:01,0.0027367,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:10:01,0.0057972,saved generation-specific observation population of size 50 X 4 to 'fon.11.obs_pop.csv'
+07:10:01,0.0291,ParetoObjectives::update() for  100 population members
+07:10:01,2.88e-05,preparing fast-lookup containers
+07:10:01,0.0030943,checking for duplicate solutions
+07:10:01,0.0012248,calculating fitness
+07:10:01,7.8e-06,get_spea_fitness
+07:10:01,0.0007435,fill domination containers
+07:10:01,0.0074336,pareto front sorting
+07:10:01,1.55e-05,starting 'fast non-dom sort
+07:10:01,4.8e-06,fill domination containers
+07:10:01,0.0072452,finding first front
+07:10:01,1.9e-05,sorting remaining fronts
+07:10:01,0.0001665,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:01,6e-06,ParetoObjectives::update() for  100 population members
+07:10:01,4.9e-06,preparing fast-lookup containers
+07:10:01,0.0029237,checking for duplicate solutions
+07:10:01,0.0011669,calculating fitness
+07:10:01,4.7e-06,get_spea_fitness
+07:10:01,0.0007245,fill domination containers
+07:10:01,0.0070967,pareto front sorting
+07:10:01,2.3e-05,starting 'fast non-dom sort
+07:10:01,5.2e-06,fill domination containers
+07:10:01,0.0068189,finding first front
+07:10:01,1.38e-05,sorting remaining fronts
+07:10:01,0.0118321,pareto dominance sorting combined parent-child populations of size  100
+07:10:01,2.12e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:01,6.5e-06,ParetoObjectives::update() for  100 population members
+07:10:01,5e-06,preparing fast-lookup containers
+07:10:01,0.003128,checking for duplicate solutions
+07:10:01,0.0011803,calculating fitness
+07:10:01,4.6e-06,get_spea_fitness
+07:10:01,0.0006978,fill domination containers
+07:10:01,0.0070821,pareto front sorting
+07:10:01,1.56e-05,starting 'fast non-dom sort
+07:10:01,5.3e-06,fill domination containers
+07:10:01,0.0068146,finding first front
+07:10:01,1.54e-05,sorting remaining fronts
+07:10:01,0.0133003,updating archive
+07:10:01,0.0003194,adding 7 non-dominated members to archive
+07:10:01,0.0002249,pareto dominance sorting archive of size 78
+07:10:01,3.66e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 78 population members
+07:10:01,7.3e-06,ParetoObjectives::update() for  78 population members
+07:10:01,4.6e-06,preparing fast-lookup containers
+07:10:01,0.002114,checking for duplicate solutions
+07:10:01,0.0007396,calculating fitness
+07:10:01,5.5e-06,get_spea_fitness
+07:10:01,0.0004198,fill domination containers
+07:10:01,0.0044366,pareto front sorting
+07:10:01,9.5e-06,starting 'fast non-dom sort
+07:10:01,4.3e-06,fill domination containers
+07:10:01,0.0043466,finding first front
+07:10:01,1.93e-05,sorting remaining fronts
+07:10:01,0.0158101,resizing archive from 78 to 76 current non-dominated solutions
+07:10:01,0.0003322,ParetoObjectives::get_nsga2_pareto_dominance() for 76 population members
+07:10:01,3.12e-05,ParetoObjectives::update() for  76 population members
+07:10:01,2.08e-05,preparing fast-lookup containers
+07:10:01,0.0019586,checking for duplicate solutions
+07:10:01,0.0007202,calculating fitness
+07:10:01,6.5e-06,get_spea_fitness
+07:10:01,0.0004228,fill domination containers
+07:10:01,0.004261,pareto front sorting
+07:10:01,1.39e-05,starting 'fast non-dom sort
+07:10:01,4.7e-06,fill domination containers
+07:10:01,0.0041096,finding first front
+07:10:01,2.69e-05,sorting remaining fronts
+07:10:01,0.0171633,saved decision variable population of size 76 X 2 to 'fon.archive.dv_pop.csv'
+07:10:01,0.0031215,saved generation-specific decision variable population of size 76 X 2 to 'fon.11.archive.dv_pop.csv'
+07:10:01,0.0032953,saved observation population of size 76 X 4 to 'fon.archive.obs_pop.csv'
+07:10:01,0.0031081,saved generation-specific observation population of size 76 X 4 to 'fon.11.archive.obs_pop.csv'
+07:10:01,0.0005479,resizing current populations to  50
+07:10:01,0.0007196,generation 11 decision variable summary:
+07:10:01,0.0011802,generation 11 decision variable change summary:
+07:10:01,0.001802,generation 11 objective function summary:
+07:10:01,0.0003945,seeking optimal trade-off point for single 'optimal' chance point runs
+07:10:01,0.0006615,using member GEN=6_MEMBER=264_PSO as single, 'optimal' point
+   with distance of 0.720618 from optimal trade - off
+07:10:01,0.0009044,generation 11 objective function change summary:
+07:10:01,0.001001,number of feasible solutions at the end of generation 11: 76
+07:10:01,0.0008441,starting generation  12
+07:10:01,3.13e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:10:01,1.35e-05,ParetoObjectives::update() for  50 population members
+07:10:01,1.01e-05,preparing fast-lookup containers
+07:10:01,0.0011807,checking for duplicate solutions
+07:10:01,0.0003996,calculating fitness
+07:10:01,1.09e-05,get_spea_fitness
+07:10:01,0.0001987,fill domination containers
+07:10:01,0.001924,pareto front sorting
+07:10:01,9.3e-06,starting 'fast non-dom sort
+07:10:01,4.9e-06,fill domination containers
+07:10:01,0.0017847,finding first front
+07:10:01,1.29e-05,sorting remaining fronts
+07:10:01,0.0067735,generating PSO population of size 50
+07:10:01,4.19e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 76 population members
+07:10:01,9.4e-06,ParetoObjectives::update() for  76 population members
+07:10:01,5.2e-06,preparing fast-lookup containers
+07:10:01,0.0019114,checking for duplicate solutions
+07:10:01,0.000706,calculating fitness
+07:10:01,6.3e-06,get_spea_fitness
+07:10:01,0.0004124,fill domination containers
+07:10:01,0.004272,pareto front sorting
+07:10:01,1.89e-05,starting 'fast non-dom sort
+07:10:01,4.8e-06,fill domination containers
+07:10:01,0.0041387,finding first front
+07:10:01,1.94e-05,sorting remaining fronts
+07:10:01,0.0303832,running population of size  50
+07:10:01,3.31e-05,queuing 50 runs
+07:10:01,0.0136798,making runs
+07:10:05,3.91201,processing runs
+07:10:05,0.0028073,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:10:05,0.0017341,saved generation-specific decision variable population of size 50 X 2 to 'fon.12.dv_pop.csv'
+07:10:05,0.0025277,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:10:05,0.0023342,saved generation-specific observation population of size 50 X 4 to 'fon.12.obs_pop.csv'
+07:10:05,0.0237859,ParetoObjectives::update() for  100 population members
+07:10:05,6.82e-05,preparing fast-lookup containers
+07:10:05,0.0029821,checking for duplicate solutions
+07:10:05,0.0011799,calculating fitness
+07:10:05,5.2e-06,get_spea_fitness
+07:10:05,0.0007768,fill domination containers
+07:10:05,0.0077274,pareto front sorting
+07:10:05,2.94e-05,starting 'fast non-dom sort
+07:10:05,6.2e-06,fill domination containers
+07:10:05,0.006868,finding first front
+07:10:05,2.61e-05,sorting remaining fronts
+07:10:05,0.0001585,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:05,6.5e-06,ParetoObjectives::update() for  100 population members
+07:10:05,4.5e-06,preparing fast-lookup containers
+07:10:05,0.0030614,checking for duplicate solutions
+07:10:05,0.0012569,calculating fitness
+07:10:05,6e-06,get_spea_fitness
+07:10:05,0.000714,fill domination containers
+07:10:05,0.0070337,pareto front sorting
+07:10:05,8.8e-06,starting 'fast non-dom sort
+07:10:05,4.7e-06,fill domination containers
+07:10:05,0.0070565,finding first front
+07:10:05,2.32e-05,sorting remaining fronts
+07:10:05,0.0118457,pareto dominance sorting combined parent-child populations of size  100
+07:10:05,6.09e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:05,1.92e-05,ParetoObjectives::update() for  100 population members
+07:10:05,1.51e-05,preparing fast-lookup containers
+07:10:05,0.0032281,checking for duplicate solutions
+07:10:05,0.0013574,calculating fitness
+07:10:05,9.3e-06,get_spea_fitness
+07:10:05,0.0006967,fill domination containers
+07:10:05,0.0071736,pareto front sorting
+07:10:05,1.17e-05,starting 'fast non-dom sort
+07:10:05,4.4e-06,fill domination containers
+07:10:05,0.0072008,finding first front
+07:10:05,2.37e-05,sorting remaining fronts
+07:10:05,0.0139302,updating archive
+07:10:05,0.0003814,adding 9 non-dominated members to archive
+07:10:05,0.0003201,pareto dominance sorting archive of size 85
+07:10:05,4.06e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 85 population members
+07:10:05,1.01e-05,ParetoObjectives::update() for  85 population members
+07:10:05,5e-06,preparing fast-lookup containers
+07:10:05,0.0022581,checking for duplicate solutions
+07:10:05,0.0008935,calculating fitness
+07:10:05,6.8e-06,get_spea_fitness
+07:10:05,0.0005247,fill domination containers
+07:10:05,0.0053678,pareto front sorting
+07:10:05,1.91e-05,starting 'fast non-dom sort
+07:10:05,7.7e-06,fill domination containers
+07:10:05,0.0054836,finding first front
+07:10:05,4.29e-05,sorting remaining fronts
+07:10:05,0.0196366,resizing archive from 85 to 85 current non-dominated solutions
+07:10:05,0.0002443,ParetoObjectives::get_nsga2_pareto_dominance() for 85 population members
+07:10:05,1.9e-05,ParetoObjectives::update() for  85 population members
+07:10:05,5.8e-06,preparing fast-lookup containers
+07:10:05,0.0023805,checking for duplicate solutions
+07:10:05,0.0009066,calculating fitness
+07:10:05,1.37e-05,get_spea_fitness
+07:10:05,0.0005002,fill domination containers
+07:10:05,0.0051327,pareto front sorting
+07:10:05,1.96e-05,starting 'fast non-dom sort
+07:10:05,5e-06,fill domination containers
+07:10:05,0.0050965,finding first front
+07:10:05,3.58e-05,sorting remaining fronts
+07:10:05,0.0205475,saved decision variable population of size 85 X 2 to 'fon.archive.dv_pop.csv'
+07:10:05,0.0020783,saved generation-specific decision variable population of size 85 X 2 to 'fon.12.archive.dv_pop.csv'
+07:10:05,0.0019306,saved observation population of size 85 X 4 to 'fon.archive.obs_pop.csv'
+07:10:05,0.0038212,saved generation-specific observation population of size 85 X 4 to 'fon.12.archive.obs_pop.csv'
+07:10:05,0.0005366,resizing current populations to  50
+07:10:05,0.0008285,generation 12 decision variable summary:
+07:10:05,0.0008588,generation 12 decision variable change summary:
+07:10:05,0.001137,generation 12 objective function summary:
+07:10:05,0.0002718,seeking optimal trade-off point for single 'optimal' chance point runs
+07:10:05,0.0006364,using member GEN=6_MEMBER=264_PSO as single, 'optimal' point
+   with distance of 0.720618 from optimal trade - off
+07:10:05,0.001082,generation 12 objective function change summary:
+07:10:05,0.0010321,number of feasible solutions at the end of generation 12: 85
+07:10:05,0.000581,starting generation  13
+07:10:05,2.61e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:10:05,1.41e-05,ParetoObjectives::update() for  50 population members
+07:10:05,1.02e-05,preparing fast-lookup containers
+07:10:05,0.0010191,checking for duplicate solutions
+07:10:05,0.0003714,calculating fitness
+07:10:05,7.3e-06,get_spea_fitness
+07:10:05,0.0002053,fill domination containers
+07:10:05,0.0019177,pareto front sorting
+07:10:05,2.17e-05,starting 'fast non-dom sort
+07:10:05,5.3e-06,fill domination containers
+07:10:05,0.0018543,finding first front
+07:10:05,2.55e-05,sorting remaining fronts
+07:10:06,0.0068686,generating PSO population of size 50
+07:10:06,2.88e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 85 population members
+07:10:06,1.22e-05,ParetoObjectives::update() for  85 population members
+07:10:06,9.3e-06,preparing fast-lookup containers
+07:10:06,0.0022623,checking for duplicate solutions
+07:10:06,0.0008344,calculating fitness
+07:10:06,6.2e-06,get_spea_fitness
+07:10:06,0.0005102,fill domination containers
+07:10:06,0.0054402,pareto front sorting
+07:10:06,3.18e-05,starting 'fast non-dom sort
+07:10:06,6.1e-06,fill domination containers
+07:10:06,0.0077851,finding first front
+07:10:06,6.41e-05,sorting remaining fronts
+07:10:06,0.0379202,running population of size  50
+07:10:06,3.12e-05,queuing 50 runs
+07:10:06,0.0148564,making runs
+07:10:10,4.88256,processing runs
+07:10:10,0.0033542,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:10:10,0.0032971,saved generation-specific decision variable population of size 50 X 2 to 'fon.13.dv_pop.csv'
+07:10:10,0.0035336,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:10:10,0.0029504,saved generation-specific observation population of size 50 X 4 to 'fon.13.obs_pop.csv'
+07:10:10,0.0192526,ParetoObjectives::update() for  100 population members
+07:10:10,3.13e-05,preparing fast-lookup containers
+07:10:10,0.0029944,checking for duplicate solutions
+07:10:10,0.0011882,calculating fitness
+07:10:10,4.9e-06,get_spea_fitness
+07:10:10,0.0007092,fill domination containers
+07:10:10,0.0071736,pareto front sorting
+07:10:10,1.23e-05,starting 'fast non-dom sort
+07:10:10,4.8e-06,fill domination containers
+07:10:11,0.0068659,finding first front
+07:10:11,3.38e-05,sorting remaining fronts
+07:10:11,0.0001655,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:11,5.8e-06,ParetoObjectives::update() for  100 population members
+07:10:11,4e-06,preparing fast-lookup containers
+07:10:11,0.0029227,checking for duplicate solutions
+07:10:11,0.001305,calculating fitness
+07:10:11,3.89e-05,get_spea_fitness
+07:10:11,0.0007507,fill domination containers
+07:10:11,0.0071137,pareto front sorting
+07:10:11,6.8e-06,starting 'fast non-dom sort
+07:10:11,4.5e-06,fill domination containers
+07:10:11,0.0069283,finding first front
+07:10:11,1.58e-05,sorting remaining fronts
+07:10:11,0.0127727,pareto dominance sorting combined parent-child populations of size  100
+07:10:11,5.03e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:11,3.77e-05,ParetoObjectives::update() for  100 population members
+07:10:11,1.54e-05,preparing fast-lookup containers
+07:10:11,0.0031192,checking for duplicate solutions
+07:10:11,0.0013821,calculating fitness
+07:10:11,1.45e-05,get_spea_fitness
+07:10:11,0.0007566,fill domination containers
+07:10:11,0.007425,pareto front sorting
+07:10:11,1.87e-05,starting 'fast non-dom sort
+07:10:11,4.7e-06,fill domination containers
+07:10:11,0.0069371,finding first front
+07:10:11,5.6e-05,sorting remaining fronts
+07:10:11,0.015458,updating archive
+07:10:11,0.0003911,adding 11 non-dominated members to archive
+07:10:11,0.0003076,pareto dominance sorting archive of size 96
+07:10:11,1.59e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 96 population members
+07:10:11,6.7e-06,ParetoObjectives::update() for  96 population members
+07:10:11,4.5e-06,preparing fast-lookup containers
+07:10:11,0.0028854,checking for duplicate solutions
+07:10:11,0.0011159,calculating fitness
+07:10:11,6.2e-06,get_spea_fitness
+07:10:11,0.000593,fill domination containers
+07:10:11,0.0065554,pareto front sorting
+07:10:11,2.07e-05,starting 'fast non-dom sort
+07:10:11,5.9e-06,fill domination containers
+07:10:11,0.0064508,finding first front
+07:10:11,2.46e-05,sorting remaining fronts
+07:10:11,0.0218316,resizing archive from 96 to 96 current non-dominated solutions
+07:10:11,0.0001714,ParetoObjectives::get_nsga2_pareto_dominance() for 96 population members
+07:10:11,9.8e-06,ParetoObjectives::update() for  96 population members
+07:10:11,5.1e-06,preparing fast-lookup containers
+07:10:11,0.0027808,checking for duplicate solutions
+07:10:11,0.0010869,calculating fitness
+07:10:11,4.7e-06,get_spea_fitness
+07:10:11,0.0005995,fill domination containers
+07:10:11,0.0064426,pareto front sorting
+07:10:11,1.37e-05,starting 'fast non-dom sort
+07:10:11,4.5e-06,fill domination containers
+07:10:11,0.0063937,finding first front
+07:10:11,1.89e-05,sorting remaining fronts
+07:10:11,0.0256786,saved decision variable population of size 96 X 2 to 'fon.archive.dv_pop.csv'
+07:10:11,0.0046599,saved generation-specific decision variable population of size 96 X 2 to 'fon.13.archive.dv_pop.csv'
+07:10:11,0.0030284,saved observation population of size 96 X 4 to 'fon.archive.obs_pop.csv'
+07:10:11,0.0038039,saved generation-specific observation population of size 96 X 4 to 'fon.13.archive.obs_pop.csv'
+07:10:11,0.0005701,resizing current populations to  50
+07:10:11,0.0006912,generation 13 decision variable summary:
+07:10:11,0.0009188,generation 13 decision variable change summary:
+07:10:11,0.0012903,generation 13 objective function summary:
+07:10:11,0.0003293,seeking optimal trade-off point for single 'optimal' chance point runs
+07:10:11,0.0006205,using member GEN=6_MEMBER=264_PSO as single, 'optimal' point
+   with distance of 0.720618 from optimal trade - off
+07:10:11,0.0010976,generation 13 objective function change summary:
+07:10:11,0.0008563,number of feasible solutions at the end of generation 13: 96
+07:10:11,0.0005774,starting generation  14
+07:10:11,3.28e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:10:11,1.83e-05,ParetoObjectives::update() for  50 population members
+07:10:11,1.05e-05,preparing fast-lookup containers
+07:10:11,0.0016546,checking for duplicate solutions
+07:10:11,0.0006623,calculating fitness
+07:10:11,1.53e-05,get_spea_fitness
+07:10:11,0.0003139,fill domination containers
+07:10:11,0.0020829,pareto front sorting
+07:10:11,3.48e-05,starting 'fast non-dom sort
+07:10:11,6.8e-06,fill domination containers
+07:10:11,0.0018777,finding first front
+07:10:11,2.34e-05,sorting remaining fronts
+07:10:11,0.0065343,generating PSO population of size 50
+07:10:11,4.69e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 96 population members
+07:10:11,7.6e-06,ParetoObjectives::update() for  96 population members
+07:10:11,5.2e-06,preparing fast-lookup containers
+07:10:11,0.0027827,checking for duplicate solutions
+07:10:11,0.0010846,calculating fitness
+07:10:11,5.7e-06,get_spea_fitness
+07:10:11,0.0006383,fill domination containers
+07:10:11,0.0066962,pareto front sorting
+07:10:11,2.36e-05,starting 'fast non-dom sort
+07:10:11,6.4e-06,fill domination containers
+07:10:11,0.0067946,finding first front
+07:10:11,3.26e-05,sorting remaining fronts
+07:10:11,0.0448131,running population of size  50
+07:10:11,2.62e-05,queuing 50 runs
+07:10:11,0.0171254,making runs
+07:10:15,4.66646,processing runs
+07:10:15,0.0034438,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:10:15,0.0040677,saved generation-specific decision variable population of size 50 X 2 to 'fon.14.dv_pop.csv'
+07:10:15,0.0023967,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:10:15,0.0028546,saved generation-specific observation population of size 50 X 4 to 'fon.14.obs_pop.csv'
+07:10:15,0.0231884,ParetoObjectives::update() for  100 population members
+07:10:15,4.41e-05,preparing fast-lookup containers
+07:10:15,0.0031446,checking for duplicate solutions
+07:10:15,0.0012921,calculating fitness
+07:10:15,5.3e-06,get_spea_fitness
+07:10:15,0.0007342,fill domination containers
+07:10:15,0.0070428,pareto front sorting
+07:10:15,6.1e-06,starting 'fast non-dom sort
+07:10:15,4.4e-06,fill domination containers
+07:10:15,0.0070247,finding first front
+07:10:15,2.17e-05,sorting remaining fronts
+07:10:15,0.0001355,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:15,5.2e-06,ParetoObjectives::update() for  100 population members
+07:10:15,4.5e-06,preparing fast-lookup containers
+07:10:15,0.0029028,checking for duplicate solutions
+07:10:15,0.001175,calculating fitness
+07:10:15,4.4e-06,get_spea_fitness
+07:10:15,0.0006776,fill domination containers
+07:10:16,0.0070008,pareto front sorting
+07:10:16,8.3e-06,starting 'fast non-dom sort
+07:10:16,4.4e-06,fill domination containers
+07:10:16,0.0069618,finding first front
+07:10:16,2.95e-05,sorting remaining fronts
+07:10:16,0.0130267,pareto dominance sorting combined parent-child populations of size  100
+07:10:16,3.76e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:16,1.82e-05,ParetoObjectives::update() for  100 population members
+07:10:16,1.39e-05,preparing fast-lookup containers
+07:10:16,0.002969,checking for duplicate solutions
+07:10:16,0.0012672,calculating fitness
+07:10:16,6.6e-06,get_spea_fitness
+07:10:16,0.0006873,fill domination containers
+07:10:16,0.0072582,pareto front sorting
+07:10:16,1.95e-05,starting 'fast non-dom sort
+07:10:16,6.1e-06,fill domination containers
+07:10:16,0.007723,finding first front
+07:10:16,2.46e-05,sorting remaining fronts
+07:10:16,0.0158864,updating archive
+07:10:16,0.0008894,adding 10 non-dominated members to archive
+07:10:16,0.0006146,pareto dominance sorting archive of size 106
+07:10:16,2.3e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 106 population members
+07:10:16,1.22e-05,ParetoObjectives::update() for  106 population members
+07:10:16,9.2e-06,preparing fast-lookup containers
+07:10:16,0.0037019,checking for duplicate solutions
+07:10:16,0.0013866,calculating fitness
+07:10:16,9.4e-06,get_spea_fitness
+07:10:16,0.0007738,fill domination containers
+07:10:16,0.0083654,pareto front sorting
+07:10:16,2.02e-05,starting 'fast non-dom sort
+07:10:16,5.1e-06,fill domination containers
+07:10:16,0.0083064,finding first front
+07:10:16,3.07e-05,sorting remaining fronts
+07:10:16,0.0274984,resizing archive from 106 to 106 current non-dominated solutions
+07:10:16,0.0002704,trimming archive size from 106 to max archive size 100
+07:10:16,0.0001932,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:16,2.94e-05,ParetoObjectives::update() for  100 population members
+07:10:16,9.1e-06,preparing fast-lookup containers
+07:10:16,0.0031523,checking for duplicate solutions
+07:10:16,0.0011865,calculating fitness
+07:10:16,5.6e-06,get_spea_fitness
+07:10:16,0.0006858,fill domination containers
+07:10:16,0.0071321,pareto front sorting
+07:10:16,5.9e-06,starting 'fast non-dom sort
+07:10:16,4.5e-06,fill domination containers
+07:10:16,0.0071815,finding first front
+07:10:16,3.79e-05,sorting remaining fronts
+07:10:16,0.0275618,saved decision variable population of size 100 X 2 to 'fon.archive.dv_pop.csv'
+07:10:16,0.0032811,saved generation-specific decision variable population of size 100 X 2 to 'fon.14.archive.dv_pop.csv'
+07:10:16,0.0032738,saved observation population of size 100 X 4 to 'fon.archive.obs_pop.csv'
+07:10:16,0.00298,saved generation-specific observation population of size 100 X 4 to 'fon.14.archive.obs_pop.csv'
+07:10:16,0.0005326,resizing current populations to  50
+07:10:16,0.0005928,generation 14 decision variable summary:
+07:10:16,0.0009407,generation 14 decision variable change summary:
+07:10:16,0.0011011,generation 14 objective function summary:
+07:10:16,0.0004273,seeking optimal trade-off point for single 'optimal' chance point runs
+07:10:16,0.0006492,using member GEN=14_MEMBER=707_PSO as single, 'optimal' point
+   with distance of 0.718157 from optimal trade - off
+07:10:16,0.0011928,generation 14 objective function change summary:
+07:10:16,0.0029825,number of feasible solutions at the end of generation 14: 100
+07:10:16,0.0007216,starting generation  15
+07:10:16,2.63e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:10:16,1.35e-05,ParetoObjectives::update() for  50 population members
+07:10:16,9.6e-06,preparing fast-lookup containers
+07:10:16,0.0011498,checking for duplicate solutions
+07:10:16,0.0003947,calculating fitness
+07:10:16,7.5e-06,get_spea_fitness
+07:10:16,0.0001935,fill domination containers
+07:10:16,0.0018694,pareto front sorting
+07:10:16,7.7e-06,starting 'fast non-dom sort
+07:10:16,4.5e-06,fill domination containers
+07:10:16,0.0017327,finding first front
+07:10:16,1.06e-05,sorting remaining fronts
+07:10:16,0.0075712,generating PSO population of size 50
+07:10:16,2.25e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:16,1.14e-05,ParetoObjectives::update() for  100 population members
+07:10:16,9.1e-06,preparing fast-lookup containers
+07:10:16,0.0032375,checking for duplicate solutions
+07:10:16,0.0012316,calculating fitness
+07:10:16,1.63e-05,get_spea_fitness
+07:10:16,0.0006948,fill domination containers
+07:10:16,0.0070863,pareto front sorting
+07:10:16,1.57e-05,starting 'fast non-dom sort
+07:10:16,5.3e-06,fill domination containers
+07:10:16,0.0070154,finding first front
+07:10:16,2.75e-05,sorting remaining fronts
+07:10:16,0.0504793,running population of size  50
+07:10:16,3.87e-05,queuing 50 runs
+07:10:16,0.016565,making runs
+07:10:20,4.70243,processing runs
+07:10:20,0.0024762,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:10:20,0.0038421,saved generation-specific decision variable population of size 50 X 2 to 'fon.15.dv_pop.csv'
+07:10:20,0.001202,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:10:20,0.0025415,saved generation-specific observation population of size 50 X 4 to 'fon.15.obs_pop.csv'
+07:10:21,0.0206735,ParetoObjectives::update() for  100 population members
+07:10:21,3.2e-05,preparing fast-lookup containers
+07:10:21,0.003143,checking for duplicate solutions
+07:10:21,0.001351,calculating fitness
+07:10:21,6.8e-06,get_spea_fitness
+07:10:21,0.0007515,fill domination containers
+07:10:21,0.0075249,pareto front sorting
+07:10:21,1.02e-05,starting 'fast non-dom sort
+07:10:21,5.3e-06,fill domination containers
+07:10:21,0.0074622,finding first front
+07:10:21,3.03e-05,sorting remaining fronts
+07:10:21,0.00013,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:21,1.08e-05,ParetoObjectives::update() for  100 population members
+07:10:21,6.3e-06,preparing fast-lookup containers
+07:10:21,0.0030039,checking for duplicate solutions
+07:10:21,0.0012165,calculating fitness
+07:10:21,4.8e-06,get_spea_fitness
+07:10:21,0.0007047,fill domination containers
+07:10:21,0.0071989,pareto front sorting
+07:10:21,2.93e-05,starting 'fast non-dom sort
+07:10:21,5.4e-06,fill domination containers
+07:10:21,0.0069732,finding first front
+07:10:21,1.62e-05,sorting remaining fronts
+07:10:21,0.0144111,pareto dominance sorting combined parent-child populations of size  100
+07:10:21,5.3e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:21,2.48e-05,ParetoObjectives::update() for  100 population members
+07:10:21,1.96e-05,preparing fast-lookup containers
+07:10:21,0.003172,checking for duplicate solutions
+07:10:21,0.00196,calculating fitness
+07:10:21,2.99e-05,get_spea_fitness
+07:10:21,0.0007561,fill domination containers
+07:10:21,0.0075113,pareto front sorting
+07:10:21,8.3e-06,starting 'fast non-dom sort
+07:10:21,5.3e-06,fill domination containers
+07:10:21,0.0074349,finding first front
+07:10:21,4.27e-05,sorting remaining fronts
+07:10:21,0.0167323,updating archive
+07:10:21,0.0005767,adding 6 non-dominated members to archive
+07:10:21,0.0005463,pareto dominance sorting archive of size 106
+07:10:21,2.63e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 106 population members
+07:10:21,1.72e-05,ParetoObjectives::update() for  106 population members
+07:10:21,1.3e-05,preparing fast-lookup containers
+07:10:21,0.0064256,checking for duplicate solutions
+07:10:21,0.0014524,calculating fitness
+07:10:21,1.06e-05,get_spea_fitness
+07:10:21,0.0008345,fill domination containers
+07:10:21,0.0118937,pareto front sorting
+07:10:21,3e-05,starting 'fast non-dom sort
+07:10:21,8.7e-06,fill domination containers
+07:10:21,0.0140381,finding first front
+07:10:21,6.19e-05,sorting remaining fronts
+07:10:21,0.0451134,resizing archive from 106 to 106 current non-dominated solutions
+07:10:21,0.0005139,trimming archive size from 106 to max archive size 100
+07:10:21,0.000213,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:21,2.02e-05,ParetoObjectives::update() for  100 population members
+07:10:21,6.9e-06,preparing fast-lookup containers
+07:10:21,0.0031804,checking for duplicate solutions
+07:10:21,0.0012227,calculating fitness
+07:10:21,6.2e-06,get_spea_fitness
+07:10:21,0.0007018,fill domination containers
+07:10:21,0.0075243,pareto front sorting
+07:10:21,1.27e-05,starting 'fast non-dom sort
+07:10:21,5.1e-06,fill domination containers
+07:10:21,0.0073743,finding first front
+07:10:21,1.93e-05,sorting remaining fronts
+07:10:21,0.0280244,saved decision variable population of size 100 X 2 to 'fon.archive.dv_pop.csv'
+07:10:21,0.0036385,saved generation-specific decision variable population of size 100 X 2 to 'fon.15.archive.dv_pop.csv'
+07:10:21,0.0030442,saved observation population of size 100 X 4 to 'fon.archive.obs_pop.csv'
+07:10:21,0.0031363,saved generation-specific observation population of size 100 X 4 to 'fon.15.archive.obs_pop.csv'
+07:10:21,0.0005256,resizing current populations to  50
+07:10:21,0.0008263,generation 15 decision variable summary:
+07:10:21,0.002018,generation 15 decision variable change summary:
+07:10:21,0.0010831,generation 15 objective function summary:
+07:10:21,0.0003236,seeking optimal trade-off point for single 'optimal' chance point runs
+07:10:21,0.0006482,using member GEN=15_MEMBER=726_PSO as single, 'optimal' point
+   with distance of 0.7145 from optimal trade - off
+07:10:21,0.001116,generation 15 objective function change summary:
+07:10:21,0.0009915,number of feasible solutions at the end of generation 15: 100
+07:10:21,0.0007461,starting generation  16
+07:10:21,2.99e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:10:21,1.38e-05,ParetoObjectives::update() for  50 population members
+07:10:21,1.03e-05,preparing fast-lookup containers
+07:10:21,0.0016743,checking for duplicate solutions
+07:10:21,0.0006568,calculating fitness
+07:10:21,1.98e-05,get_spea_fitness
+07:10:21,0.0003207,fill domination containers
+07:10:21,0.0029012,pareto front sorting
+07:10:21,4.02e-05,starting 'fast non-dom sort
+07:10:21,7.1e-06,fill domination containers
+07:10:21,0.0018445,finding first front
+07:10:21,1.79e-05,sorting remaining fronts
+07:10:21,0.0069971,generating PSO population of size 50
+07:10:21,3.28e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:21,1.26e-05,ParetoObjectives::update() for  100 population members
+07:10:21,8.9e-06,preparing fast-lookup containers
+07:10:21,0.0034088,checking for duplicate solutions
+07:10:21,0.0012546,calculating fitness
+07:10:21,7.4e-06,get_spea_fitness
+07:10:21,0.0007321,fill domination containers
+07:10:21,0.0076937,pareto front sorting
+07:10:21,3.14e-05,starting 'fast non-dom sort
+07:10:21,7e-06,fill domination containers
+07:10:21,0.0074691,finding first front
+07:10:21,2.97e-05,sorting remaining fronts
+07:10:21,0.0499814,running population of size  50
+07:10:21,3.15e-05,queuing 50 runs
+07:10:21,0.0147029,making runs
+07:10:26,4.78014,processing runs
+07:10:26,0.003701,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:10:26,0.0016946,saved generation-specific decision variable population of size 50 X 2 to 'fon.16.dv_pop.csv'
+07:10:26,0.0025778,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:10:26,0.0035132,saved generation-specific observation population of size 50 X 4 to 'fon.16.obs_pop.csv'
+07:10:26,0.0247984,ParetoObjectives::update() for  100 population members
+07:10:26,3.64e-05,preparing fast-lookup containers
+07:10:26,0.0029161,checking for duplicate solutions
+07:10:26,0.0012258,calculating fitness
+07:10:26,7.7e-06,get_spea_fitness
+07:10:26,0.000704,fill domination containers
+07:10:26,0.0071236,pareto front sorting
+07:10:26,2.43e-05,starting 'fast non-dom sort
+07:10:26,4.6e-06,fill domination containers
+07:10:26,0.0073237,finding first front
+07:10:26,2.93e-05,sorting remaining fronts
+07:10:26,0.000125,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:26,5.7e-06,ParetoObjectives::update() for  100 population members
+07:10:26,4.8e-06,preparing fast-lookup containers
+07:10:26,0.0030881,checking for duplicate solutions
+07:10:26,0.0012735,calculating fitness
+07:10:26,6.5e-06,get_spea_fitness
+07:10:26,0.0007316,fill domination containers
+07:10:26,0.0071797,pareto front sorting
+07:10:26,1.41e-05,starting 'fast non-dom sort
+07:10:26,5.6e-06,fill domination containers
+07:10:26,0.0069216,finding first front
+07:10:26,1.55e-05,sorting remaining fronts
+07:10:26,0.0135704,pareto dominance sorting combined parent-child populations of size  100
+07:10:26,4.19e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:26,1.55e-05,ParetoObjectives::update() for  100 population members
+07:10:26,1.22e-05,preparing fast-lookup containers
+07:10:26,0.0030112,checking for duplicate solutions
+07:10:26,0.0012271,calculating fitness
+07:10:26,6.2e-06,get_spea_fitness
+07:10:26,0.0007099,fill domination containers
+07:10:26,0.0074219,pareto front sorting
+07:10:26,4.31e-05,starting 'fast non-dom sort
+07:10:26,6.1e-06,fill domination containers
+07:10:26,0.0072246,finding first front
+07:10:26,1.81e-05,sorting remaining fronts
+07:10:26,0.0163883,updating archive
+07:10:26,0.000594,adding 9 non-dominated members to archive
+07:10:26,0.0002914,pareto dominance sorting archive of size 109
+07:10:26,4.86e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 109 population members
+07:10:26,1.55e-05,ParetoObjectives::update() for  109 population members
+07:10:26,5.2e-06,preparing fast-lookup containers
+07:10:26,0.0038511,checking for duplicate solutions
+07:10:26,0.0015592,calculating fitness
+07:10:26,1.61e-05,get_spea_fitness
+07:10:26,0.0008647,fill domination containers
+07:10:26,0.0088407,pareto front sorting
+07:10:26,1.7e-05,starting 'fast non-dom sort
+07:10:26,5.6e-06,fill domination containers
+07:10:26,0.0088099,finding first front
+07:10:26,4.52e-05,sorting remaining fronts
+07:10:26,0.0260279,resizing archive from 109 to 106 current non-dominated solutions
+07:10:26,0.0004073,trimming archive size from 106 to max archive size 100
+07:10:26,0.0002055,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:26,1.84e-05,ParetoObjectives::update() for  100 population members
+07:10:26,5.7e-06,preparing fast-lookup containers
+07:10:26,0.003033,checking for duplicate solutions
+07:10:26,0.0011843,calculating fitness
+07:10:26,5.4e-06,get_spea_fitness
+07:10:26,0.0006969,fill domination containers
+07:10:26,0.0070388,pareto front sorting
+07:10:26,4.9e-06,starting 'fast non-dom sort
+07:10:26,4.4e-06,fill domination containers
+07:10:26,0.0112449,finding first front
+07:10:26,6.06e-05,sorting remaining fronts
+07:10:26,0.0275625,saved decision variable population of size 100 X 2 to 'fon.archive.dv_pop.csv'
+07:10:26,0.0023074,saved generation-specific decision variable population of size 100 X 2 to 'fon.16.archive.dv_pop.csv'
+07:10:26,0.0031348,saved observation population of size 100 X 4 to 'fon.archive.obs_pop.csv'
+07:10:26,0.0033177,saved generation-specific observation population of size 100 X 4 to 'fon.16.archive.obs_pop.csv'
+07:10:26,0.0005423,resizing current populations to  50
+07:10:26,0.0006796,generation 16 decision variable summary:
+07:10:26,0.0017097,generation 16 decision variable change summary:
+07:10:26,0.0011111,generation 16 objective function summary:
+07:10:26,0.0003289,seeking optimal trade-off point for single 'optimal' chance point runs
+07:10:26,0.000636,using member GEN=16_MEMBER=784_PSO as single, 'optimal' point
+   with distance of 0.717134 from optimal trade - off
+07:10:26,0.0010568,generation 16 objective function change summary:
+07:10:26,0.0009906,number of feasible solutions at the end of generation 16: 100
+07:10:26,0.0005975,starting generation  17
+07:10:26,2.22e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:10:26,1.26e-05,ParetoObjectives::update() for  50 population members
+07:10:26,1.05e-05,preparing fast-lookup containers
+07:10:26,0.001087,checking for duplicate solutions
+07:10:26,0.0003554,calculating fitness
+07:10:26,6.9e-06,get_spea_fitness
+07:10:26,0.0001896,fill domination containers
+07:10:26,0.0019099,pareto front sorting
+07:10:26,6.6e-06,starting 'fast non-dom sort
+07:10:26,4.8e-06,fill domination containers
+07:10:26,0.0018028,finding first front
+07:10:26,1.87e-05,sorting remaining fronts
+07:10:26,0.0064723,generating PSO population of size 50
+07:10:26,1.71e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:26,6.4e-06,ParetoObjectives::update() for  100 population members
+07:10:26,4.3e-06,preparing fast-lookup containers
+07:10:26,0.0031758,checking for duplicate solutions
+07:10:26,0.0011719,calculating fitness
+07:10:26,4.7e-06,get_spea_fitness
+07:10:26,0.0006642,fill domination containers
+07:10:26,0.0070697,pareto front sorting
+07:10:26,1.45e-05,starting 'fast non-dom sort
+07:10:26,5.5e-06,fill domination containers
+07:10:26,0.0070331,finding first front
+07:10:26,3.14e-05,sorting remaining fronts
+07:10:26,0.0513561,running population of size  50
+07:10:26,3.02e-05,queuing 50 runs
+07:10:26,0.0156197,making runs
+07:10:31,4.61244,processing runs
+07:10:31,0.0040839,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:10:31,0.0029923,saved generation-specific decision variable population of size 50 X 2 to 'fon.17.dv_pop.csv'
+07:10:31,0.0022267,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:10:31,0.0038225,saved generation-specific observation population of size 50 X 4 to 'fon.17.obs_pop.csv'
+07:10:31,0.0251871,ParetoObjectives::update() for  100 population members
+07:10:31,4.53e-05,preparing fast-lookup containers
+07:10:31,0.0031179,checking for duplicate solutions
+07:10:31,0.0013431,calculating fitness
+07:10:31,7.8e-06,get_spea_fitness
+07:10:31,0.0007289,fill domination containers
+07:10:31,0.0076323,pareto front sorting
+07:10:31,1.3e-05,starting 'fast non-dom sort
+07:10:31,5.2e-06,fill domination containers
+07:10:31,0.0074612,finding first front
+07:10:31,3.04e-05,sorting remaining fronts
+07:10:31,0.0001144,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:31,6.1e-06,ParetoObjectives::update() for  100 population members
+07:10:31,5.1e-06,preparing fast-lookup containers
+07:10:31,0.0030425,checking for duplicate solutions
+07:10:31,0.001292,calculating fitness
+07:10:31,6.9e-06,get_spea_fitness
+07:10:31,0.0007319,fill domination containers
+07:10:31,0.0075407,pareto front sorting
+07:10:31,1.51e-05,starting 'fast non-dom sort
+07:10:31,5e-06,fill domination containers
+07:10:31,0.007365,finding first front
+07:10:31,1.95e-05,sorting remaining fronts
+07:10:31,0.0171559,pareto dominance sorting combined parent-child populations of size  100
+07:10:31,4.91e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:31,2.48e-05,ParetoObjectives::update() for  100 population members
+07:10:31,1.96e-05,preparing fast-lookup containers
+07:10:31,0.0033171,checking for duplicate solutions
+07:10:31,0.0013928,calculating fitness
+07:10:31,9.6e-06,get_spea_fitness
+07:10:31,0.0007275,fill domination containers
+07:10:31,0.0070079,pareto front sorting
+07:10:31,1.27e-05,starting 'fast non-dom sort
+07:10:31,4.7e-06,fill domination containers
+07:10:31,0.0070259,finding first front
+07:10:31,1.53e-05,sorting remaining fronts
+07:10:31,0.0179838,updating archive
+07:10:31,0.000433,adding 8 non-dominated members to archive
+07:10:31,0.0004921,pareto dominance sorting archive of size 108
+07:10:31,3.75e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 108 population members
+07:10:31,2.24e-05,ParetoObjectives::update() for  108 population members
+07:10:31,1.74e-05,preparing fast-lookup containers
+07:10:31,0.0038783,checking for duplicate solutions
+07:10:31,0.001407,calculating fitness
+07:10:31,7.7e-06,get_spea_fitness
+07:10:31,0.0007895,fill domination containers
+07:10:31,0.0085668,pareto front sorting
+07:10:31,1.9e-05,starting 'fast non-dom sort
+07:10:31,5.6e-06,fill domination containers
+07:10:31,0.0084848,finding first front
+07:10:31,5.06e-05,sorting remaining fronts
+07:10:31,0.0260292,resizing archive from 108 to 106 current non-dominated solutions
+07:10:31,0.0004577,trimming archive size from 106 to max archive size 100
+07:10:31,0.0001855,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:31,1.92e-05,ParetoObjectives::update() for  100 population members
+07:10:31,1.75e-05,preparing fast-lookup containers
+07:10:31,0.00318,checking for duplicate solutions
+07:10:31,0.0012144,calculating fitness
+07:10:31,5.6e-06,get_spea_fitness
+07:10:31,0.0007059,fill domination containers
+07:10:31,0.0079008,pareto front sorting
+07:10:31,3.75e-05,starting 'fast non-dom sort
+07:10:31,6.7e-06,fill domination containers
+07:10:31,0.007086,finding first front
+07:10:31,2.36e-05,sorting remaining fronts
+07:10:31,0.027858,saved decision variable population of size 100 X 2 to 'fon.archive.dv_pop.csv'
+07:10:31,0.0044226,saved generation-specific decision variable population of size 100 X 2 to 'fon.17.archive.dv_pop.csv'
+07:10:31,0.0029923,saved observation population of size 100 X 4 to 'fon.archive.obs_pop.csv'
+07:10:31,0.0045259,saved generation-specific observation population of size 100 X 4 to 'fon.17.archive.obs_pop.csv'
+07:10:31,0.0004643,resizing current populations to  50
+07:10:31,0.0007062,generation 17 decision variable summary:
+07:10:31,0.0008707,generation 17 decision variable change summary:
+07:10:31,0.0012077,generation 17 objective function summary:
+07:10:31,0.0003431,seeking optimal trade-off point for single 'optimal' chance point runs
+07:10:31,0.000638,using member GEN=16_MEMBER=784_PSO as single, 'optimal' point
+   with distance of 0.717134 from optimal trade - off
+07:10:31,0.0010327,generation 17 objective function change summary:
+07:10:31,0.00107,number of feasible solutions at the end of generation 17: 100
+07:10:31,0.0006027,starting generation  18
+07:10:31,2.98e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:10:31,1.45e-05,ParetoObjectives::update() for  50 population members
+07:10:31,1.02e-05,preparing fast-lookup containers
+07:10:31,0.0016596,checking for duplicate solutions
+07:10:31,0.0006446,calculating fitness
+07:10:31,1.38e-05,get_spea_fitness
+07:10:31,0.0003047,fill domination containers
+07:10:31,0.0024808,pareto front sorting
+07:10:31,3.01e-05,starting 'fast non-dom sort
+07:10:31,6.6e-06,fill domination containers
+07:10:31,0.0018499,finding first front
+07:10:31,1.67e-05,sorting remaining fronts
+07:10:31,0.0066211,generating PSO population of size 50
+07:10:31,1.62e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:31,6.1e-06,ParetoObjectives::update() for  100 population members
+07:10:31,4.5e-06,preparing fast-lookup containers
+07:10:31,0.0032045,checking for duplicate solutions
+07:10:31,0.0012403,calculating fitness
+07:10:31,5.3e-06,get_spea_fitness
+07:10:31,0.0007443,fill domination containers
+07:10:31,0.0099295,pareto front sorting
+07:10:31,3.32e-05,starting 'fast non-dom sort
+07:10:31,6.2e-06,fill domination containers
+07:10:31,0.0072628,finding first front
+07:10:31,2.45e-05,sorting remaining fronts
+07:10:31,0.048398,running population of size  50
+07:10:31,4.42e-05,queuing 50 runs
+07:10:31,0.017616,making runs
+07:10:36,4.7106,processing runs
+07:10:36,0.0032366,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:10:36,0.0019233,saved generation-specific decision variable population of size 50 X 2 to 'fon.18.dv_pop.csv'
+07:10:36,0.0025424,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:10:36,0.0026558,saved generation-specific observation population of size 50 X 4 to 'fon.18.obs_pop.csv'
+07:10:36,0.0249573,ParetoObjectives::update() for  100 population members
+07:10:36,3.55e-05,preparing fast-lookup containers
+07:10:36,0.0029491,checking for duplicate solutions
+07:10:36,0.0012816,calculating fitness
+07:10:36,7.3e-06,get_spea_fitness
+07:10:36,0.0006814,fill domination containers
+07:10:36,0.0072876,pareto front sorting
+07:10:36,1.96e-05,starting 'fast non-dom sort
+07:10:36,5.2e-06,fill domination containers
+07:10:36,0.0072325,finding first front
+07:10:36,4.54e-05,sorting remaining fronts
+07:10:36,0.0001182,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:36,6.3e-06,ParetoObjectives::update() for  100 population members
+07:10:36,7.7e-06,preparing fast-lookup containers
+07:10:36,0.0028931,checking for duplicate solutions
+07:10:36,0.0012437,calculating fitness
+07:10:36,7.1e-06,get_spea_fitness
+07:10:36,0.0006958,fill domination containers
+07:10:36,0.0071026,pareto front sorting
+07:10:36,1.8e-05,starting 'fast non-dom sort
+07:10:36,7.4e-06,fill domination containers
+07:10:36,0.0073655,finding first front
+07:10:36,5.99e-05,sorting remaining fronts
+07:10:36,0.0139298,pareto dominance sorting combined parent-child populations of size  100
+07:10:36,3.4e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:36,1.81e-05,ParetoObjectives::update() for  100 population members
+07:10:36,1.44e-05,preparing fast-lookup containers
+07:10:36,0.0029594,checking for duplicate solutions
+07:10:36,0.0012764,calculating fitness
+07:10:36,6.7e-06,get_spea_fitness
+07:10:36,0.0006855,fill domination containers
+07:10:36,0.0070741,pareto front sorting
+07:10:36,5e-06,starting 'fast non-dom sort
+07:10:36,4.2e-06,fill domination containers
+07:10:36,0.007053,finding first front
+07:10:36,1.79e-05,sorting remaining fronts
+07:10:36,0.0154516,updating archive
+07:10:36,0.0003101,adding 6 non-dominated members to archive
+07:10:36,0.0003013,pareto dominance sorting archive of size 106
+07:10:36,2.98e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 106 population members
+07:10:36,1.87e-05,ParetoObjectives::update() for  106 population members
+07:10:36,9.4e-06,preparing fast-lookup containers
+07:10:36,0.0034264,checking for duplicate solutions
+07:10:36,0.0014452,calculating fitness
+07:10:36,1.29e-05,get_spea_fitness
+07:10:36,0.0008158,fill domination containers
+07:10:36,0.0084222,pareto front sorting
+07:10:36,2.4e-05,starting 'fast non-dom sort
+07:10:36,5.2e-06,fill domination containers
+07:10:36,0.0080589,finding first front
+07:10:36,2.28e-05,sorting remaining fronts
+07:10:36,0.0271075,resizing archive from 106 to 106 current non-dominated solutions
+07:10:36,0.0004392,trimming archive size from 106 to max archive size 100
+07:10:36,0.0001697,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:36,2.44e-05,ParetoObjectives::update() for  100 population members
+07:10:36,6.2e-06,preparing fast-lookup containers
+07:10:36,0.0030063,checking for duplicate solutions
+07:10:36,0.0011608,calculating fitness
+07:10:36,5.6e-06,get_spea_fitness
+07:10:36,0.0006794,fill domination containers
+07:10:36,0.0072843,pareto front sorting
+07:10:36,1.79e-05,starting 'fast non-dom sort
+07:10:36,6.5e-06,fill domination containers
+07:10:36,0.0075328,finding first front
+07:10:36,4.84e-05,sorting remaining fronts
+07:10:36,0.0265407,saved decision variable population of size 100 X 2 to 'fon.archive.dv_pop.csv'
+07:10:36,0.0038087,saved generation-specific decision variable population of size 100 X 2 to 'fon.18.archive.dv_pop.csv'
+07:10:36,0.0031209,saved observation population of size 100 X 4 to 'fon.archive.obs_pop.csv'
+07:10:36,0.0043187,saved generation-specific observation population of size 100 X 4 to 'fon.18.archive.obs_pop.csv'
+07:10:36,0.0005415,resizing current populations to  50
+07:10:36,0.000665,generation 18 decision variable summary:
+07:10:36,0.0010095,generation 18 decision variable change summary:
+07:10:36,0.0013749,generation 18 objective function summary:
+07:10:36,0.000369,seeking optimal trade-off point for single 'optimal' chance point runs
+07:10:36,0.0006649,using member GEN=18_MEMBER=888_PSO as single, 'optimal' point
+   with distance of 0.714741 from optimal trade - off
+07:10:36,0.0009828,generation 18 objective function change summary:
+07:10:36,0.0019256,number of feasible solutions at the end of generation 18: 100
+07:10:36,0.0008262,starting generation  19
+07:10:36,3.17e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:10:36,1.36e-05,ParetoObjectives::update() for  50 population members
+07:10:36,1.13e-05,preparing fast-lookup containers
+07:10:36,0.0016639,checking for duplicate solutions
+07:10:36,0.000643,calculating fitness
+07:10:36,1.38e-05,get_spea_fitness
+07:10:36,0.0003123,fill domination containers
+07:10:36,0.0032638,pareto front sorting
+07:10:36,2.45e-05,starting 'fast non-dom sort
+07:10:36,6.4e-06,fill domination containers
+07:10:36,0.0018398,finding first front
+07:10:36,2.02e-05,sorting remaining fronts
+07:10:36,0.0062605,generating PSO population of size 50
+07:10:36,2.62e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:36,1.82e-05,ParetoObjectives::update() for  100 population members
+07:10:36,9.8e-06,preparing fast-lookup containers
+07:10:36,0.0031944,checking for duplicate solutions
+07:10:36,0.0011867,calculating fitness
+07:10:36,7.2e-06,get_spea_fitness
+07:10:36,0.0006874,fill domination containers
+07:10:36,0.0071212,pareto front sorting
+07:10:36,1.55e-05,starting 'fast non-dom sort
+07:10:36,4.6e-06,fill domination containers
+07:10:36,0.0071751,finding first front
+07:10:36,6.02e-05,sorting remaining fronts
+07:10:36,0.0494351,running population of size  50
+07:10:36,4.98e-05,queuing 50 runs
+07:10:36,0.0188744,making runs
+07:10:41,4.70485,processing runs
+07:10:41,0.0032285,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:10:41,0.0023802,saved generation-specific decision variable population of size 50 X 2 to 'fon.19.dv_pop.csv'
+07:10:41,0.0021472,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:10:41,0.0034929,saved generation-specific observation population of size 50 X 4 to 'fon.19.obs_pop.csv'
+07:10:41,0.0257588,ParetoObjectives::update() for  100 population members
+07:10:41,3.94e-05,preparing fast-lookup containers
+07:10:41,0.0029571,checking for duplicate solutions
+07:10:41,0.0019754,calculating fitness
+07:10:41,1.92e-05,get_spea_fitness
+07:10:41,0.0010722,fill domination containers
+07:10:41,0.0076041,pareto front sorting
+07:10:41,2.23e-05,starting 'fast non-dom sort
+07:10:41,4.9e-06,fill domination containers
+07:10:41,0.0070765,finding first front
+07:10:41,1.95e-05,sorting remaining fronts
+07:10:41,0.0001022,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:41,5.4e-06,ParetoObjectives::update() for  100 population members
+07:10:41,4.3e-06,preparing fast-lookup containers
+07:10:41,0.0028192,checking for duplicate solutions
+07:10:41,0.0011848,calculating fitness
+07:10:41,5.4e-06,get_spea_fitness
+07:10:41,0.0006895,fill domination containers
+07:10:41,0.0072658,pareto front sorting
+07:10:41,3.78e-05,starting 'fast non-dom sort
+07:10:41,6e-06,fill domination containers
+07:10:41,0.0076548,finding first front
+07:10:41,4.65e-05,sorting remaining fronts
+07:10:41,0.0151355,pareto dominance sorting combined parent-child populations of size  100
+07:10:41,2.01e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:41,6.8e-06,ParetoObjectives::update() for  100 population members
+07:10:41,4.9e-06,preparing fast-lookup containers
+07:10:41,0.0030307,checking for duplicate solutions
+07:10:41,0.0012092,calculating fitness
+07:10:41,5.4e-06,get_spea_fitness
+07:10:41,0.0006996,fill domination containers
+07:10:41,0.0073261,pareto front sorting
+07:10:41,2.33e-05,starting 'fast non-dom sort
+07:10:41,5.7e-06,fill domination containers
+07:10:41,0.0069033,finding first front
+07:10:41,1.59e-05,sorting remaining fronts
+07:10:41,0.0167475,updating archive
+07:10:41,0.0003264,adding 3 non-dominated members to archive
+07:10:41,0.0002308,pareto dominance sorting archive of size 103
+07:10:41,3.75e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 103 population members
+07:10:41,8.2e-06,ParetoObjectives::update() for  103 population members
+07:10:41,4.8e-06,preparing fast-lookup containers
+07:10:41,0.0033406,checking for duplicate solutions
+07:10:41,0.0013149,calculating fitness
+07:10:41,2.3e-05,get_spea_fitness
+07:10:41,0.0007238,fill domination containers
+07:10:41,0.0075341,pareto front sorting
+07:10:41,1.05e-05,starting 'fast non-dom sort
+07:10:41,4.7e-06,fill domination containers
+07:10:41,0.0074153,finding first front
+07:10:41,3.5e-05,sorting remaining fronts
+07:10:41,0.0246066,resizing archive from 103 to 103 current non-dominated solutions
+07:10:41,0.0004217,trimming archive size from 103 to max archive size 100
+07:10:41,0.00021,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:41,2.26e-05,ParetoObjectives::update() for  100 population members
+07:10:41,5.8e-06,preparing fast-lookup containers
+07:10:41,0.0031084,checking for duplicate solutions
+07:10:41,0.0011626,calculating fitness
+07:10:41,4.5e-06,get_spea_fitness
+07:10:41,0.0006716,fill domination containers
+07:10:41,0.0077607,pareto front sorting
+07:10:41,5.52e-05,starting 'fast non-dom sort
+07:10:41,6.9e-06,fill domination containers
+07:10:41,0.0074167,finding first front
+07:10:41,5.07e-05,sorting remaining fronts
+07:10:41,0.0259169,saved decision variable population of size 100 X 2 to 'fon.archive.dv_pop.csv'
+07:10:41,0.0038683,saved generation-specific decision variable population of size 100 X 2 to 'fon.19.archive.dv_pop.csv'
+07:10:41,0.0026795,saved observation population of size 100 X 4 to 'fon.archive.obs_pop.csv'
+07:10:41,0.0039865,saved generation-specific observation population of size 100 X 4 to 'fon.19.archive.obs_pop.csv'
+07:10:41,0.0006387,resizing current populations to  50
+07:10:41,0.0008506,generation 19 decision variable summary:
+07:10:41,0.0010852,generation 19 decision variable change summary:
+07:10:41,0.0011458,generation 19 objective function summary:
+07:10:41,0.0003248,seeking optimal trade-off point for single 'optimal' chance point runs
+07:10:41,0.0005818,using member GEN=18_MEMBER=888_PSO as single, 'optimal' point
+   with distance of 0.714741 from optimal trade - off
+07:10:41,0.0008853,generation 19 objective function change summary:
+07:10:41,0.0011655,number of feasible solutions at the end of generation 19: 100
+07:10:41,0.0006385,starting generation  20
+07:10:41,2.56e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 50 population members
+07:10:41,1.3e-05,ParetoObjectives::update() for  50 population members
+07:10:41,9.5e-06,preparing fast-lookup containers
+07:10:41,0.0010966,checking for duplicate solutions
+07:10:41,0.00038,calculating fitness
+07:10:41,7.5e-06,get_spea_fitness
+07:10:41,0.0001942,fill domination containers
+07:10:41,0.0019267,pareto front sorting
+07:10:41,5.4e-06,starting 'fast non-dom sort
+07:10:41,5.5e-06,fill domination containers
+07:10:41,0.0018983,finding first front
+07:10:41,2.19e-05,sorting remaining fronts
+07:10:41,0.0065706,generating PSO population of size 50
+07:10:41,4.38e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:41,1.19e-05,ParetoObjectives::update() for  100 population members
+07:10:41,9.5e-06,preparing fast-lookup containers
+07:10:41,0.0031742,checking for duplicate solutions
+07:10:41,0.0012183,calculating fitness
+07:10:41,6.2e-06,get_spea_fitness
+07:10:41,0.0007026,fill domination containers
+07:10:41,0.0094706,pareto front sorting
+07:10:41,3.27e-05,starting 'fast non-dom sort
+07:10:41,7.1e-06,fill domination containers
+07:10:41,0.007401,finding first front
+07:10:41,2.84e-05,sorting remaining fronts
+07:10:41,0.0500675,running population of size  50
+07:10:41,3.84e-05,queuing 50 runs
+07:10:41,0.013464,making runs
+07:10:46,4.69,processing runs
+07:10:46,0.003463,saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+07:10:46,0.0022594,saved generation-specific decision variable population of size 50 X 2 to 'fon.20.dv_pop.csv'
+07:10:46,0.0022966,saved observation population of size 50 X 4 to 'fon.obs_pop.csv'
+07:10:46,0.0032013,saved generation-specific observation population of size 50 X 4 to 'fon.20.obs_pop.csv'
+07:10:46,0.0254226,ParetoObjectives::update() for  100 population members
+07:10:46,2.86e-05,preparing fast-lookup containers
+07:10:46,0.0030055,checking for duplicate solutions
+07:10:46,0.0012667,calculating fitness
+07:10:46,9.1e-06,get_spea_fitness
+07:10:46,0.0007022,fill domination containers
+07:10:46,0.0080866,pareto front sorting
+07:10:46,3.91e-05,starting 'fast non-dom sort
+07:10:46,6.5e-06,fill domination containers
+07:10:46,0.0074839,finding first front
+07:10:46,2.62e-05,sorting remaining fronts
+07:10:46,0.0001142,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:46,6.4e-06,ParetoObjectives::update() for  100 population members
+07:10:46,4.2e-06,preparing fast-lookup containers
+07:10:46,0.0028931,checking for duplicate solutions
+07:10:46,0.0011488,calculating fitness
+07:10:46,6.4e-06,get_spea_fitness
+07:10:46,0.0007047,fill domination containers
+07:10:46,0.0075072,pareto front sorting
+07:10:46,5.5e-05,starting 'fast non-dom sort
+07:10:46,6.1e-06,fill domination containers
+07:10:46,0.0071734,finding first front
+07:10:46,1.79e-05,sorting remaining fronts
+07:10:46,0.014671,pareto dominance sorting combined parent-child populations of size  100
+07:10:46,2.48e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:46,6.3e-06,ParetoObjectives::update() for  100 population members
+07:10:46,4.4e-06,preparing fast-lookup containers
+07:10:46,0.003079,checking for duplicate solutions
+07:10:46,0.001197,calculating fitness
+07:10:46,8.9e-06,get_spea_fitness
+07:10:46,0.0007424,fill domination containers
+07:10:46,0.007197,pareto front sorting
+07:10:46,5.1e-06,starting 'fast non-dom sort
+07:10:46,4.6e-06,fill domination containers
+07:10:46,0.0071553,finding first front
+07:10:46,1.83e-05,sorting remaining fronts
+07:10:46,0.0171467,updating archive
+07:10:46,0.0002597,adding 5 non-dominated members to archive
+07:10:46,0.0003744,pareto dominance sorting archive of size 105
+07:10:46,1.79e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 105 population members
+07:10:46,6.7e-06,ParetoObjectives::update() for  105 population members
+07:10:46,4.6e-06,preparing fast-lookup containers
+07:10:46,0.003363,checking for duplicate solutions
+07:10:46,0.0012832,calculating fitness
+07:10:46,5.1e-06,get_spea_fitness
+07:10:46,0.0007115,fill domination containers
+07:10:46,0.0079957,pareto front sorting
+07:10:46,1.66e-05,starting 'fast non-dom sort
+07:10:46,5.1e-06,fill domination containers
+07:10:46,0.0077487,finding first front
+07:10:46,2.96e-05,sorting remaining fronts
+07:10:46,0.0278206,resizing archive from 105 to 103 current non-dominated solutions
+07:10:46,0.0004184,trimming archive size from 103 to max archive size 100
+07:10:46,0.0001826,ParetoObjectives::get_nsga2_pareto_dominance() for 100 population members
+07:10:46,1.28e-05,ParetoObjectives::update() for  100 population members
+07:10:46,9.7e-06,preparing fast-lookup containers
+07:10:46,0.003242,checking for duplicate solutions
+07:10:46,0.0013039,calculating fitness
+07:10:46,7e-06,get_spea_fitness
+07:10:46,0.0007142,fill domination containers
+07:10:46,0.0072812,pareto front sorting
+07:10:46,2.91e-05,starting 'fast non-dom sort
+07:10:46,5.5e-06,fill domination containers
+07:10:46,0.0070124,finding first front
+07:10:46,2.13e-05,sorting remaining fronts
+07:10:46,0.027568,saved decision variable population of size 100 X 2 to 'fon.archive.dv_pop.csv'
+07:10:46,0.0028916,saved generation-specific decision variable population of size 100 X 2 to 'fon.20.archive.dv_pop.csv'
+07:10:46,0.0031545,saved observation population of size 100 X 4 to 'fon.archive.obs_pop.csv'
+07:10:46,0.0047256,saved generation-specific observation population of size 100 X 4 to 'fon.20.archive.obs_pop.csv'
+07:10:46,0.0005177,resizing current populations to  50
+07:10:46,0.0007553,generation 20 decision variable summary:
+07:10:46,0.0011479,generation 20 decision variable change summary:
+07:10:46,0.001408,generation 20 objective function summary:
+07:10:46,0.0004531,seeking optimal trade-off point for single 'optimal' chance point runs
+07:10:46,0.0006837,using member GEN=18_MEMBER=888_PSO as single, 'optimal' point
+   with distance of 0.707302 from optimal trade - off
+07:10:46,0.0010648,generation 20 objective function change summary:
+07:10:46,0.0007162,number of feasible solutions at the end of generation 20: 100

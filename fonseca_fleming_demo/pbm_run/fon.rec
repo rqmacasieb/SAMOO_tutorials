@@ -1,0 +1,2021 @@
+              pestpp-mou: multi-objective optimization under uncertainty
+                         by the PEST++ developement team
+
+
+
+
+
+version: 5.2.5
+binary compiled on Apr  7 2025 at 11:15:18
+
+using control file: "fon.pst"
+in directory: "c:\Users\mac732\OneDrive - CSIRO\Documents\GitHub\SAMOO_tutorials\fonseca_fleming_demo\pbm_run"
+on host: "DUMPLING-FL"
+started at 04/08/25 23:09:19
+
+on host: "DUMPLING-FL"
+
+Note: 3 unused lines in pest control file:
+  -->  line number 6: '1.000000E+01   2.000000E+00   3.000000E-01   1.000000E-02         8' 
+  -->  line number 10: '1         1         1' 
+  -->  line number 12: '1' 
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+Case dimensions:- 
+    Number of parameters = 2
+    Number of adjustable parameters = 2
+    Number of observations = 2
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 20
+    phiredstp = 0.01
+    nphistp = 3
+    nphinored = 3
+    relparstp = 0.01
+    nrelpar = 3
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+forgive_unknown_args: 0
+max_run_fail: 3
+panther_poll_interval: 1
+parameter_covariance: 
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 1.15
+overdue_giveup_fac: 100
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+tpl_force_decimal: 0
+additional_ins_delimiters: 
+random_seed: 358183147
+num_tpl_ins_threads: 1
+save_binary: 0
+ensemble_output_precision: 6
+panther_echo: 1
+panther_agent_restart_on_error: 0
+panther_agent_no_ping_timeout_secs: -1
+panther_debug_loop: 0
+debug_check_par_en_consistency: 0
+panther_agent_freeze_on_fail: 1
+panther_transfer_on_finish: 
+panther_transfer_on_fail: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 0
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0
+glm_iter_mc: 0
+glm_high_2nd_iter_phi: 0
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+sweep_include_regul_phi: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: DECVAR,
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_chance_points: SINGLE
+
+...pestpp-sqp options:
+sqp_dv_en: 
+sqp_obs_restart_en: 
+sqp_num_reals: -1
+sqp_update_hessian: 0
+sqp_scale_facs:
+  1e-05
+  0.0001
+  0.0005
+  0.001
+  0.0025
+  0.005
+  0.01
+  0.05
+  0.075
+  0.1
+  0.25
+  0.5
+  1
+  2
+  5
+  10
+
+...pestpp-mou options:
+mou_generator: pso
+mou_population_size: 50
+mou_dv_population_file: starter.dv_pop.csv
+mou_obs_population_restart_file: 
+mou_objectives: 
+  OBJ1
+  OBJ2
+mou_max_archive_size: 500
+mou_risk_objective: 0
+mou_verbose_level: 1
+mou_env_selector: NSGA
+mou_mating_selector: TOURNAMENT
+mou_crossover_prob: 0.75
+mou_mutation_prob: -999
+mou_de_f: 0.8
+mou_save_population_every: 1
+mou_pso_omega: 0.7
+mou_pso_inertia (IINER, FINERT, INITER): 
+ 0.7  0.4  0 
+mou_pso_social_const: 
+ 2
+mou_pso_cognitive: 
+ 2
+mou_pso_alpha: 2
+mou_pso_rramp: -500
+mou_pso_rfit: 2
+mou_pso_vmax_factor: 0.8
+mou_pso_dv_bound_restoration: ITERATIVE
+mou_max_nn_search: 100
+mou_outer_repo_obs_file: 
+mou_hypervolume_extreme: 1e+10
+mou_infill_size: 100
+mou_ppd_beta: 0.5
+mou_fit_gamma: 0.25
+mou_fit_epsilon: 0.05
+mou_population_schedule: 
+mou_simplex_reflections:10
+mou_simplex_factors: 
+ 0.5
+ 0.6
+ 0.7
+ 0.8
+mou_simplex_mutation: 0
+mou_use_multigen:0
+mou_shuffle_fixed_pars: 0
+
+...shared pestpp-ies/pestpp-da options:
+(note: 'da' args override 'ies' args when using pestpp-da)
+ies_parameter_ensemble: 
+ies_observation_ensemble: 
+ies_weights_ensemble: 
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.1,1,10,
+ies_initial_lambda: 0
+ies_use_approx: 1
+ies_subset_size: 4
+ies_reg_factor: 0
+ies_verbose_level: 1
+ies_use_prior_scaling: 0
+ies_num_reals: 50
+ies_bad_phi: 1e+300
+ies_bad_phi_sigma: 1e+300
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+ies_use_mda: 0
+ies_mda_init_fac: 10
+ies_mda_dec_fac: 0.5
+ies_localization_type: LOCAL
+ies_upgrades_in_memory: 1
+ies_ordered_binary: 1
+ies_multimodal_alpha: 1
+ies_localizer_forgive_extra: 0
+ies_phi_factors_file: 
+ies_phi_factors_by_real: 0
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+
+pestpp-da options (those not shared with pestpp-ies):
+da_parameter_cycle_table: 
+da_observation_cycle_table: 
+da_hotstart_cycle: 0
+da_stop_cycle: 1000000000
+da_use_simulated_states: 1
+da_noptmax_schedule: 
+
+
+
+Model command line(s):- 
+    python forward_pbrun.py
+
+Model interface files:-
+    template files:
+      dv_tpl.dat
+    model input files:
+      dv.dat
+
+    instruction files:
+      output.ins
+    model output files:
+      output.dat
+
+
+Parameter group information
+NAME          INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+decvar              ABSOLUTE                        1                        0         SWITCH                        1
+
+
+
+Parameter information
+NAME         TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND        GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+x1           none                  RELATIVE              1             -4              4       decvar              1              0                   1
+x2           none                  RELATIVE              1             -4              4       decvar              1              0                   1
+
+
+
+Observation information
+NAME                                VALUE                GROUP              WEIGHT
+obj1                                    0                l_obj                   1
+obj2                                    0                l_obj                   1
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 10000000
+    eigthresh = 1e-06
+
+
+
+
+
+
+  ---  initializing MOEA process  ---  
+...population schedule: generation,population size:
+...   0, 50
+...   1, 50
+...   2, 50
+...   3, 50
+...   4, 50
+...   5, 50
+...   6, 50
+...   7, 50
+...   8, 50
+...   9, 50
+...   10, 50
+...   11, 50
+...   12, 50
+...   13, 50
+...   14, 50
+...   15, 50
+...   16, 50
+...   17, 50
+...   18, 50
+...   19, 50
+...using 'nsga2' env selector
+...using binary tournament mating pool selector
+...saving generation specific populations and archives every nth generation 1
+'opt_dec_var_groups' passed, using 2 adjustable parameters as decision variables
+decision variables:
+X1 X2 
+...number of decision variables:  2
+...max run fail:  3
+...'opt_chance_points' = SINGLE, evaluting chance at representative point
+...using the following observations as objectives: 
+                          OBJ1   minimize
+                          OBJ2   minimize
+
+  ---  observation constraints and/or objectives ---  
+name                 sense          value          
+OBJ1                 less_than      0              
+OBJ2                 less_than      0              
+...using particle swarm generator
+...loading dv population from csv file starter.dv_pop.csv
+...dv population with 50 members read from 'starter.dv_pop.csv'
+
+checking for denormal values in dv population
+... saved initial dv population to  fon.0.dv_pop.csv
+...running initial population of size 50
+...running population of size  50
+... saved observation population to  fon.0.obs_pop.csv
+
+  ---  initial population decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -40.00800646             2.30335    -3.85567     3.90096
+X2                          4        -4-0.00316535             2.30833    -3.98877     3.88687
+
+
+  ---  initial population objective function summary:  ---  
+using member GEN=0_MEMBER=6 as nearest-to-mean single point
+    with distance of 0.0843752 from mean of decision variable population
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.9357421    0.1742784     0.155598            1    0.6030255
+OBJ2                  minimize     0.947217    0.1407466    0.3436665            1    0.6649252
+
+... saved initial dv population to  fon.0.dv_pop.csv
+...performing initial pareto dominance sort
+WARNING: 1 duplicate solutions found:
+GEN=0_MEMBER=27 
+...pareto dominance sort yielded 13 domination fronts
+4 in the front 1
+3 in the front 2
+4 in the front 3
+3 in the front 4
+6 in the front 5
+6 in the front 6
+5 in the front 7
+5 in the front 8
+3 in the front 9
+(not reporting remaining front membership)
+...wrote pareto summary to fon.pareto.summary.csv
+initialized archives with 4 nondominated members
+...pareto dominance sort yielded 1 domination fronts
+4 in the front 1
+...wrote pareto summary to fon.pareto.archive.summary.csv
+...pareto dominance sort yielded 1 domination fronts
+4 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 4 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 4 X 2 to 'fon.0.archive.dv_pop.csv'
+...saved observation population of size 4 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 4 X 2 to 'fon.0.archive.obs_pop.csv'
+...number of initial feasible solutions: 4
+
+  ---  initialization complete  ---  
+
+  ---  starting generation  1  ---  
+...pareto dominance sort yielded 13 domination fronts
+4 in the front 1
+3 in the front 2
+4 in the front 3
+3 in the front 4
+6 in the front 5
+6 in the front 6
+5 in the front 7
+5 in the front 8
+3 in the front 9
+(not reporting remaining front membership)
+...augmenting PSO population DE population of size 1
+...generating diffevol population of size 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+4 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.1.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.1.obs_pop.csv'
+...pareto dominance sort yielded 24 domination fronts
+6 in the front 1
+5 in the front 2
+8 in the front 3
+5 in the front 4
+6 in the front 5
+6 in the front 6
+5 in the front 7
+7 in the front 8
+9 in the front 9
+(not reporting remaining front membership)
+...pareto dominance sorting combined parent-child populations of size  99
+...pareto dominance sort yielded 24 domination fronts
+6 in the front 1
+5 in the front 2
+8 in the front 3
+5 in the front 4
+6 in the front 5
+6 in the front 6
+5 in the front 7
+7 in the front 8
+9 in the front 9
+(not reporting remaining front membership)
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 3 non-dominated members to archive
+pareto dominance sorting archive of size 7
+...pareto dominance sort yielded 2 domination fronts
+6 in the front 1
+1 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 7 to 6 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+6 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 6 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 6 X 2 to 'fon.1.archive.dv_pop.csv'
+...saved observation population of size 6 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 6 X 2 to 'fon.1.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 1 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4-0.0859321              1.2591    -2.48207     2.28823
+X2                          4        -4 0.0539542             1.49352    -2.51579     2.74632
+
+
+  ---  generation 1 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                   0.0939385    1173.28    1.61273    41.3419    -1.3736          0
+X2                  -0.0571196          0    1.14055    29.3437   -1.47297          0
+
+
+  ---  generation 1 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=0_MEMBER=20 as single, 'optimal' point
+   with distance of 0.6304 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.8452015    0.2490888    0.0187554    0.9999994     0.155598
+OBJ2                  minimize    0.8700736    0.1866248    0.3311397    0.9999998    0.9465081
+
+
+  ---  generation 1 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0905406     9.67581 5.56292e-07 5.56292e-05    0.136843     87.9462    0.447428     74.1971
+OBJ2                   0.0771435     8.14422 1.53659e-07 1.53659e-05   0.0125268     3.64504   -0.281583    -42.3481
+
+...number of feasible solutions at the end of generation 1: 6
+
+  ---  starting generation  2  ---  
+...pareto dominance sort yielded 9 domination fronts
+6 in the front 1
+5 in the front 2
+8 in the front 3
+5 in the front 4
+6 in the front 5
+6 in the front 6
+5 in the front 7
+7 in the front 8
+2 in the front 9
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+6 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.2.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.2.obs_pop.csv'
+...pareto dominance sort yielded 18 domination fronts
+7 in the front 1
+6 in the front 2
+8 in the front 3
+7 in the front 4
+6 in the front 5
+9 in the front 6
+8 in the front 7
+8 in the front 8
+8 in the front 9
+(not reporting remaining front membership)
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 18 domination fronts
+7 in the front 1
+6 in the front 2
+8 in the front 3
+7 in the front 4
+6 in the front 5
+9 in the front 6
+8 in the front 7
+8 in the front 8
+8 in the front 9
+(not reporting remaining front membership)
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 3 non-dominated members to archive
+pareto dominance sorting archive of size 9
+...pareto dominance sort yielded 2 domination fronts
+7 in the front 1
+2 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 9 to 7 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+7 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 7 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 7 X 2 to 'fon.2.archive.dv_pop.csv'
+...saved observation population of size 7 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 7 X 2 to 'fon.2.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 2 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 -0.223259            0.887087     -1.8668     1.67263
+X2                          4        -4  0.218309             1.16225     -1.9014     1.93262
+
+
+  ---  generation 2 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                    0.137327          0   0.615595    26.9027  -0.615278          0
+X2                   -0.164355   -304.619   0.813695    29.6286  -0.614394          0
+
+
+  ---  generation 2 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=0_MEMBER=6 as single, 'optimal' point
+   with distance of 0.85123 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.7867181    0.2548953    0.0187554    0.9999845    0.6030255
+OBJ2                  minimize    0.7990184     0.260846   0.04587702    0.9998367    0.6649252
+
+
+  ---  generation 2 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0584834     6.91946 1.49029e-05  0.00149029           0           0   -0.447428    -287.554
+OBJ2                   0.0710552     8.16657  0.00016319    0.016319    0.285263     86.1457    0.281583     29.7497
+
+...number of feasible solutions at the end of generation 2: 7
+
+  ---  starting generation  3  ---  
+...pareto dominance sort yielded 7 domination fronts
+7 in the front 1
+6 in the front 2
+8 in the front 3
+7 in the front 4
+6 in the front 5
+9 in the front 6
+7 in the front 7
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+7 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.3.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.3.obs_pop.csv'
+...pareto dominance sort yielded 15 domination fronts
+11 in the front 1
+9 in the front 2
+9 in the front 3
+10 in the front 4
+8 in the front 5
+8 in the front 6
+11 in the front 7
+6 in the front 8
+9 in the front 9
+(not reporting remaining front membership)
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 15 domination fronts
+11 in the front 1
+9 in the front 2
+9 in the front 3
+10 in the front 4
+8 in the front 5
+8 in the front 6
+11 in the front 7
+6 in the front 8
+9 in the front 9
+(not reporting remaining front membership)
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 4 non-dominated members to archive
+pareto dominance sorting archive of size 11
+...pareto dominance sort yielded 1 domination fronts
+11 in the front 1
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 11 to 11 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+11 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 11 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 11 X 2 to 'fon.3.archive.dv_pop.csv'
+...saved observation population of size 11 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 11 X 2 to 'fon.3.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 3 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0129686            0.874651    -1.45955     1.67263
+X2                          4        -4  0.107143            0.916195    -1.60848     1.61871
+
+
+  ---  generation 3 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                   -0.236228          0          0          0  -0.407245          0
+X2                    0.111166    50.9214   0.313907    16.2426  -0.292922          0
+
+
+  ---  generation 3 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=0_MEMBER=6 as single, 'optimal' point
+   with distance of 0.85123 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.7009966    0.2828195    0.0187554    0.9997482    0.6030255
+OBJ2                  minimize    0.7504818    0.2754863   0.04587702    0.9998184    0.6649252
+
+
+  ---  generation 3 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0857216     10.8961 0.000236369   0.0236373           0           0           0           0
+OBJ2                   0.0485365     6.07452 1.82179e-05  0.00182209           0           0           0           0
+
+...number of feasible solutions at the end of generation 3: 11
+
+  ---  starting generation  4  ---  
+...pareto dominance sort yielded 6 domination fronts
+11 in the front 1
+9 in the front 2
+9 in the front 3
+10 in the front 4
+8 in the front 5
+3 in the front 6
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+11 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.4.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.4.obs_pop.csv'
+...pareto dominance sort yielded 15 domination fronts
+16 in the front 1
+10 in the front 2
+9 in the front 3
+11 in the front 4
+8 in the front 5
+9 in the front 6
+9 in the front 7
+6 in the front 8
+5 in the front 9
+(not reporting remaining front membership)
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 15 domination fronts
+16 in the front 1
+10 in the front 2
+9 in the front 3
+11 in the front 4
+8 in the front 5
+9 in the front 6
+9 in the front 7
+6 in the front 8
+5 in the front 9
+(not reporting remaining front membership)
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 8 non-dominated members to archive
+pareto dominance sorting archive of size 19
+...pareto dominance sort yielded 2 domination fronts
+16 in the front 1
+3 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 19 to 16 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+16 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 16 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 16 X 2 to 'fon.4.archive.dv_pop.csv'
+...saved observation population of size 16 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 16 X 2 to 'fon.4.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 4 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0238396            0.746084    -1.45955     1.46818
+X2                          4        -4 0.0924135            0.751072    -1.60848     1.45755
+
+
+  ---  generation 4 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                   -0.010871   -83.8253   0.204449    12.2232          0          0
+X2                   0.0147293    13.7473   0.161167    9.95648          0          0
+
+
+  ---  generation 4 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=4_MEMBER=161_PSO as single, 'optimal' point
+   with distance of 0.850939 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.6166132    0.3065275   0.01384255    0.9993076    0.5218264
+OBJ2                  minimize    0.7225551    0.2882006   0.04587702    0.9988603    0.7285547
+
+
+  ---  generation 4 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0843834     12.0376 0.000440605   0.0440716  0.00491285     26.1943   0.0811991     13.4653
+OBJ2                   0.0279267     3.72117 0.000958095   0.0958269           0           0  -0.0636295    -9.56942
+
+...number of feasible solutions at the end of generation 4: 16
+
+  ---  starting generation  5  ---  
+...pareto dominance sort yielded 5 domination fronts
+16 in the front 1
+10 in the front 2
+9 in the front 3
+11 in the front 4
+4 in the front 5
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+16 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.5.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.5.obs_pop.csv'
+...pareto dominance sort yielded 14 domination fronts
+19 in the front 1
+14 in the front 2
+11 in the front 3
+9 in the front 4
+15 in the front 5
+6 in the front 6
+7 in the front 7
+7 in the front 8
+5 in the front 9
+(not reporting remaining front membership)
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 14 domination fronts
+19 in the front 1
+14 in the front 2
+11 in the front 3
+9 in the front 4
+15 in the front 5
+6 in the front 6
+7 in the front 7
+7 in the front 8
+5 in the front 9
+(not reporting remaining front membership)
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 9 non-dominated members to archive
+pareto dominance sorting archive of size 25
+...pareto dominance sort yielded 2 domination fronts
+19 in the front 1
+6 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 25 to 19 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+19 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 19 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 19 X 2 to 'fon.5.archive.dv_pop.csv'
+...saved observation population of size 19 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 19 X 2 to 'fon.5.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 5 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0438433            0.583886    -1.00888     1.28358
+X2                          4        -4 0.0255719            0.611419    -1.06429     1.32521
+
+
+  ---  generation 5 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                  -0.0200037   -83.9094   0.184603    12.5736  -0.450674          0
+X2                   0.0668416    72.3288   0.132335    9.07928   -0.54419          0
+
+
+  ---  generation 5 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=4_MEMBER=161_PSO as single, 'optimal' point
+   with distance of 0.875817 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.6053588     0.317127   0.01384255    0.9935948    0.5218264
+OBJ2                  minimize     0.635306    0.3363129   0.01510651    0.9985186    0.7285547
+
+
+  ---  generation 5 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0112544     1.82519   0.0057128    0.571676           0           0           0           0
+OBJ2                   0.0872491     12.0751 0.000341727   0.0342117   0.0307705     67.0717           0           0
+
+...number of feasible solutions at the end of generation 5: 19
+
+  ---  starting generation  6  ---  
+...pareto dominance sort yielded 4 domination fronts
+19 in the front 1
+14 in the front 2
+11 in the front 3
+6 in the front 4
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+19 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.6.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.6.obs_pop.csv'
+...pareto dominance sort yielded 11 domination fronts
+23 in the front 1
+18 in the front 2
+12 in the front 3
+13 in the front 4
+8 in the front 5
+10 in the front 6
+4 in the front 7
+5 in the front 8
+3 in the front 9
+(not reporting remaining front membership)
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 11 domination fronts
+23 in the front 1
+18 in the front 2
+12 in the front 3
+13 in the front 4
+8 in the front 5
+10 in the front 6
+4 in the front 7
+5 in the front 8
+3 in the front 9
+(not reporting remaining front membership)
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 5 non-dominated members to archive
+pareto dominance sorting archive of size 24
+...pareto dominance sort yielded 2 domination fronts
+23 in the front 1
+1 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 24 to 23 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+23 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 23 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 23 X 2 to 'fon.6.archive.dv_pop.csv'
+...saved observation population of size 23 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 23 X 2 to 'fon.6.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 6 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0346997            0.522719   -0.961084     1.03549
+X2                          4        -4-0.0405496            0.527697   -0.987759    0.893105
+
+
+  ---  generation 6 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                  0.00914354    20.8551   0.248095    19.3283 -0.0477932          0
+X2                   0.0661216    258.571   0.432108    32.6067 -0.0765297          0
+
+
+  ---  generation 6 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=4_MEMBER=161_PSO as single, 'optimal' point
+   with distance of 0.875817 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5908425    0.3352266   0.01384255    0.9900066    0.5218264
+OBJ2                  minimize    0.6015974    0.3413712   0.01510651    0.9911592    0.7285547
+
+
+  ---  generation 6 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0145163     2.39796  0.00358815    0.361128           0           0           0           0
+OBJ2                   0.0337087     5.30589  0.00735946    0.737038           0           0           0           0
+
+...number of feasible solutions at the end of generation 6: 23
+
+  ---  starting generation  7  ---  
+...pareto dominance sort yielded 3 domination fronts
+23 in the front 1
+18 in the front 2
+9 in the front 3
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+23 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.7.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.7.obs_pop.csv'
+...pareto dominance sort yielded 10 domination fronts
+27 in the front 1
+16 in the front 2
+18 in the front 3
+13 in the front 4
+10 in the front 5
+7 in the front 6
+5 in the front 7
+2 in the front 8
+1 in the front 9
+(not reporting remaining front membership)
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 10 domination fronts
+27 in the front 1
+16 in the front 2
+18 in the front 3
+13 in the front 4
+10 in the front 5
+7 in the front 6
+5 in the front 7
+2 in the front 8
+1 in the front 9
+(not reporting remaining front membership)
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 9 non-dominated members to archive
+pareto dominance sorting archive of size 32
+...pareto dominance sort yielded 2 domination fronts
+27 in the front 1
+5 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 32 to 27 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+27 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 27 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 27 X 2 to 'fon.7.archive.dv_pop.csv'
+...saved observation population of size 27 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 27 X 2 to 'fon.7.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 7 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0551647            0.436209   -0.821993    0.895329
+X2                          4        -4 0.0483549            0.499277   -0.906109    0.909192
+
+
+  ---  generation 7 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                  -0.0204649   -58.9772   0.140158    13.5354  -0.139092          0
+X2                  -0.0889046          0 -0.0160869   -1.80123   -0.08165          0
+
+
+  ---  generation 7 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=4_MEMBER=161_PSO as single, 'optimal' point
+   with distance of 0.877189 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5589564    0.3278659   0.01384255    0.9879647    0.5218264
+OBJ2                  minimize    0.6217972    0.3252386   0.01342384    0.9943732    0.7285547
+
+
+  ---  generation 7 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0318861     5.39672   0.0020419    0.206251           0           0           0           0
+OBJ2                  -0.0201998     -3.3577 -0.00321409   -0.324275  0.00168267     11.1387           0           0
+
+...number of feasible solutions at the end of generation 7: 27
+
+  ---  starting generation  8  ---  
+...pareto dominance sort yielded 3 domination fronts
+27 in the front 1
+16 in the front 2
+7 in the front 3
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+27 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.8.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.8.obs_pop.csv'
+...pareto dominance sort yielded 10 domination fronts
+37 in the front 1
+20 in the front 2
+15 in the front 3
+10 in the front 4
+4 in the front 5
+6 in the front 6
+3 in the front 7
+3 in the front 8
+1 in the front 9
+(not reporting remaining front membership)
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 10 domination fronts
+37 in the front 1
+20 in the front 2
+15 in the front 3
+10 in the front 4
+4 in the front 5
+6 in the front 6
+3 in the front 7
+3 in the front 8
+1 in the front 9
+(not reporting remaining front membership)
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 13 non-dominated members to archive
+pareto dominance sorting archive of size 40
+...pareto dominance sort yielded 2 domination fronts
+37 in the front 1
+3 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 40 to 37 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+37 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 37 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 37 X 2 to 'fon.8.archive.dv_pop.csv'
+...saved observation population of size 37 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 37 X 2 to 'fon.8.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 8 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0243613            0.390287   -0.697226    0.842858
+X2                          4        -4 0.0397014            0.434549   -0.729115    0.818947
+
+
+  ---  generation 8 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                   0.0308034    55.8389  0.0524705    5.86047  -0.124767          0
+X2                  0.00865359     17.896  0.0902453    9.92587  -0.176994          0
+
+
+  ---  generation 8 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=8_MEMBER=359_PSO as single, 'optimal' point
+   with distance of 0.875512 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5682754     0.317444   0.01384255    0.9765503    0.5642607
+OBJ2                  minimize    0.6030799    0.3119053   0.01341022    0.9869548    0.6942637
+
+
+  ---  generation 8 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                 -0.00931894     -1.6672   0.0114144     1.15535           0           0  -0.0424343    -8.13187
+OBJ2                   0.0187173     3.01019  0.00741844    0.746041 1.36197e-05    0.101459    0.034291     4.70672
+
+...number of feasible solutions at the end of generation 8: 37
+
+  ---  starting generation  9  ---  
+...pareto dominance sort yielded 2 domination fronts
+37 in the front 1
+13 in the front 2
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+37 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.9.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.9.obs_pop.csv'
+...pareto dominance sort yielded 9 domination fronts
+37 in the front 1
+23 in the front 2
+14 in the front 3
+11 in the front 4
+6 in the front 5
+2 in the front 6
+3 in the front 7
+3 in the front 8
+1 in the front 9
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 9 domination fronts
+37 in the front 1
+23 in the front 2
+14 in the front 3
+11 in the front 4
+6 in the front 5
+2 in the front 6
+3 in the front 7
+3 in the front 8
+1 in the front 9
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 9 non-dominated members to archive
+pareto dominance sorting archive of size 46
+...pareto dominance sort yielded 2 domination fronts
+37 in the front 1
+9 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 46 to 37 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+37 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 37 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 37 X 2 to 'fon.9.archive.dv_pop.csv'
+...saved observation population of size 37 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 37 X 2 to 'fon.9.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 9 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4-0.0118579            0.362311   -0.697226    0.821428
+X2                          4        -4 0.0490191            0.404277   -0.729115    0.722598
+
+
+  ---  generation 9 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                   0.0362192    148.675    0.02143    2.54254          0          0
+X2                 -0.00931771   -23.4695  0.0963487     11.765          0          0
+
+
+  ---  generation 9 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=8_MEMBER=359_PSO as single, 'optimal' point
+   with distance of 0.877098 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5754122    0.3020859   0.01132414    0.9765503    0.5642607
+OBJ2                  minimize    0.5981285     0.306257   0.01341022    0.9857909    0.6942637
+
+
+  ---  generation 9 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                 -0.00713686    -1.25588           0           0  0.00251841     18.1932           0           0
+OBJ2                  0.00495141     0.82102  0.00116391     0.11793           0           0           0           0
+
+...number of feasible solutions at the end of generation 9: 37
+
+  ---  starting generation  10  ---  
+...pareto dominance sort yielded 2 domination fronts
+37 in the front 1
+13 in the front 2
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+37 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.10.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.10.obs_pop.csv'
+...pareto dominance sort yielded 6 domination fronts
+50 in the front 1
+26 in the front 2
+9 in the front 3
+6 in the front 4
+6 in the front 5
+3 in the front 6
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 6 domination fronts
+50 in the front 1
+26 in the front 2
+9 in the front 3
+6 in the front 4
+6 in the front 5
+3 in the front 6
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 19 non-dominated members to archive
+pareto dominance sorting archive of size 56
+...pareto dominance sort yielded 2 domination fronts
+50 in the front 1
+6 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 56 to 50 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 50 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.10.archive.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.10.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 10 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 -0.023184             0.36212   -0.659726    0.629806
+X2                          4        -4-0.0231343            0.378529   -0.670503    0.722598
+
+
+  ---  generation 10 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                   0.0113261          0   0.191622    23.3279 -0.0374998          0
+X2                   0.0721534    147.194          0          0 -0.0586121          0
+
+
+  ---  generation 10 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=10_MEMBER=482_PSO as single, 'optimal' point
+   with distance of 0.883443 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5974241      0.29791   0.01132414    0.9768565    0.6429878
+OBJ2                  minimize     0.561245     0.316837  0.003578354    0.9722535    0.6212128
+
+
+  ---  generation 10 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                  -0.0220119    -3.82541-0.000306204  -0.0313557           0           0  -0.0787271    -13.9523
+OBJ2                   0.0368835     6.16648   0.0135374     1.37325  0.00983187     73.3162   0.0730509     10.5221
+
+...number of feasible solutions at the end of generation 10: 50
+
+  ---  starting generation  11  ---  
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.11.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.11.obs_pop.csv'
+...pareto dominance sort yielded 6 domination fronts
+60 in the front 1
+18 in the front 2
+10 in the front 3
+6 in the front 4
+5 in the front 5
+1 in the front 6
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 6 domination fronts
+60 in the front 1
+18 in the front 2
+10 in the front 3
+6 in the front 4
+5 in the front 5
+1 in the front 6
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 11 non-dominated members to archive
+pareto dominance sorting archive of size 61
+...pareto dominance sort yielded 2 domination fronts
+57 in the front 1
+4 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 61 to 57 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+57 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 57 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 57 X 2 to 'fon.11.archive.dv_pop.csv'
+...saved observation population of size 57 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 57 X 2 to 'fon.11.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 11 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4-0.0047421            0.331256   -0.678269    0.629806
+X2                          4        -4  0.022238            0.361153   -0.675717    0.722598
+
+
+  ---  generation 11 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                  -0.0184419          0          0          0   0.018543          0
+X2                  -0.0453723          0          0          0  0.0052138          0
+
+
+  ---  generation 11 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=10_MEMBER=482_PSO as single, 'optimal' point
+   with distance of 0.884676 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize     0.576479    0.2919334   0.01132414    0.9783222    0.6429878
+OBJ2                  minimize     0.591523    0.2935411  0.001815294    0.9722535    0.6212128
+
+
+  ---  generation 11 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0209451      3.5059 -0.00146573   -0.150046           0           0           0           0
+OBJ2                   -0.030278    -5.39479           0           0  0.00176306     49.2701           0           0
+
+...number of feasible solutions at the end of generation 11: 57
+
+  ---  starting generation  12  ---  
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+57 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.12.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.12.obs_pop.csv'
+...pareto dominance sort yielded 7 domination fronts
+56 in the front 1
+20 in the front 2
+14 in the front 3
+5 in the front 4
+3 in the front 5
+1 in the front 6
+1 in the front 7
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 7 domination fronts
+56 in the front 1
+20 in the front 2
+14 in the front 3
+5 in the front 4
+3 in the front 5
+1 in the front 6
+1 in the front 7
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 8 non-dominated members to archive
+pareto dominance sorting archive of size 65
+...pareto dominance sort yielded 2 domination fronts
+60 in the front 1
+5 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 65 to 60 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+60 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 60 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 60 X 2 to 'fon.12.archive.dv_pop.csv'
+...saved observation population of size 60 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 60 X 2 to 'fon.12.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 12 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -40.00819609            0.322802   -0.678269    0.629806
+X2                          4        -4  0.036565            0.361291   -0.675717    0.722598
+
+
+  ---  generation 12 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                  -0.0129382          0          0          0          0          0
+X2                  -0.0143271   -64.4261          0          0          0          0
+
+
+  ---  generation 12 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=10_MEMBER=482_PSO as single, 'optimal' point
+   with distance of 0.884676 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5612617    0.2935592   0.01132414    0.9783222    0.6429878
+OBJ2                  minimize    0.6018032    0.2938125  0.001815294    0.9722535    0.6212128
+
+
+  ---  generation 12 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0152173     2.63971           0           0           0           0           0           0
+OBJ2                  -0.0102802    -1.73791           0           0           0           0           0           0
+
+...number of feasible solutions at the end of generation 12: 60
+
+  ---  starting generation  13  ---  
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+60 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.13.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.13.obs_pop.csv'
+...pareto dominance sort yielded 6 domination fronts
+58 in the front 1
+23 in the front 2
+10 in the front 3
+6 in the front 4
+2 in the front 5
+1 in the front 6
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 6 domination fronts
+58 in the front 1
+23 in the front 2
+10 in the front 3
+6 in the front 4
+2 in the front 5
+1 in the front 6
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 9 non-dominated members to archive
+pareto dominance sorting archive of size 69
+...pareto dominance sort yielded 2 domination fronts
+63 in the front 1
+6 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 69 to 63 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+63 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 63 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 63 X 2 to 'fon.13.archive.dv_pop.csv'
+...saved observation population of size 63 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 63 X 2 to 'fon.13.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 13 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0236214             0.32412   -0.678269    0.629806
+X2                          4        -4 0.0338081            0.352301   -0.675717    0.633531
+
+
+  ---  generation 13 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                  -0.0154253   -188.203          0          0          0          0
+X2                    0.002757    7.53997   0.089067    12.3259          0          0
+
+
+  ---  generation 13 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=10_MEMBER=482_PSO as single, 'optimal' point
+   with distance of 0.884676 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5536025     0.292978   0.01132414    0.9783222    0.6429878
+OBJ2                  minimize    0.6076219    0.2929551  0.001815294    0.9722535    0.6212128
+
+
+  ---  generation 13 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                  0.00765918     1.36464           0           0           0           0           0           0
+OBJ2                  -0.0058187   -0.966878           0           0           0           0           0           0
+
+...number of feasible solutions at the end of generation 13: 63
+
+  ---  starting generation  14  ---  
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+63 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.14.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.14.obs_pop.csv'
+...pareto dominance sort yielded 8 domination fronts
+65 in the front 1
+15 in the front 2
+8 in the front 3
+5 in the front 4
+2 in the front 5
+2 in the front 6
+2 in the front 7
+1 in the front 8
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 8 domination fronts
+65 in the front 1
+15 in the front 2
+8 in the front 3
+5 in the front 4
+2 in the front 5
+2 in the front 6
+2 in the front 7
+1 in the front 8
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 12 non-dominated members to archive
+pareto dominance sorting archive of size 75
+...pareto dominance sort yielded 2 domination fronts
+71 in the front 1
+4 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 75 to 71 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+71 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 71 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 71 X 2 to 'fon.14.archive.dv_pop.csv'
+...saved observation population of size 71 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 71 X 2 to 'fon.14.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 14 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4-0.0117211            0.316408   -0.678269    0.629806
+X2                          4        -4-0.00118686            0.339271   -0.675717    0.633531
+
+
+  ---  generation 14 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                   0.0353425    149.621          0          0          0          0
+X2                   0.0349949    103.511          0          0          0          0
+
+
+  ---  generation 14 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=10_MEMBER=482_PSO as single, 'optimal' point
+   with distance of 0.884676 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5878475    0.2862939   0.01132414    0.9783222    0.6429878
+OBJ2                  minimize    0.5765054    0.2898559  0.001815294    0.9722535    0.6212128
+
+
+  ---  generation 14 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   -0.034245    -6.18584           0           0           0           0           0           0
+OBJ2                   0.0311165     5.12103           0           0           0           0           0           0
+
+...number of feasible solutions at the end of generation 14: 71
+
+  ---  starting generation  15  ---  
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+71 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.15.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.15.obs_pop.csv'
+...pareto dominance sort yielded 5 domination fronts
+63 in the front 1
+19 in the front 2
+11 in the front 3
+4 in the front 4
+3 in the front 5
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 5 domination fronts
+63 in the front 1
+19 in the front 2
+11 in the front 3
+4 in the front 4
+3 in the front 5
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 7 non-dominated members to archive
+pareto dominance sorting archive of size 78
+...pareto dominance sort yielded 2 domination fronts
+74 in the front 1
+4 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 78 to 74 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+74 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 74 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 74 X 2 to 'fon.15.archive.dv_pop.csv'
+...saved observation population of size 74 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 74 X 2 to 'fon.15.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 15 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 -0.034006            0.323237   -0.678269    0.629806
+X2                          4        -4-0.0196386            0.341983   -0.675717    0.719326
+
+
+  ---  generation 15 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                   0.0222849          0          0          0          0          0
+X2                   0.0184518          0 -0.0857954   -13.5424          0          0
+
+
+  ---  generation 15 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=10_MEMBER=482_PSO as single, 'optimal' point
+   with distance of 0.884676 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.6048168    0.2895044   0.01132414    0.9783222    0.6429878
+OBJ2                  minimize    0.5554609    0.2942075  0.001815294    0.9722535    0.6212128
+
+
+  ---  generation 15 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                  -0.0169694    -2.88669           0           0           0           0           0           0
+OBJ2                   0.0210445     3.65035           0           0           0           0           0           0
+
+...number of feasible solutions at the end of generation 15: 74
+
+  ---  starting generation  16  ---  
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+74 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.16.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.16.obs_pop.csv'
+...pareto dominance sort yielded 9 domination fronts
+64 in the front 1
+15 in the front 2
+10 in the front 3
+3 in the front 4
+2 in the front 5
+3 in the front 6
+1 in the front 7
+1 in the front 8
+1 in the front 9
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 9 domination fronts
+64 in the front 1
+15 in the front 2
+10 in the front 3
+3 in the front 4
+2 in the front 5
+3 in the front 6
+1 in the front 7
+1 in the front 8
+1 in the front 9
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 12 non-dominated members to archive
+pareto dominance sorting archive of size 86
+...pareto dominance sort yielded 2 domination fronts
+83 in the front 1
+3 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 86 to 83 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+83 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 83 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 83 X 2 to 'fon.16.archive.dv_pop.csv'
+...saved observation population of size 83 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 83 X 2 to 'fon.16.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 16 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4-0.0130904            0.334112   -0.688499    0.729377
+X2                          4        -4-0.0184258            0.348203   -0.704595    0.665663
+
+
+  ---  generation 16 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                  -0.0209157          0 -0.0995703   -15.8097  0.0102299          0
+X2                  -0.0012128          0  0.0536633    7.46021  0.0288778          0
+
+
+  ---  generation 16 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=10_MEMBER=482_PSO as single, 'optimal' point
+   with distance of 0.892223 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5908674    0.2941415  0.002211084    0.9805638    0.6429878
+OBJ2                  minimize    0.5660171    0.2998254 0.0003525011    0.9807064    0.6212128
+
+
+  ---  generation 16 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0139494     2.30639 -0.00224155   -0.229122  0.00911306     80.4746           0           0
+OBJ2                  -0.0105561    -1.90042 -0.00845288   -0.869411  0.00146279     80.5816           0           0
+
+...number of feasible solutions at the end of generation 16: 83
+
+  ---  starting generation  17  ---  
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+83 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.17.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.17.obs_pop.csv'
+...pareto dominance sort yielded 6 domination fronts
+68 in the front 1
+15 in the front 2
+11 in the front 3
+3 in the front 4
+2 in the front 5
+1 in the front 6
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 6 domination fronts
+68 in the front 1
+15 in the front 2
+11 in the front 3
+3 in the front 4
+2 in the front 5
+1 in the front 6
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 11 non-dominated members to archive
+pareto dominance sorting archive of size 94
+...pareto dominance sort yielded 2 domination fronts
+91 in the front 1
+3 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 94 to 91 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+91 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 91 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 91 X 2 to 'fon.17.archive.dv_pop.csv'
+...saved observation population of size 91 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 91 X 2 to 'fon.17.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 17 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0321825            0.327268   -0.688499    0.729377
+X2                          4        -4 0.0203855            0.320354   -0.704595    0.665663
+
+
+  ---  generation 17 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                  -0.0452729          0          0          0          0          0
+X2                  -0.0388114          0          0          0          0          0
+
+
+  ---  generation 17 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=14_MEMBER=688_PSO as single, 'optimal' point
+   with distance of 0.892452 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5608891    0.2914502  0.002211084    0.9805638    0.6637278
+OBJ2                  minimize    0.6036769    0.2793582 0.0003525011    0.9807064    0.5994073
+
+
+  ---  generation 17 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0299783     5.07361           0           0           0           0    -0.02074    -3.22557
+OBJ2                  -0.0376598    -6.65348           0           0           0           0   0.0218056     3.51016
+
+...number of feasible solutions at the end of generation 17: 91
+
+  ---  starting generation  18  ---  
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+91 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.18.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.18.obs_pop.csv'
+...pareto dominance sort yielded 7 domination fronts
+64 in the front 1
+16 in the front 2
+8 in the front 3
+3 in the front 4
+6 in the front 5
+2 in the front 6
+1 in the front 7
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 7 domination fronts
+64 in the front 1
+16 in the front 2
+8 in the front 3
+3 in the front 4
+6 in the front 5
+2 in the front 6
+1 in the front 7
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 11 non-dominated members to archive
+pareto dominance sorting archive of size 102
+...pareto dominance sort yielded 2 domination fronts
+97 in the front 1
+5 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 102 to 97 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+97 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 97 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 97 X 2 to 'fon.18.archive.dv_pop.csv'
+...saved observation population of size 97 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 97 X 2 to 'fon.18.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 18 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0510833            0.332883   -0.688499    0.729377
+X2                          4        -4 0.0352359            0.324342   -0.704595    0.665663
+
+
+  ---  generation 18 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                  -0.0189008   -58.7299          0          0          0          0
+X2                  -0.0148504   -72.8476          0          0          0          0
+
+
+  ---  generation 18 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=18_MEMBER=878_PSO as single, 'optimal' point
+   with distance of 0.892284 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5476345    0.2928743  0.002211084    0.9805638    0.6519563
+OBJ2                  minimize    0.6171785    0.2768943 0.0003525011    0.9807064    0.6119095
+
+
+  ---  generation 18 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                   0.0132546     2.36314           0           0           0           0   0.0117716     1.77356
+OBJ2                  -0.0135016    -2.23656           0           0           0           0  -0.0125022    -2.08577
+
+...number of feasible solutions at the end of generation 18: 97
+
+  ---  starting generation  19  ---  
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+97 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.19.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.19.obs_pop.csv'
+...pareto dominance sort yielded 6 domination fronts
+66 in the front 1
+21 in the front 2
+7 in the front 3
+3 in the front 4
+1 in the front 5
+2 in the front 6
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 6 domination fronts
+66 in the front 1
+21 in the front 2
+7 in the front 3
+3 in the front 4
+1 in the front 5
+2 in the front 6
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 11 non-dominated members to archive
+pareto dominance sorting archive of size 108
+...pareto dominance sort yielded 2 domination fronts
+101 in the front 1
+7 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 108 to 101 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+101 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 101 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 101 X 2 to 'fon.19.archive.dv_pop.csv'
+...saved observation population of size 101 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 101 X 2 to 'fon.19.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 19 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0443244            0.333873   -0.688499    0.729377
+X2                          4        -4 0.0284227            0.324568   -0.704595    0.685405
+
+
+  ---  generation 19 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                  0.00675887    13.2311          0          0          0          0
+X2                   0.0068132     19.336 -0.0197417   -2.96572          0          0
+
+
+  ---  generation 19 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=18_MEMBER=878_PSO as single, 'optimal' point
+   with distance of 0.892284 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize      0.55413    0.2939766  0.002211084    0.9805638    0.6519563
+OBJ2                  minimize    0.6112305    0.2775473 0.0003525011    0.9807064    0.6119095
+
+
+  ---  generation 19 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                 -0.00649551     -1.1861           0           0           0           0           0           0
+OBJ2                  0.00594797    0.963736           0           0           0           0           0           0
+
+...number of feasible solutions at the end of generation 19: 101
+
+  ---  starting generation  20  ---  
+...pareto dominance sort yielded 1 domination fronts
+50 in the front 1
+...generating PSO population of size 50
+...pareto dominance sort yielded 1 domination fronts
+101 in the front 1
+...running population of size  50
+...saved decision variable population of size 50 X 2 to 'fon.dv_pop.csv'
+...saved generation-specific decision variable population of size 50 X 2 to 'fon.20.dv_pop.csv'
+...saved observation population of size 50 X 2 to 'fon.obs_pop.csv'
+...saved generation-specific observation population of size 50 X 2 to 'fon.20.obs_pop.csv'
+...pareto dominance sort yielded 6 domination fronts
+64 in the front 1
+19 in the front 2
+9 in the front 3
+3 in the front 4
+4 in the front 5
+1 in the front 6
+...pareto dominance sorting combined parent-child populations of size  100
+...pareto dominance sort yielded 6 domination fronts
+64 in the front 1
+19 in the front 2
+9 in the front 3
+3 in the front 4
+4 in the front 5
+1 in the front 6
+...wrote pareto summary to fon.pareto.summary.csv
+updating archive
+adding 13 non-dominated members to archive
+pareto dominance sorting archive of size 114
+...pareto dominance sort yielded 2 domination fronts
+106 in the front 1
+8 in the front 2
+...wrote pareto summary to fon.pareto.archive.summary.csv
+resizing archive from 114 to 106 current non-dominated solutions
+...pareto dominance sort yielded 1 domination fronts
+106 in the front 1
+...wrote pareto summary to fon.pareto.trimmed.archive.summary.csv
+...saved decision variable population of size 106 X 2 to 'fon.archive.dv_pop.csv'
+...saved generation-specific decision variable population of size 106 X 2 to 'fon.20.archive.dv_pop.csv'
+...saved observation population of size 106 X 2 to 'fon.archive.obs_pop.csv'
+...saved generation-specific observation population of size 106 X 2 to 'fon.20.archive.obs_pop.csv'
+...resizing current populations to  50
+
+  ---  generation 20 decision variable summary:  ---  
+decision variable        ubnd      lbnd      mean   standard devation         min         max
+X1                          4        -4 0.0186247            0.327899   -0.688499    0.729377
+X2                          4        -4-0.00949413            0.331622   -0.710237    0.665663
+
+
+  ---  generation 20 decision variable change summary:  ---  
+decision variable  mean change   % change max change   % change min change   % change
+X1                   0.0256997     57.981          0          0          0          0
+X2                   0.0379168    133.403  0.0197417     2.8803 0.00564184          0
+
+
+  ---  generation 20 objective function summary:  ---  
+seeking optimal trade-off point for single 'optimal' chance point runs
+using member GEN=18_MEMBER=878_PSO as single, 'optimal' point
+   with distance of 0.892284 from optimal trade - off
+objective function   direction         mean      std dev          min          max         knee
+
+OBJ1                  minimize    0.5815637    0.2888382  0.002211084    0.9805638    0.6519563
+OBJ2                  minimize    0.5849697    0.2818318 0.0003525011    0.9807064    0.6119095
+
+
+  ---  generation 20 objective function change summary:  ---  
+objective function   mean change    % change  max change    % change  min change    % change knee change    % change
+OBJ1                  -0.0274337    -4.95077           0           0           0           0           0           0
+OBJ2                   0.0262608     4.29638           0           0           0           0           0           0
+
+...number of feasible solutions at the end of generation 20: 106
+
+
+pestpp-mou analysis complete...
+started at 04/08/25 23:09:19
+finished at 04/08/25 23:10:45
+took 1.41667 minutes

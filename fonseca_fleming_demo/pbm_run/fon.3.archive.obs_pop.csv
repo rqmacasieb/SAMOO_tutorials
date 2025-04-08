@@ -1,0 +1,12 @@
+real_name,obj1,obj2
+gen=2_member=75_pso,0.990007,0.045877
+gen=1_member=9_pso,0.0187554,0.986955
+gen=1_member=50_pso,0.722473,0.559594
+gen=3_member=107_pso,0.964906,0.155972
+gen=3_member=133_pso,0.368945,0.913264
+gen=3_member=108_pso,0.593385,0.720858
+gen=0_member=20,0.155598,0.946508
+gen=0_member=6,0.603026,0.664925
+gen=3_member=127_pso,0.0661361,0.976406
+gen=2_member=90_pso,0.987974,0.0792585
+gen=2_member=58_pso,0.987989,0.0714545
