@@ -9,11 +9,11 @@ version: 5.2.5
 binary compiled on Apr  7 2025 at 11:15:18
 
 using control file: "fon.pst"
-in directory: "C:\Users\mac732\OneDrive - CSIRO\Documents\GitHub\SAMOO_tutorials\fonseca_fleming_demo\samoo_runs\outer_0"
-on host: "DUMPLING-FL"
-started at 04/09/25 07:08:55
+in directory: "c:\Users\rmacasieb\Documents\GitHub\SAMOO_tutorials\fonseca_fleming_demo\samoo_runs\outer_0"
+on host: "REYGIE"
+started at 04/10/25 00:56:56
 
-on host: "DUMPLING-FL"
+on host: "REYGIE"
 
 Note: 3 unused lines in pest control file:
   -->  line number 6: '1.000000E+01   2.000000E+00   3.000000E-01   1.000000E-02         8' 
@@ -359,42 +359,40 @@ OBJ1                 less_than      0
 OBJ2                 less_than      0              
 ...using particle swarm generator
 ...loading dv population from csv file infill.dv_pop.csv
-...dv population with 50 members read from 'infill.dv_pop.csv'
+...dv population with 30 members read from 'infill.dv_pop.csv'
 
 checking for denormal values in dv population
 ... saved initial dv population to  fon.0.dv_pop.csv
-...running initial population of size 50
-...running population of size  50
+...running initial population of size 30
+...running population of size  30
 ... saved observation population to  fon.0.obs_pop.csv
 
   ---  initial population decision variable summary:  ---  
 decision variable        ubnd      lbnd      mean   standard devation         min         max
-X1                          4        -4-0.00865218             2.30659    -3.94007     3.86958
-X2                          4        -4-0.00409698             2.30246    -3.94067     3.88311
+X1                          4        -4-0.0163741             2.29493    -3.90012     3.74572
+X2                          4        -4-0.000222082             2.28817    -3.74144     3.76423
 
 
   ---  initial population objective function summary:  ---  
-using member GEN=0_TRAINING=34 as nearest-to-mean single point
-    with distance of 0.4557 from mean of decision variable population
+using member GEN=0_TRAINING=8 as nearest-to-mean single point
+    with distance of 0.569601 from mean of decision variable population
 objective function   direction         mean      std dev          min          max         knee
 
-OBJ1                  minimize     0.940671    0.1772839    0.2480183            1    0.8807989
-OBJ2                  minimize    0.9559395    0.1651315   0.06672191            1    0.2617891
+OBJ1                  minimize    0.9561324   0.09894593    0.5867283            1    0.7632684
+OBJ2                  minimize    0.9433245    0.1754934   0.08850413            1    0.6942952
 
 ... saved initial dv population to  fon.0.dv_pop.csv
 ...performing initial pareto dominance sort
-WARNING: 1 duplicate solutions found:
-GEN=0_TRAINING=24 
-...pareto dominance sort yielded 15 domination fronts
+...pareto dominance sort yielded 10 domination fronts
 4 in the front 1
-4 in the front 2
-4 in the front 3
-6 in the front 4
-4 in the front 5
-4 in the front 6
-4 in the front 7
-4 in the front 8
-4 in the front 9
+2 in the front 2
+3 in the front 3
+4 in the front 4
+5 in the front 5
+3 in the front 6
+5 in the front 7
+2 in the front 8
+1 in the front 9
 (not reporting remaining front membership)
 ...wrote pareto summary to fon.pareto.summary.csv
 initialized archives with 4 nondominated members
@@ -414,6 +412,6 @@ initialized archives with 4 nondominated members
 
 
 pestpp-mou analysis complete...
-started at 04/09/25 07:08:55
-finished at 04/09/25 07:09:07
-took 0.2 minutes
+started at 04/10/25 00:56:56
+finished at 04/10/25 00:57:13
+took 0.283333 minutes

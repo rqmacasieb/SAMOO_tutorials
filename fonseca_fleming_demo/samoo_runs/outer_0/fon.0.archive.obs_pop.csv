@@ -1,5 +1,5 @@
 real_name,obj1,obj2,obj1_sd,obj2_sd
-gen=0_training=16,0.993982,0.0667219,0,0
-gen=0_training=0,0.248018,0.960224,0,0
-gen=0_training=34,0.880799,0.261789,0,0
-gen=0_training=25,0.278861,0.907389,0,0
+gen=0_training=26,0.99443,0.0885041,0,0
+gen=0_training=17,0.586728,0.999791,0,0
+gen=0_training=8,0.763268,0.694295,0,0
+gen=0_training=14,0.734973,0.997849,0,0

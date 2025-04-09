@@ -33,5 +33,5 @@ output.ins output.dat
 ++mou_save_population_every(1)
 ++mou_generator(pso)
 ++mou_pso_alpha(2)
-++mou_population_size(50)
+++mou_population_size(30)
 ++mou_dv_population_file(starter.dv_pop.csv)

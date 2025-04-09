@@ -7,7 +7,6 @@ import glob
 import sys
 import shutil
 import datetime
-from sklearn.cluster import KMeans
 import numpy as np
 import argparse
 import re
@@ -34,10 +33,11 @@ output_dir = '.'
 port = 4000
 
 def inner_opt(iitidx):
+    pst_file = os.path.basename(glob.glob(os.path.join('template_inner', '*.pst'))[0])   
     sys.path.insert(0, tmpl_in)
     from forward_gprun import ppw_worker as ppw_function 
     pyemu.os_utils.start_workers(tmpl_in, "pestpp-mou", 
-                                 "fon.pst", num_workers=num_workers, 
+                                 pst_file, num_workers=num_workers, 
                                  worker_root=".", master_dir="./inner_"+str(iitidx), port=port,
                                  ppw_function=ppw_function)
     sys.path.remove(tmpl_in)
@@ -52,7 +52,8 @@ def inner_opt(iitidx):
 
     return sorted([d for d in os.listdir() if d.startswith("inner_") and os.path.isdir(d)], key=lambda x: int(x.split("_")[1]))
     
-def outer_sweep(oitidx):   
+def outer_sweep(oitidx):
+    pst_file = os.path.basename(glob.glob(os.path.join('template_outer', '*.pst'))[0])   
     if oitidx == 0:
         shutil.copy(os.path.join("template_outer", "gp.lhs.dv_pop.csv"), 
                     os.path.join("template_outer", "infill.dv_pop.csv"))
@@ -60,7 +61,7 @@ def outer_sweep(oitidx):
     sys.path.insert(0, "template_outer")
     from forward_pbrun import ppw_worker as ppw_function 
     pyemu.os_utils.start_workers("template_outer", "pestpp-mou", 
-                                 "fon.pst", num_workers=num_workers, 
+                                 pst_file, num_workers=num_workers, 
                                  worker_root=".", master_dir="./outer_"+str(oitidx), port=port,
                                  ppw_function=ppw_function)
     sys.path.remove("template_outer")
@@ -72,17 +73,6 @@ def get_dirlist():
     outer_dirs = sorted([d for d in os.listdir() if d.startswith("outer_") and os.path.isdir(d)], key=lambda x: int(x.split("_")[1]))
 
     return inner_dirs, outer_dirs
-
-def build_training_dataset(X, Y):
-
-    X.to_csv(os.path.join(tmpl_in, f"gp_0.dv_training.csv"), index=False)
-    X = X.drop(columns=['real_name']).values
-
-    Y.to_csv(os.path.join(tmpl_in, f"gp_0.obs_training.csv"), index=False)
-    Y = Y.drop(columns=['real_name'])['func'].values
-
-    # gpr.buildGP(X, Y, fname=os.path.join(tmpl_in, f"gp_0.gp"))
-    print(f"\n{datetime.datetime.now()}: GP training dataset saved. \n")
 
 def inner_prep(inner_dirs, outer_dirs):
     curr_dv = pd.read_csv(glob.glob(f"./{outer_dirs[-1]}/*0.dv_pop.csv", recursive=True)[0])
@@ -134,7 +124,8 @@ def inner_prep(inner_dirs, outer_dirs):
                                   curr_obs], ignore_index=True)
         training_dv.columns, training_obs.columns = curr_dv.columns.values, curr_obs.columns.values
 
-    build_training_dataset(training_dv, training_obs)
+    training_dv.to_csv(os.path.join(tmpl_in, f"gp_0.dv_training.csv"), index=False)
+    training_obs.to_csv(os.path.join(tmpl_in, f"gp_0.obs_training.csv"), index=False)
 
 def update_outer_repo(outer_dirs):
     base_path = os.path.join(".", outer_dirs[-2])
@@ -154,9 +145,10 @@ def update_outer_repo(outer_dirs):
         merged_file.drop_duplicates(subset='real_name', inplace=True)
         merged_file.to_csv(os.path.join(".", "template_repo_update", f"merged.{file_type}.csv"), index=False)
 
+    pst_file = os.path.basename(glob.glob(os.path.join('template_repo_update', '*.pst'))[0])
     #run pestpp mou in pareto sorting mode
     pyemu.os_utils.start_workers("template_repo_update", "pestpp-mou", 
-                                 "outer_repo.pst", num_workers=num_workers, port=port,
+                                 "outer_repo.pst", num_workers=1, port=port,
                                  worker_root=".", master_dir="temp")
 
     #copy outer repo update files to outer dir
@@ -179,13 +171,13 @@ def update_outer_repo(outer_dirs):
 def prep_templates():
     print(f"\n{datetime.datetime.now()}: prepping templates \n")
           
-    pst_files = glob.glob(os.path.join('template', '*.pst'))
-    if len(pst_files) != 1:
+    pst_file = glob.glob(os.path.join('template', '*.pst'))
+    if len(pst_file) != 1:
         raise ValueError("There should be exactly one .pst file in the template directory.")
     
     #prep outer iter pst file
     print(f"\n{datetime.datetime.now()}: prepping outer template \n")
-    pst = pyemu.Pst(pst_files[0])
+    pst = pyemu.Pst(pst_file[0])
     if os.path.exists('template_outer'):
         shutil.rmtree('template_outer')
     shutil.copytree('template', 'template_outer')
@@ -193,13 +185,13 @@ def prep_templates():
     pst.control_data.noptmax = -1
     pst.model_command = 'python forward_pbrun.py'
     pst.pestpp_options['mou_dv_population_file'] = 'infill.dv_pop.csv'
-    pst.write(os.path.join('template_outer', os.path.basename(pst_files[0])))
+    pst.write(os.path.join('template_outer', os.path.basename(pst_file[0])))
 
     print(f"\n{datetime.datetime.now()}: outer template prepped \n")
 
     #prep outer repo update template
     print(f"\n{datetime.datetime.now()}: prepping repo update template \n")
-    pst = pyemu.Pst(pst_files[0])
+    pst = pyemu.Pst(pst_file[0])
     if os.path.exists('template_repo_update'):
         shutil.rmtree('template_repo_update')
     shutil.copytree('template', 'template_repo_update')
@@ -208,32 +200,31 @@ def prep_templates():
     pst.model_command = 'python forward_pbrun.py'
     pst.pestpp_options['mou_dv_population_file'] = 'merged.dv_pop.csv'
     pst.pestpp_options['mou_obs_population_restart_file'] = 'merged.obs_pop.csv'
-    pst.write(os.path.join('template_repo_update', "outer_repo.pst"))
+    pst.write(os.path.join('template_repo_update', 'outer_repo.pst'))
 
     print(f"\n{datetime.datetime.now()}: outer repo update template prepped \n")
 
     #prep inner iter pst file
     print(f"\n{datetime.datetime.now()}: prepping inner template \n")
-    pst = pyemu.Pst(pst_files[0])
+    pst = pyemu.Pst(pst_file[0])
     if os.path.exists('template_inner'):
         shutil.rmtree('template_inner')
     shutil.copytree('template', 'template_inner')
 
     pst.control_data.noptmax = nmax_inner
     pst.model_command = 'python forward_gprun.py'
-    pst.pestpp_options['mou_objectives'] = 'func, func_var'
     pst.pestpp_options['mou_save_population_every'] = 1
-    pst.pestpp_options['mou_ppd_beta'] = 0.7
+    pst.pestpp_options['mou_ppd_beta'] = 0.6
     pst.pestpp_options['mou_env_selector'] = 'NSGA_PPD'
     pst.pestpp_options['mou_population_size'] = pop_size
     pst.pestpp_options['mou_max_archive_size'] = 100
     pst.pestpp_options['mou_dv_population_file'] = 'initial.dv_pop.csv'
     pst.pestpp_options['mou_obs_population_restart_file'] = 'initial.obs_pop.csv'
-    pst.write(os.path.join('template_inner', os.path.basename(pst_files[0])))
+    pst.write(os.path.join('template_inner', os.path.basename(pst_file[0])))
 
     print(f"\n{datetime.datetime.now()}: inner template prepped \n")
 
-def parse_all_io(inner_dirs):
+def parse_all_io(inner_dirs, save_consolidated_dv=False, save_consolidated_obs=False, ):
     csvfiles = sorted(glob.glob(f"{inner_dirs[-1]}/*[0-999].dv_pop.csv", recursive=True), 
                       key=lambda x: int(x.split(".dv")[0].split(".")[1]))
     all_dv_list = []
@@ -243,7 +234,8 @@ def parse_all_io(inner_dirs):
         df = df[['generation'] + [col for col in df.columns if col != 'generation']] 
         all_dv_list.append(df)
     all_dv = pd.concat(all_dv_list, ignore_index=True)
-    # all_dv.to_csv(os.path.join(inner_dirs[-1], "dv.summary.csv"), index=False)
+    if save_consolidated_dv:
+        all_dv.to_csv(os.path.join(inner_dirs[-1], "dv.summary.csv"), index=False)
     all_dv.drop(columns=['generation'], inplace=True)
 
     csvfiles = sorted(glob.glob(f"{inner_dirs[-1]}/*[0-999].obs_pop.csv", recursive=True), 
@@ -255,7 +247,8 @@ def parse_all_io(inner_dirs):
         df = df[['generation'] + [col for col in df.columns if col != 'generation']] 
         all_obs_list.append(df)
     all_obs = pd.concat(all_obs_list, ignore_index=True)
-    all_obs.to_csv(os.path.join(inner_dirs[-1], "obs.summary.csv"), index=False)
+    if save_consolidated_obs:
+        all_obs.to_csv(os.path.join(inner_dirs[-1], "obs.summary.csv"), index=False)
     all_obs.drop(columns=['generation'], inplace=True)
 
     return all_dv, all_obs
@@ -294,7 +287,6 @@ def resample(inner_dirs, outer_dirs):
                 n_infill = infill_pool.shape[0]
             else:
                 front_idx += 1 
-               
         iter_n -= 1
 
     if infill_pool.shape[0] < max_infill:
@@ -304,15 +296,6 @@ def resample(inner_dirs, outer_dirs):
     infill_pool_dv.to_csv(os.path.join("template_outer", "infill.dv_pop.csv"), index=False)
     
     print(f"\n{datetime.datetime.now()}: infill ensemble saved \n")
-
-    #sampling from decision space for restart dv file
-    augmented_training_dv = pd.concat([training_dv, infill_pool_dv], ignore_index=True)
-    kmeans = KMeans(n_clusters=pop_size).fit(augmented_training_dv.drop(columns='real_name'))
-    restart_pool_dv = pd.DataFrame(kmeans.cluster_centers_, columns=training_dv.drop(columns='real_name').columns)
-    restart_pool_dv.insert(0, 'real_name', [f'gen={max(inner_pareto["generation"]) * len(inner_dirs)}_restart={i+1}' for i in range(len(restart_pool_dv))])    
-    restart_pool_dv.to_csv(os.path.join(tmpl_in, "initial.dv_pop.csv"), index=False)
-
-    print(f"\n{datetime.datetime.now()}: restart population saved \n")
     
 
 if __name__ == "__main__":
