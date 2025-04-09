@@ -1,9 +1,0 @@
-real_name,x1,x2
-gen=1_member=23_pso,-0.00369132,1.45404
-gen=1_member=16_pso,-0.0184548,-0.802673
-gen=0_training=8,0.347798,-0.438199
-gen=0_training=26,-0.808024,-0.994307
-gen=0_training=17,1.14433,1.53927
-gen=1_member=21_pso,0.102594,1.66501
-gen=0_training=14,0.0489079,1.65299
-gen=1_member=7_pso,1.72221,1.90389

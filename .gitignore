@@ -1,0 +1,11 @@
+# Ignore Python cache files
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Ignore validation run files
+validation/
+fonseca_fleming_demo/
