@@ -11,7 +11,7 @@ binary compiled on Apr  7 2025 at 11:15:18
 using control file: "fon.pst"
 in directory: "c:\Users\rmacasieb\Documents\GitHub\SAMOO_tutorials\fonseca_fleming_demo\samoo_runs\inner_1"
 on host: "REYGIE"
-started at 04/10/25 00:58:03
+started at 04/10/25 01:05:39
 
 on host: "REYGIE"
 
@@ -1861,6 +1861,6 @@ OBJ2                   0.0833851     13.5781           0           0           0
 
 
 pestpp-mou analysis complete...
-started at 04/10/25 00:58:03
-finished at 04/10/25 00:59:34
-took 1.51667 minutes
+started at 04/10/25 01:05:39
+finished at 04/10/25 01:07:09
+took 1.5 minutes
