@@ -9,5 +9,7 @@ dependencies:
   - matplotlib
   - jupyter
   - ipykernel
-  - lagpy
   - pyemu
+  - pip
+  - pip:
+    - lagpy==2.1.5
