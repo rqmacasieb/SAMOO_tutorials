@@ -12,7 +12,35 @@ Contents
 
 - Part 5: Solving Expensive Constrained MOO using SAMOO (soon)
 
-These notebooks require pyEMU (https://github.com/pypest/pyemu) and laGPy (https://github.com/rqmacasieb/laGPy).
+
+Environment Setup
+-----------------------------------------------
+
+1. Clone this repository:
+   ```
+   git clone https://github.com/rqmacasieb/SAMOO_tutorials.git
+   cd SAMOO_tutorials
+   ```
+
+2. Create the conda environment:
+   ```
+   conda env create -f environment.yml
+   ```
+
+3. Activate the environment:
+   ```
+   conda activate samoo_tutorials
+   ```
+
+4. Launch Jupyter:
+   ```
+   jupyter notebook
+   ```
+
+Requirements
+-----------------------------------------------
+All required packages are specified in the `environment.yml` file. 
+A pre-compiled version of pestpp-mou that includes SAMOO functionalities is included in base_files.
 
 Related Publications
 -----------------------------------------------
