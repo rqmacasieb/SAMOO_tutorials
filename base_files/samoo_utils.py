@@ -109,7 +109,7 @@ class SAMOO:
                 restart_obs = pd.concat([restart_obs, restart_obs_subsample], ignore_index=True)
             else:
                 restart_dv = restart_dv.sample(n=self.pop_size)
-                restart_obs = curr_obs[curr_obs['real_name'].isin(restart_dv['real_name'])]
+                restart_obs = restart_obs[restart_obs['real_name'].isin(restart_dv['real_name'])]
 
         restart_dv = restart_dv.loc[~restart_dv.duplicated(subset=restart_dv.columns.difference(['real_name']), keep='first')]
         restart_dv = restart_dv.sort_values('real_name')
