@@ -1,0 +1,8 @@
+real_name,x1,x2
+gen=1_member=32_pso,-0.0251262,-0.413318
+gen=1_member=31_pso,-1.97096,0.10404
+gen=1_member=29_pso,-0.527545,0.540027
+gen=1_member=17_pso,-2.58339,-0.234071
+gen=0_training=3,-1.06691,0.591118
+gen=0_training=15,-1.97096,-1.195
+gen=1_member=33_pso,0.576034,0.10184

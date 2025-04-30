@@ -1,0 +1,77 @@
+time,elapsed_seconds,message
+15:04:50,0.0001094,PEST++ performance logger started
+15:04:50,0.0003658,starting to process control file
+15:04:50,0.006216,finished processing control file
+15:04:50,0.0081836,initializing MOEA process
+15:04:50,5.24e-05,using 'nsga2' env selector
+15:04:50,2.24e-05,using binary tournament mating pool selector
+15:04:50,2.5e-05,saving generation specific populations and archives every nth generation 1
+15:04:50,3.16e-05,'opt_dec_var_groups' passed, using 2 adjustable parameters as decision variables
+15:04:50,0.000111,number of decision variables:  2
+15:04:50,4.53e-05,max run fail:  3
+15:04:50,9.41e-05,'opt_chance_points' = SINGLE, evaluating chance at representative point
+15:04:50,6.14e-05,initializing constraints
+15:04:50,0.0004241,using particle swarm generator
+15:04:50,0.0013998,processing dv population file infill.dv_pop.csv
+15:04:50,3.01e-05,loading dv population from csv file infill.dv_pop.csv
+15:04:50,0.0071937,dv population with 20 members read from 'infill.dv_pop.csv'
+
+15:04:50,3.23e-05,previous generation numbers detected in dv population, fast forwarding generation counter to 80
+15:04:50,3.09e-05,checking for denormal values in dv population
+15:04:50,0.0019925, saved initial dv population to  kur.0.dv_pop.csv
+15:04:50,1.23e-05,running initial population
+15:04:50,1.64e-05,running initial population of size 20
+15:04:50,0.0029515,running population of size  20
+15:04:50,1.53e-05,queuing 20 runs
+15:04:50,0.0011682,making runs
+15:05:01,10.7366,processing runs
+15:05:01,0.0048271, saved observation population to  kur.0.obs_pop.csv
+15:05:01,2.32e-05,initial population decision variable summary:
+15:05:01,5.06e-05,initial population objective function summary:
+15:05:01,3.08e-05,using member GEN=79_MEMBER=562_PSO as nearest-to-mean single point
+    with distance of 0.0287968 from mean of decision variable population
+15:05:01,0.0014744, saved initial dv population to  kur.0.dv_pop.csv
+15:05:01,1.96e-05,performing initial pareto dominance sort
+15:05:01,0.0026651,ParetoObjectives::get_nsga2_pareto_dominance() for 20 population members
+15:05:01,1.91e-05,ParetoObjectives::update() for  20 population members
+15:05:01,8e-06,preparing fast-lookup containers
+15:05:01,0.0001068,checking for duplicate solutions
+15:05:01,5.35e-05,calculating fitness
+15:05:01,9e-06,get_spea_fitness
+15:05:01,5.33e-05,fill domination containers
+15:05:01,0.0001288,pareto front sorting
+15:05:01,9.8e-06,starting 'fast non-dom sort
+15:05:01,7.4e-06,fill domination containers
+15:05:01,9.66e-05,finding first front
+15:05:01,8.9e-06,sorting remaining fronts
+15:05:01,0.0007047,kur.0.dv_pop.csvinitialized archives with 9 nondominated members
+15:05:01,1.01e-05,ParetoObjectives::get_nsga2_pareto_dominance() for 9 population members
+15:05:01,8e-06,ParetoObjectives::update() for  9 population members
+15:05:01,6.9e-06,preparing fast-lookup containers
+15:05:01,3.17e-05,checking for duplicate solutions
+15:05:01,1.96e-05,calculating fitness
+15:05:01,6.6e-06,get_spea_fitness
+15:05:01,1.8e-05,fill domination containers
+15:05:01,3.34e-05,pareto front sorting
+15:05:01,6.9e-06,starting 'fast non-dom sort
+15:05:01,6.7e-06,fill domination containers
+15:05:01,2.61e-05,finding first front
+15:05:01,7.9e-06,sorting remaining fronts
+15:05:01,0.0003074,ParetoObjectives::get_nsga2_pareto_dominance() for 9 population members
+15:05:01,8.6e-06,ParetoObjectives::update() for  9 population members
+15:05:01,6.8e-06,preparing fast-lookup containers
+15:05:01,2.89e-05,checking for duplicate solutions
+15:05:01,1.8e-05,calculating fitness
+15:05:01,6.7e-06,get_spea_fitness
+15:05:01,1.69e-05,fill domination containers
+15:05:01,3.09e-05,pareto front sorting
+15:05:01,6.8e-06,starting 'fast non-dom sort
+15:05:01,6.5e-06,fill domination containers
+15:05:01,2.57e-05,finding first front
+15:05:01,7.7e-06,sorting remaining fronts
+15:05:01,0.0016964,saved decision variable population of size 9 X 2 to 'kur.archive.dv_pop.csv'
+15:05:01,0.0015033,saved generation-specific decision variable population of size 9 X 2 to 'kur.0.archive.dv_pop.csv'
+15:05:01,0.002126,saved observation population of size 9 X 4 to 'kur.archive.obs_pop.csv'
+15:05:01,0.0016738,saved generation-specific observation population of size 9 X 4 to 'kur.0.archive.obs_pop.csv'
+15:05:01,0.0001037,number of initial feasible solutions: 9
+15:05:01,1.54e-05,initialization complete

@@ -1,0 +1,37 @@
+pcf
+* control data
+             restart          estimation
+         2         2         1         0         1
+         1         1              single               point         1
+   1.000000E+01   2.000000E+00   3.000000E-01   1.000000E-02         8
+   1.000000E+01   1.000000E+01   1.000000E-03
+   1.000000E-01
+        20   1.000000E-02         3         3   1.000000E-02         3
+         1         1         1
+* singular value decomposition
+         1
+  10000000    1.000000E-06
+1
+* parameter groups
+decvar                 absolute              1.0000000000E+00      0.0 switch                1.0000000000E+00      parabolic             1.0000000000E-05      5.0000000000E-01      smaller              
+* parameter data
+x1                    none                  relative              0.0000000000E+00      -5.0000000000E+00     5.0000000000E+00      decvar                1.0000000000E+00      0.0000000000E+00      1          
+x2                    none                  relative              0.0000000000E+00      -5.0000000000E+00     5.0000000000E+00      decvar                1.0000000000E+00      0.0000000000E+00      1          
+* observation groups
+l_obj                
+* observation data
+obj1                  0.0000000000E+00      1.0000000000E+00      l_obj                
+obj2                  0.0000000000E+00      1.0000000000E+00      l_obj                
+* model command line
+python forward_pbrun.py
+* model input/output
+dv_tpl.dat dv.dat
+output.ins output.dat
+++opt_dec_var_groups(decvar)
+++mou_objectives(obj1,obj2)
+++panther_agent_freeze_on_fail(true)
+++mou_save_population_every(1)
+++mou_generator(pso)
+++mou_pso_alpha(2)
+++mou_population_size(20)
+++mou_dv_population_file(starter.dv_pop.csv)
