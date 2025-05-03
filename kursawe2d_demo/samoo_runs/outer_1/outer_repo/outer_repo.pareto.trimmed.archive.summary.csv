@@ -1,8 +1,0 @@
-generation,member,obj1,obj2,nsga2_front,nsga2_crowding_distance,spea2_unconstrained_fitness,spea2_constrained_fitness,is_feasible,feasible_distance
-0,gen=5_member=147_pso,-9.81508,0.188966,1,1e+30,0.279399,0.279399,1,-999
-0,gen=0_training=15,-6.30661,-6.98287,1,1e+30,0.142909,0.142909,1,-999
-0,gen=19_member=556_pso,-7.93697,-3.654,1,1.21823,0.228973,0.228973,1,-999
-0,gen=12_member=357_pso,-8.34959,-2.42207,1,0.498398,0.303104,0.303104,1,-999
-0,gen=11_member=328_pso,-8.90203,-0.27136,1,0.478028,0.330849,0.330849,1,-999
-0,gen=15_member=446_pso,-8.56961,-1.37278,1,0.303741,0.325509,0.325509,1,-999
-0,gen=18_member=531_pso,-8.66975,-0.898147,1,0.248324,0.37475,0.37475,1,-999
