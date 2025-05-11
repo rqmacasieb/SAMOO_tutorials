@@ -136,7 +136,7 @@ class LatinHypercube:
             
         return samples
 
-def generate_lhstrainingset(template_dir = './', seed=0, n_samples=20, n_dimensions=2, bounds=None):
+def generate_lhstrainingset(template_dir = '.', seed=0, n_samples=20, n_dimensions=2, bounds=None, savefile = True):
     """
     Generate a Latin Hypercube training set.
 
@@ -150,6 +150,8 @@ def generate_lhstrainingset(template_dir = './', seed=0, n_samples=20, n_dimensi
         The number of samples to generate
     n_dimensions : int
         The number of dimensions to generate
+    savefile : bool
+        Whether to save the training set to a file
     """
     np.random.seed(seed)
 
@@ -166,9 +168,11 @@ def generate_lhstrainingset(template_dir = './', seed=0, n_samples=20, n_dimensi
     member_names = [f"gen=0_training={i}" for i in range(n_samples)]
     samples_df = pd.DataFrame(samples_maximin, index=member_names, columns=dv_names)
     samples_df.rename_axis("real_name", inplace=True)
-    samples_df.to_csv(os.path.join(template_dir, "gp.lhs.dv_pop.csv"), index=True)
+    if savefile:
+        samples_df.to_csv(os.path.join(template_dir, "gp.lhs.dv_pop.csv"), index=True)
+    return samples_df
 
-def generate_lhsstarter(template_dir = './', seed=0, n_samples=20, n_dimensions=2, bounds=None):
+def generate_lhsstarter(template_dir = '.', seed=0, n_samples=20, n_dimensions=2, bounds=None, savefile = True):
     """
     Generate a Latin Hypercube starter set.
 
@@ -182,6 +186,8 @@ def generate_lhsstarter(template_dir = './', seed=0, n_samples=20, n_dimensions=
         The number of samples to generate
     n_dimensions : int
         The number of dimensions to generate
+    savefile : bool
+        Whether to save the starter set to a file
     """
     np.random.seed(seed+100)
 
@@ -198,7 +204,9 @@ def generate_lhsstarter(template_dir = './', seed=0, n_samples=20, n_dimensions=
     member_names = [f"gen=0_member={i}" for i in range(n_samples)]
     samples_df = pd.DataFrame(samples_maximin, index=member_names, columns=dv_names)
     samples_df.rename_axis("real_name", inplace=True)
-    samples_df.to_csv(os.path.join(template_dir, "starter.dv_pop.csv"), index=True)
+    if savefile:
+        samples_df.to_csv(os.path.join(template_dir, "starter.dv_pop.csv"), index=True)
+    return samples_df
 
 if __name__ == "__main__":
     generate_lhstrainingset(seed=0)
