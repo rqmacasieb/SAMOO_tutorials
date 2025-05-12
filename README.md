@@ -6,7 +6,7 @@ Contents
 
 - Part 2: Pareto Optimality Under Uncertainty
 
-- Part 3: Walkthough of SAMOO 
+- Part 3: Walkthrough of SAMOO 
 
 Environment Setup
 -----------------------------------------------
@@ -35,7 +35,7 @@ Environment Setup
 Requirements
 -----------------------------------------------
 All required packages are specified in the `environment.yml` file. 
-A pre-compiled version of pestpp-mou that includes SAMOO functionalities is included in base_files.
+A pre-compiled version of pestpp-mou that includes SAMOO functionalities is included in demo_files.
 
 Related Publications
 -----------------------------------------------
