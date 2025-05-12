@@ -3,8 +3,8 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.9
-  - numpy
+  - python=3.11
+  - numpy<2
   - pandas
   - matplotlib
   - jupyter
@@ -13,3 +13,4 @@ dependencies:
   - pip
   - pip:
     - lagpy==2.1.6
+
