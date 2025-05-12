@@ -9,3 +9,4 @@ build/
 # Ignore validation run files
 validation/
 fonseca_fleming_demo/
+/kursawe2d_demo

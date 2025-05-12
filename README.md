@@ -4,14 +4,9 @@ Contents
 -----------------------------------------------
 - Part 1: Pareto Optimality
 
-- Part 2: Pareto Optimality Under Uncertainty (soon)
+- Part 2: Pareto Optimality Under Uncertainty
 
-- Part 3: Overview of SAMOO algorithm
-
-- Part 4: Walkthough of SAMOO utilities and more examples (soon)
-
-- Part 5: Solving Expensive Constrained MOO using SAMOO (soon)
-
+- Part 3: Walkthough of SAMOO 
 
 Environment Setup
 -----------------------------------------------
