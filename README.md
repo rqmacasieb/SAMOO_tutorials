@@ -6,7 +6,9 @@ Contents
 
 - Part 2: Pareto Optimality Under Uncertainty
 
-- Part 3: Walkthrough of SAMOO 
+- Part 3: Walkthrough of SAMOO
+
+- Part 4: Setting up and facilitating SAMOO using samoo utility
 
 Environment Setup
 -----------------------------------------------
