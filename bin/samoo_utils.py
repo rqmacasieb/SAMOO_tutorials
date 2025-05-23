@@ -22,6 +22,9 @@ class SAMOO:
                  ppd_beta = 0.6,
                  tmpl_in="template_inner",
                  exe_file = './pestpp-mou',
+                 pbmodel_command = 'python forward_pbrun.py',
+                 gpmodel_command = 'python forward_gprun.py',
+                 save_inner_every = 1,
                  output_dir='.',
                  port=4000):
         
@@ -34,10 +37,14 @@ class SAMOO:
         self.repo_size = repo_size
         self.ppd_beta = ppd_beta
         self.tmpl_in = tmpl_in
+        self.save_inner_every = save_inner_every
         self.output_dir = output_dir
         self.exe_file = exe_file
+        self.pbmodel_command = pbmodel_command
+        self.gpmodel_command = gpmodel_command
         self.port = port
         
+
     def inner_opt(self, iitidx):
         pst_file = os.path.basename(glob.glob(os.path.join(self.tmpl_in, '*.pst'))[0])   
         sys.path.insert(0, self.tmpl_in)
@@ -47,6 +54,8 @@ class SAMOO:
                                     worker_root=".", master_dir=f"./inner_{iitidx}", port=self.port,
                                     ppw_function=ppw_function)
         sys.path.remove(self.tmpl_in)
+
+        print(f"\n{datetime.datetime.now()}: inner {iitidx} done. Output saved to inner_{iitidx} \n")
 
         #delete some files to save space
         file_formats_to_delete = ["*.gp", "*.trimmed.archive.summary.csv"]
@@ -71,6 +80,7 @@ class SAMOO:
                                     worker_root=".", master_dir=f"./outer_{oitidx}", port=self.port,
                                     ppw_function=ppw_function)
         sys.path.remove("template_outer")
+        print(f"\n{datetime.datetime.now()}: outer {oitidx} done. Output saved to outer_{oitidx} \n")
 
         return self.get_outer_dirs()
 
@@ -121,6 +131,8 @@ class SAMOO:
         restart_obs = restart_obs.sort_values('real_name')
         restart_obs.to_csv(os.path.join(self.tmpl_in, "initial.obs_pop.csv"), index=False)
 
+        print(f"\n{datetime.datetime.now()}: restart population for inner iteration saved to template_inner \n")
+
         #remove existing gp files and training data from template dir
         for file in glob.glob(os.path.join(self.tmpl_in, "*.gp")) + \
                     glob.glob(os.path.join(self.tmpl_in, "*dv_training.csv")) + \
@@ -139,6 +151,8 @@ class SAMOO:
 
         training_dv.to_csv(os.path.join(self.tmpl_in, f"gp_0.dv_training.csv"), index=False)
         training_obs.to_csv(os.path.join(self.tmpl_in, f"gp_0.obs_training.csv"), index=False)
+
+        print(f"\n{datetime.datetime.now()}: surrogate model training data updated in template_inner \n")
 
     def update_outer_repo(self, outer_dirs):
         base_path = os.path.join(".", outer_dirs[-2])
@@ -180,6 +194,8 @@ class SAMOO:
         #clean up temp directory
         shutil.rmtree("temp")
 
+        print(f"\n{datetime.datetime.now()}: outer repo update done \n")
+
     def prep_templates(self):
         print(f"\n{datetime.datetime.now()}: prepping templates \n")
               
@@ -195,7 +211,7 @@ class SAMOO:
         shutil.copytree('template', 'template_outer')
 
         pst.control_data.noptmax = -1
-        pst.model_command = 'python forward_pbrun.py'
+        pst.model_command = self.pbmodel_command
         pst.pestpp_options['mou_dv_population_file'] = 'infill.dv_pop.csv'
         pst.write(os.path.join('template_outer', os.path.basename(pst_file[0])))
 
@@ -209,7 +225,7 @@ class SAMOO:
         shutil.copytree('template', 'template_repo_update')
 
         pst.control_data.noptmax = -1
-        pst.model_command = 'python forward_pbrun.py'
+        pst.model_command = self.pbmodel_command
         pst.pestpp_options['mou_dv_population_file'] = 'merged.dv_pop.csv'
         pst.pestpp_options['mou_obs_population_restart_file'] = 'merged.obs_pop.csv'
         pst.write(os.path.join('template_repo_update', 'outer_repo.pst'))
@@ -224,8 +240,8 @@ class SAMOO:
         shutil.copytree('template', 'template_inner')
 
         pst.control_data.noptmax = self.nmax_inner
-        pst.model_command = 'python forward_gprun.py'
-        pst.pestpp_options['mou_save_population_every'] = 1
+        pst.model_command = self.gpmodel_command
+        pst.pestpp_options['mou_save_population_every'] = self.save_inner_every
         pst.pestpp_options['mou_ppd_beta'] = self.ppd_beta
         pst.pestpp_options['mou_env_selector'] = 'NSGA_PPD'
         pst.pestpp_options['mou_population_size'] = self.pop_size
@@ -264,6 +280,9 @@ class SAMOO:
         return all_dv, all_obs
 
     def resample(self, inner_dirs, outer_dirs):
+
+        print(f"\n{datetime.datetime.now()}: resampling {self.max_infill} infill points \n")
+
         #get current training dv and obs dataset
         training_dv = pd.read_csv(glob.glob(f"{inner_dirs[-1]}/gp_0.dv_training.csv", recursive=True)[0])
        
@@ -300,7 +319,7 @@ class SAMOO:
                     if size_to_fill < infill_sort_front.shape[0]:
                         infill_sort_front = infill_sort_front.sort_values(by='nsga2_crowding_distance', ascending=False)
                         infill_sort_front = infill_sort_front.head(size_to_fill)
-                    infill_pool = pd.concat([infill_pool, infill_sort_front], ignore_index=True)
+                    infill_pool = pd.concat([infill_pool, infill_sort_front.dropna(how='all', axis=1)], ignore_index=True)
                     n_infill = infill_pool.shape[0]
                 else:
                     front_idx += 1 
@@ -312,7 +331,7 @@ class SAMOO:
         infill_pool_dv = all_dv[all_dv['real_name'].isin(infill_pool['member'].values)]
         infill_pool_dv.to_csv(os.path.join("template_outer", "infill.dv_pop.csv"), index=False)
         
-        print(f"\n{datetime.datetime.now()}: infill ensemble saved \n")
+        print(f"\n{datetime.datetime.now()}: infill ensemble saved to template_outer \n")
     
     def run(self):
         print('Saving outputs to:', self.output_dir)
@@ -331,7 +350,6 @@ class SAMOO:
         for i in range(self.nmax_outer+1):
             if not outer_dirs:
                 outer_dirs = self.outer_sweep(0)
-                print(f"\n{datetime.datetime.now()}: outer 0 done \n")
             else:
                 if not (self.restart and i == 0):
                     outer_dirs = self.outer_sweep(int(outer_dirs[-1].split("_")[1]) + 1)
@@ -358,6 +376,9 @@ def parse_args():
     parser.add_argument('--num-workers', type=int, default=8, help='Number of workers')
     parser.add_argument('--max-infill', type=int, default=50, help='Maximum number of infill points')
     parser.add_argument('--pop-size', type=int, default=50, help='Population size')
+    parser.add_argument('--save-inner-every', type=int, default=1, help='Save inner results every n iterations')
+    parser.add_argument('--pbmodel-command', type=str, default='python forward_pbrun.py', help='Command to run the PB model')
+    parser.add_argument('--gpmodel-command', type=str, default='python forward_gprun.py', help='Command to run the GP model')
     return parser.parse_args()
 
 if __name__ == "__main__":
@@ -371,8 +392,11 @@ if __name__ == "__main__":
         max_infill=args.max_infill,
         pop_size=args.pop_size,
         output_dir=args.output_dir,
+        save_inner_every=args.save_inner_every,
         exe_file=args.exe_file,
-        port=args.port        
+        pbmodel_command=args.pbmodel_command,
+        gpmodel_command=args.gpmodel_command,
+        port=args.port
     )
     
     samoo.run()
